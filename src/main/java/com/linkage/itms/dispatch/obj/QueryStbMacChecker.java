@@ -1,0 +1,115 @@
+package com.linkage.itms.dispatch.obj;
+
+import java.io.StringReader;
+
+import org.dom4j.Document;
+import org.dom4j.DocumentException;
+import org.dom4j.DocumentHelper;
+import org.dom4j.Element;
+import org.dom4j.io.SAXReader;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import com.linkage.commons.util.StringUtil;
+
+/**
+ * 
+ * @author hp (Ailk No.)
+ * @version 1.0
+ * @since 2017-10-24
+ * @category com.linkage.itms.dispatch.obj
+ * @copyright Ailk NBS-Network Mgt. RD Dept.
+ *
+ */
+public class QueryStbMacChecker extends BaseChecker
+{
+	private static final Logger logger = LoggerFactory.getLogger(QueryStbMacChecker.class);
+	private String inParam = null;
+	public String OnlineMAC="";
+	public QueryStbMacChecker (String inParam) {
+		this.inParam = inParam;
+	}
+	@Override
+	public boolean check()
+	{
+		logger.debug("QueryStbMacChecker==>check()" + inParam);
+		SAXReader reader = new SAXReader();
+		Document document = null;
+		try
+		{
+			document = reader.read(new StringReader(inParam));
+			Element root = document.getRootElement();
+			cmdId = root.elementTextTrim("CmdID");// 接口调用唯一ID 每次调用此值不可重复
+			cmdType = root.elementTextTrim("CmdType");// 接口类型 CX_01,固定
+			clientType = StringUtil.getIntegerValue(root.elementTextTrim("ClientType"));// 客户端类型:1：BSS;2：IPOSS;3：综调;4：RADIUS
+			Element param = root.element("Param");
+			userInfoType = StringUtil.getIntegerValue(param.elementTextTrim("UserInfoType"));
+			// 用户信息类型:1：用户宽带帐号;2：LOID;3：IPTV宽带帐号;4：VOIP业务电话号码;5：VOIP认证帐号
+			userInfo = param.elementTextTrim("UserInfo"); // 用户信息类型所对应的用户信息
+		}
+		catch (Exception e)
+		{
+			logger.error("inParam format is err,mesg({})", e.getMessage());
+			e.printStackTrace();
+			result = 1;
+			resultDesc = "数据格式错误";
+			return false;
+		}
+		// 参数合法性检查
+		if (false == baseCheck()) {
+			return false;
+		}
+		if(userInfoType!=1 && userInfoType!=2 && userInfoType!=3 && userInfoType!=4 && userInfoType!=5){
+			result = 1001;
+			resultDesc = "用户信息类型非法";
+			return false;
+		}
+		if (StringUtil.IsEmpty(userInfo)) {
+			result = 1006;
+			resultDesc = "用户信息为空";
+			return false;
+		}
+		result = 0;
+		resultDesc = "成功";
+		return true;
+	}
+
+	@Override
+	public String getReturnXml()
+	{
+		logger.debug("getReturnXml()");
+		Document document = DocumentHelper.createDocument();
+		document.setXMLEncoding("GBK");
+		Element root = document.addElement("root");
+		// 接口调用唯一ID
+		root.addElement("CmdID").addText(StringUtil.getStringValue(cmdId));
+		// 结果代码
+		root.addElement("RstCode").addText(StringUtil.getStringValue(result));
+		// 结果描述
+		root.addElement("RstMsg").addText(StringUtil.getStringValue(resultDesc));
+		Element Param = root.addElement("Param");
+		Param.addElement("OnlineMAC").addText(OnlineMAC);
+		return document.asXML();
+	}
+	
+	public String getInParam()
+	{
+		return inParam;
+	}
+	
+	public void setInParam(String inParam)
+	{
+		this.inParam = inParam;
+	}
+	
+	public String getOnlineMAC()
+	{
+		return OnlineMAC;
+	}
+	
+	public void setOnlineMAC(String onlineMAC)
+	{
+		OnlineMAC = onlineMAC;
+	}
+	
+}

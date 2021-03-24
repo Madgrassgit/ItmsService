@@ -1,0 +1,76 @@
+﻿<?xml version="1.0" encoding="UTF-8"?>
+<deployment xmlns="http://xml.apache.org/axis/wsdd/" xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+    <service name="ItmsService" provider="java:RPC">
+        <parameter name="className" value="com.linkage.itms.itv.main.ItmsService"/>
+        <parameter name="allowedMethods" value="*"/>
+    </service>
+    <service name="CallService" provider="java:RPC">
+        <parameter name="className" value="com.linkage.itms.dispatch.main.CallService"/>
+        <parameter name="allowedMethods" value="*"/>
+    </service>
+    <service name="CloudCallService" provider="java:RPC">
+        <parameter name="className" value="com.linkage.itms.dispatch.main.CloudCallService"/>
+        <parameter name="allowedMethods" value="*"/>
+    </service>
+    <service name="QosServices" provider="java:RPC">
+        <parameter name="className" value="com.linkage.itms.dacs.main.Application"/>
+        <parameter name="allowedMethods" value="*"/>
+    </service>
+    <service name="CtService" provider="java:RPC">
+        <parameter name="className" value="com.linkage.itms.ct.main.CtService"/>
+        <parameter name="allowedMethods" value="*"/>
+    </service>
+
+    <service name="OpenService" provider="java:RPC">
+        <parameter name="className" value="com.linkage.itms.os.main.OpenService"/>
+        <parameter name="allowedMethods" value="*"/>
+    </service>
+    <service name="CompletedService" provider="java:RPC">
+        <parameter name="className" value="com.linkage.itms.os.main.CompletedService"/>
+        <parameter name="allowedMethods" value="*"/>
+    </service>
+    <service name="RadiusService" provider="java:RPC">
+        <parameter name="className" value="com.linkage.itms.radius.main.RadiusService"/>
+        <parameter name="allowedMethods" value="*"/>
+    </service>
+    <service name="getInfo" provider="java:RPC">
+        <parameter name="className" value="com.linkage.itms.oss.main.OssService"/>
+        <parameter name="allowedMethods" value="*"/>
+    </service>
+    <service name="IdsService" provider="java:RPC">
+        <parameter name="className" value="com.linkage.stbms.ids.main.IdsService"/>
+        <parameter name="allowedMethods" value="*"/>
+    </service>
+    <service name="iOperationService" provider="java:RPC">
+        <parameter name="className"
+                   value="com.linkage.stbms.ioperation.service.IOperationService"/>
+        <parameter name="allowedMethods" value="*"/>
+    </service>
+    <service name="StbService" provider="java:RPC">
+        <parameter name="className" value="com.linkage.stbms.itv.main.StbService"/>
+        <parameter name="allowedMethods" value="*"/>
+    </service>
+    <service name="NmgService" provider="java:RPC">
+        <parameter name="className" value="com.linkage.itms.nmg.dispatch.main.NmgService"/>
+        <parameter name="allowedMethods" value="*"/>
+    </service>
+    <service name="HljService" provider="java:RPC">
+        <parameter name="className" value="com.linkage.itms.hlj.dispatch.main.HljService"/>
+        <parameter name="allowedMethods" value="*"/>
+    </service>
+    <service name="JLService" provider="java:RPC">
+        <parameter name="className" value="com.linkage.itms.hlj.dispatch.main.JlService"/>
+        <parameter name="allowedMethods" value="*"/>
+    </service>
+    <service name="OperationDistributeService" provider="java:RPC">
+        <parameter name="scope" value="Request"/>
+        <parameter name="className" value="com.linkage.itms.dispatch.main.OperationDistributeService"/>
+        <parameter name="allowedMethods" value="*"/>
+        <beanMapping languageSpecificType="java:com.linkage.itms.dispatch.gsdx.beanObj.UserIndex" qname="ns1:UserIndex" xmlns:ns1="com.linkage.itms.dispatch.gsdx.beanObj" />
+        <typeMapping languageSpecificType="java:com.linkage.itms.dispatch.gsdx.beanObj.UserIndex"
+                     qname="ns1:UserIndex" xmlns:ns1="com.linkage.itms.dispatch.gsdx.beanObj"
+                     deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+                     serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"/>
+        <namespace>com.linkage.itms.dispatch.gsdx.beanObj.UserIndex</namespace>
+    </service>
+</deployment>

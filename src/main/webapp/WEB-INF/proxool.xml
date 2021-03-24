@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="ISO-8859-1"?>
+<something-else-entirely>
+	<proxool>
+		<alias>xml-test</alias>
+		<driver-url>
+			jdbc:sybase:Tds:192.168.32.231:4100/ldims
+		</driver-url>
+		<driver-class>com.sybase.jdbc3.jdbc.SybDriver</driver-class>
+		<driver-properties>
+			<property name="user" value="itmsmanager" />
+			<property name="password" value="mypassword123" />
+		</driver-properties>
+		<maximum-connection-count>5</maximum-connection-count>
+		<house-keeping-test-sql>select 1</house-keeping-test-sql>
+	</proxool>
+	
+	<proxool>
+		<alias>xml-macdb</alias>
+		<driver-url>
+			jdbc:oracle:thin:@(description=(address_list=(address=(host=12.241.0.138)(protocol=tcp)(port=1521))(address=(host=12.241.0.139)(protocol=tcp)(port=1521))(address=(host=12.241.0.140)(protocol=tcp)(port=1521))(address=(host=12.241.0.141)(protocol=tcp)(port=1521))(load_balance=yes)(failover=yes))(connect_data=(service_name=itmsmac)))
+		</driver-url>
+		<driver-class>oracle.jdbc.driver.OracleDriver</driver-class>
+		<driver-properties>
+			<property name="user" value="itmsmanager" />
+			<property name="password" value="mypassword123" />
+		</driver-properties>
+		<maximum-connection-count>5</maximum-connection-count>
+		<house-keeping-test-sql>select 1</house-keeping-test-sql>
+	</proxool>
+</something-else-entirely>

@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<endpoints xmlns="http://java.sun.com/xml/ns/jax-ws/ri/runtime"
+	version="2.0">
+	<endpoint name="itmsservice"
+		implementation="com.alcatel.asb.hdm.report.webservice.feedbackWorkTicketsInfo.FeedbackTicketsInfo"
+		url-pattern="/itmsservice" />
+	<endpoint name="operateOui"
+	    implementation="com.alcatel.asb.hdm.report.webservice.OUIMager.OperateOui" 
+	    url-pattern="/itmsservice/operateOui" />
+</endpoints>

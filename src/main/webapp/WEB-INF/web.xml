@@ -1,0 +1,199 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<web-app xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xmlns="http://java.sun.com/xml/ns/javaee"
+	xmlns:web="http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	xsi:schemaLocation="http://java.sun.com/xml/ns/javaee http://java.sun.com/xml/ns/javaee/web-app_2_5.xsd"
+	id="WebApp_ID" version="2.5">
+	<display-name>Apache-Axis</display-name>
+	
+	<listener>
+		<listener-class>
+			com.sun.xml.ws.transport.http.servlet.WSServletContextListener
+		</listener-class>
+	</listener>
+	<listener>
+		<listener-class>
+			org.apache.axis.transport.http.AxisHTTPSessionListener
+		</listener-class>
+	</listener>
+	
+	<servlet>
+		<servlet-name>wsServlet</servlet-name>
+		<servlet-class>
+			com.sun.xml.ws.transport.http.servlet.WSServlet
+		</servlet-class>
+		<load-on-startup>10</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>wsServlet</servlet-name>
+		<url-pattern>/itmsservice</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>AxisServlet</servlet-name>
+		<servlet-class>
+			com.linkage.init.AxisServlet
+		</servlet-class>
+	</servlet>
+	<servlet>
+		<servlet-name>AdminServlet</servlet-name>
+		<servlet-class>
+			org.apache.axis.transport.http.AdminServlet
+		</servlet-class>
+		<load-on-startup>100</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>SOAPMonitorService</servlet-name>
+		<servlet-class>
+			org.apache.axis.monitor.SOAPMonitorService
+		</servlet-class>
+		<init-param>
+			<param-name>SOAPMonitorPort</param-name>
+			<param-value>5001</param-value>
+		</init-param>
+		<load-on-startup>100</load-on-startup>
+	</servlet>
+
+	<!--  初始化 LOG-->
+	<servlet>
+		<servlet-name>InitLogServlet</servlet-name>
+		<servlet-class>
+			com.linkage.init.InitLogServlet
+		</servlet-class>
+		<init-param>
+			<param-name>log4j-init-file</param-name>
+			<param-value>WEB-INF/log4j.xml</param-value>
+		</init-param>
+		<load-on-startup>1</load-on-startup>
+	</servlet>
+	<!--  初始化 DB-->
+	<servlet>
+		<servlet-name>ServletConfigurator</servlet-name>
+		<servlet-class>
+			org.logicalcobwebs.proxool.configuration.ServletConfigurator
+		</servlet-class>
+		<init-param>
+			<param-name>xmlFile</param-name>
+			<param-value>WEB-INF/proxool.xml</param-value>
+		</init-param>
+		<load-on-startup>2</load-on-startup>
+	</servlet>
+	<!--  初始化 Application-->
+	<servlet>
+		<servlet-name>InitServlet</servlet-name>
+		<servlet-class>
+			com.linkage.init.InitServlet
+		</servlet-class>
+		<load-on-startup>3</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>InitServlet2</servlet-name>
+		<servlet-class>
+			com.linkage.stbms.init.InitServlet
+		</servlet-class>
+		<load-on-startup>3</load-on-startup>
+	</servlet>
+	
+	<!-- 初始化ACS -->
+	<servlet>
+		<servlet-name>AcsAliveMQServlet</servlet-name>
+		<servlet-class>
+			com.linkage.init.AcsAliveMQServlet
+		</servlet-class>
+		<load-on-startup>200</load-on-startup>
+	</servlet>
+	<servlet>
+		<servlet-name>AcsRpcMQServlet</servlet-name>
+		<servlet-class>
+			com.linkage.init.AcsRpcMQServlet
+		</servlet-class>
+		<load-on-startup>201</load-on-startup>
+	</servlet>
+	
+	<!-- 新疆对外提供url连接 -->
+	<servlet>
+		<servlet-name>changeWanType</servlet-name>
+		<servlet-class>com.linkage.itms.dacs.ChangeWanType</servlet-class>
+		<load-on-startup>202</load-on-startup>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>changeWanType</servlet-name>
+		<url-pattern>/IPRouteOpen</url-pattern>
+	</servlet-mapping>
+	<!-- 新疆对外提供url连接 -->
+	<servlet-mapping>
+		<servlet-name>AxisServlet</servlet-name>
+		<url-pattern>/servlet/AxisServlet</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AxisServlet</servlet-name>
+		<url-pattern>*.jws</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>AxisServlet</servlet-name>
+		<url-pattern>/services/*</url-pattern>
+	</servlet-mapping>
+	<servlet-mapping>
+		<servlet-name>SOAPMonitorService</servlet-name>
+		<url-pattern>/SOAPMonitor</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>reboot</servlet-name>
+		<servlet-class>com.linkage.itms.rms.servlet.RebootServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>reboot</servlet-name>
+		<url-pattern>/reboot</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>reset</servlet-name>
+		<servlet-class>com.linkage.itms.rms.servlet.ResetServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>reset</servlet-name>
+		<url-pattern>/reset</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>queryKpi</servlet-name>
+		<servlet-class>com.linkage.itms.rms.servlet.QueryKpiServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>queryKpi</servlet-name>
+		<url-pattern>/queryKpi</url-pattern>
+	</servlet-mapping>
+	<servlet>
+		<servlet-name>inquiryConfig</servlet-name>
+		<servlet-class>com.linkage.itms.rms.servlet.InquiryConfigServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>inquiryConfig</servlet-name>
+		<url-pattern>/inquiryConfig</url-pattern>
+	</servlet-mapping>
+	
+	<servlet>
+		<servlet-name>diagnose</servlet-name>
+		<servlet-class>com.linkage.itms.rms.servlet.DiagnoseServlet</servlet-class>
+	</servlet>
+	<servlet-mapping>
+		<servlet-name>diagnose</servlet-name>
+		<url-pattern>/diagnose</url-pattern>
+	</servlet-mapping>
+	
+	<session-config>
+		<session-timeout>5</session-timeout>
+	</session-config>
+	<mime-mapping>
+		<extension>wsdl</extension>
+		<mime-type>text/xml</mime-type>
+	</mime-mapping>
+	<mime-mapping>
+		<extension>xsd</extension>
+		<mime-type>text/xml</mime-type>
+	</mime-mapping>
+	<welcome-file-list id="WelcomeFileList">
+		<welcome-file>index.jsp</welcome-file>
+		<welcome-file>index.html</welcome-file>
+		<welcome-file>index.jws</welcome-file>
+	</welcome-file-list>
+</web-app>

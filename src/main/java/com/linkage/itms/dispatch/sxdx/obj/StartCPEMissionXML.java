@@ -1,0 +1,127 @@
+package com.linkage.itms.dispatch.sxdx.obj;
+
+import com.linkage.commons.util.StringUtil;
+import org.dom4j.Document;
+import org.dom4j.Element;
+import org.dom4j.io.SAXReader;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import java.io.StringReader;
+
+public class StartCPEMissionXML extends BaseDealXML {
+	public StartCPEMissionXML(String methodName) {
+		super(methodName);
+	}
+	private static Logger logger = LoggerFactory.getLogger(StartCPEMissionXML.class);
+	SAXReader reader = new SAXReader();
+
+	private String index = "";
+	private String type = "";
+	private String iOperType = "";
+	private String fileName = "";
+	
+	public Document getXML(String inXml) {
+		this.inXml = inXml;
+		try 
+		{
+			logger.warn(methodName+"["+opId+"]入参校验开始");
+			Document inDocument = reader.read(new StringReader(inXml));
+			Element inRoot = inDocument.getRootElement();
+			opId = StringUtil.getStringValue(inRoot.elementTextTrim("op_id"));
+			type = StringUtil.getStringValue(inRoot.elementTextTrim("type"));
+			index = StringUtil.getStringValue(inRoot.elementTextTrim("index"));
+			iOperType = StringUtil.getStringValue(inRoot.elementTextTrim("iOperType"));
+			fileName = StringUtil.getStringValue(inRoot.elementTextTrim("fileName"));
+			
+			/**
+			 * 0：逻辑ID，即激活码
+			   1：宽带帐号，即Order结构中的ad_account字段。
+			   2：Device ID(OUI-SN)
+			   3：Device ID(OUI-SN)
+			 */
+			if( StringUtil.IsEmpty(type))
+			{
+				this.result ="-99";
+				this.errMsg ="查询类型type为空";
+				logger.warn(methodName+"["+opId+"]查询类型type为空");
+				return null;
+			}
+			if(!"0".equals(type) && !"1".equals(type) && !"2".equals(type) && !"3".equals(type) && !"4".equals(type) && !"5".equals(type)){
+				this.result ="-99";
+				this.errMsg ="查询类型type范围非法";
+				logger.warn(methodName+"["+opId+"]查询类型type范围非法：{}", type);
+				return null;
+			}
+			if(StringUtil.IsEmpty(index)){
+				this.result ="-99";
+				this.errMsg ="查询值index为空";
+				logger.warn(methodName+"["+opId+"]查询值index为空");
+				return null;
+			}
+			 if(StringUtil.IsEmpty(iOperType)){
+				this.result ="-99";
+				this.errMsg ="查询值iOperType为空";
+				logger.warn(methodName+"["+opId+"]查询值iOperType为空");
+				return null;
+			}
+			 if(!"1".equals(iOperType)){
+				 this.result ="-99";
+				 this.errMsg ="查询值iOperType不为1";
+				 logger.warn(methodName+"["+opId+"]查询值iOperType不为1");
+				 return null;
+			 }
+			 if(StringUtil.IsEmpty(fileName)){
+				 this.result ="-99";
+				 this.errMsg ="查询值fileName为空";
+				 logger.warn(methodName+"["+opId+"]查询值fileName为空");
+				 return null;
+			 }
+			return inDocument;
+		} catch (Exception e) {
+			logger.error(methodName+"["+opId+"] Excetion occured!", e);
+			return null;
+		}
+	}
+
+	public SAXReader getReader() {
+		return reader;
+	}
+
+	public void setReader(SAXReader reader) {
+		this.reader = reader;
+	}
+
+	public String getIndex() {
+		return index;
+	}
+
+	public void setIndex(String index) {
+		this.index = index;
+	}
+
+	public String getType() {
+		return type;
+	}
+
+	public void setType(String type) {
+		this.type = type;
+	}
+
+	public String getiOperType() {
+		return iOperType;
+	}
+
+	public void setiOperType(String iOperType) {
+		this.iOperType = iOperType;
+	}
+
+	public String getFileName() {
+		return fileName;
+	}
+
+	public void setFileName(String fileName) {
+		this.fileName = fileName;
+	}
+	
+}

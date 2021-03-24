@@ -1,0 +1,193 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<MQPool>
+	<!-- 每个模块唯一的标识，目前暂定：web、PreProcess、SuperGather -->
+	<clientId>ItmsService</clientId>
+	<systemName>ITMS</systemName>
+	<itms>
+		<!--enable 0:false,default; 1:yes. -->
+		<enable>1</enable>
+		<mq>
+			<!--enable 0:false,default; 1:yes. -->
+			<enable>1</enable>
+			<!--主题使用哪种消息中心发送消息 1:使用activemq 2:使用kafka -->
+			<type>2</type>
+			<topic>acs.alive</topic>
+			<activeMQ>
+				<url>tcp://192.168.2.4:61616</url>
+			</activeMQ>
+			<kafka>
+				<autoCommitInterval>1000</autoCommitInterval>
+				<groupId>itmsService.alive</groupId>
+				<sessionTimeout>60000</sessionTimeout>
+				<syncTime>2000</syncTime>
+				<zooKeeper>192.168.0.213:2181,192.168.0.213:2182</zooKeeper>
+			</kafka>
+		</mq>
+		<mq>
+			<!--enable 0:false,default; 1:yes. -->
+			<enable>1</enable>
+			<!--主题使用哪种消息中心发送消息 1:使用activemq 2:使用kafka -->
+			<type>2</type>
+			<topic>dev.rpc</topic>
+			<activeMQ>
+				<url>tcp://192.168.2.4:61616</url>
+			</activeMQ>
+			<kafka>
+				<autoCommitInterval>1000</autoCommitInterval>
+				<groupId>itmsService.rpc</groupId>
+				<sessionTimeout>60000</sessionTimeout>
+				<syncTime>2000</syncTime>
+				<zooKeeper>192.168.0.213:2181,192.168.0.213:2182</zooKeeper>
+			</kafka>
+		</mq>
+		<mq>
+			<!--enable 0:false,default; 1:yes. -->
+			<enable>0</enable>
+			<!--主题使用哪种消息中心发送消息 1:使用activemq 2:使用kafka -->
+			<type>2</type>
+			<topic>servinfo</topic>
+			<activeMQ>
+				<url>tcp://192.168.2.4:61616</url>
+			</activeMQ>
+			<kafka>
+				<autoCommitInterval>1000</autoCommitInterval>
+				<groupId>itmsService.servinfo</groupId>
+				<sessionTimeout>60000</sessionTimeout>
+				<syncTime>2000</syncTime>
+				<zooKeeper>192.168.2.14:2181,192.168.2.20:2181</zooKeeper>
+			</kafka>
+		</mq>
+		<mq>
+			<!--enable 0:false,default; 1:yes. -->
+			<enable>1</enable>
+			<!--主题使用哪种消息中心发送消息 1:使用activemq 2:使用kafka -->
+			<type>2</type>
+			<topic>dev.servinfo</topic>
+			<activeMQ>
+				<url>tcp://192.168.2.4:61616</url>
+			</activeMQ>
+			<kafka>
+				<autoCommitInterval>1000</autoCommitInterval>
+				<groupId>itmsServiceDev.servinfo</groupId>
+				<sessionTimeout>60000</sessionTimeout>
+				<syncTime>2000</syncTime>
+				<zooKeeper>192.168.0.213:2181,192.168.0.213:2182</zooKeeper>
+			</kafka>
+		</mq>
+		
+		<mq>
+			<!--enable 0:false,default; 1:yes. -->
+			<enable>1</enable>
+			<!--主题使用哪种消息中心发送消息 1:使用activemq 2:使用kafka -->
+			<type>1</type>
+			<topic>dev.ipsec</topic>
+			<activeMQ>
+				<url>tcp://10.10.1.2:61616</url>
+			</activeMQ>
+			<kafka>
+				<autoCommitInterval>1000</autoCommitInterval>
+				<groupId>ipsec</groupId>
+				<sessionTimeout>60000</sessionTimeout>
+				<syncTime>2000</syncTime>
+				<zooKeeper>192.168.0.213:2181,192.168.0.213:2182</zooKeeper>
+			</kafka>
+		</mq>
+	</itms>
+	<stb>
+		<!--enable 0:false,default; 1:yes. -->
+		<enable>0</enable>
+		<objectName>STB_ACS</objectName>
+		<mq>
+			<!--enable 0:false,default; 1:yes. -->
+			<enable>0</enable>
+			<!--主题使用哪种消息中心发送消息 1:使用activemq 2:使用kafka -->
+			<type>1</type>
+			<topic>acs.alive</topic>
+			<activeMQ>
+				<url>tcp://192.168.4.67:62626</url>
+			</activeMQ>
+			<kafka>
+				<autoCommitInterval>1000</autoCommitInterval>
+				<groupId>itmsServiceStb.alive</groupId>
+				<sessionTimeout>60000</sessionTimeout>
+				<syncTime>2000</syncTime>
+				<zooKeeper>192.168.2.14:2181,192.168.2.20:2181</zooKeeper>
+			</kafka>
+		</mq>
+		<mq>
+			<!--enable 0:false,default; 1:yes. -->
+			<enable>0</enable>
+			<!--主题使用哪种消息中心发送消息 1:使用activemq 2:使用kafka -->
+			<type>1</type>
+			<topic>dev.rpc</topic>
+			<activeMQ>
+				<url>tcp://192.168.4.67:62626</url>
+			</activeMQ>
+			<kafka>
+				<autoCommitInterval>1000</autoCommitInterval>
+				<groupId>itmsServiceStb.rpc</groupId>
+				<sessionTimeout>60000</sessionTimeout>
+				<syncTime>2000</syncTime>
+				<zooKeeper>192.168.2.14:2181,192.168.2.20:2181</zooKeeper>
+			</kafka>
+		</mq>
+		<mq>
+			<!--enable 0:false,default; 1:yes. -->
+			<enable>0</enable>
+			<!--主题使用哪种消息中心发送消息 1:使用activemq 2:使用kafka -->
+			<type>1</type>
+			<topic>picUp.task</topic>
+			<activeMQ>
+				<url>tcp://192.168.4.73:62626</url>
+			</activeMQ>
+			<kafka>
+				<autoCommitInterval>1000</autoCommitInterval>
+				<groupId>itmsServiceStb.task</groupId>
+				<sessionTimeout>60000</sessionTimeout>
+				<syncTime>2000</syncTime>
+				<zooKeeper>192.168.2.14:2181,192.168.2.20:2181</zooKeeper>
+			</kafka>
+		</mq>
+	</stb>
+	
+	<publisher>
+		<enable>0</enable>
+		<!-- 向绑定模块发送消息 -->
+		<mq>
+			<!--enable 0:false,default; 1:yes. -->
+			<enable>0</enable>
+			<!--主题使用哪种消息中心发送消息 1:使用activemq 2:使用kafka -->
+			<type>2</type>
+			<topic>res.Interface</topic>
+			<activeMQ>
+				<url>tcp://192.168.2.14:22222</url>
+			</activeMQ>
+			<kafka>
+				<brokerList>192.168.0.213:9091,192.168.0.213:9092</brokerList>
+	            <type>sync</type>
+	            <serializer>kafka.serializer.StringEncoder</serializer>
+	            <partitioner>kafka.producer.DefaultPartitioner</partitioner>
+	            <acks>1</acks>		
+			</kafka>
+		</mq>
+		
+		<!-- 向配置模块发送消息 -->
+		<mq>
+			<!--enable 0:false,default; 1:yes. -->
+			<enable>0</enable>
+			<!--主题使用哪种消息中心发送消息 1:使用activemq 2:使用kafka -->
+			<type>2</type>
+			<topic>cm</topic>
+			<activeMQ>
+				<url>tcp://192.168.2.14:22222</url>
+			</activeMQ>
+			<kafka>
+				<brokerList>192.168.0.213:9091,192.168.0.213:9092</brokerList>
+	            <type>sync</type>
+	            <serializer>kafka.serializer.StringEncoder</serializer>
+	            <partitioner>kafka.producer.DefaultPartitioner</partitioner>
+	            <acks>1</acks>		
+			</kafka>
+		</mq>		
+	</publisher>
+</MQPool>

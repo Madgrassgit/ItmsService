@@ -1,0 +1,2724 @@
+VERSION: V4.0.1.152_20201209
+DATE: 2020-12-09
+author:ou.yuan
+TITLE: GSDX-REQ-ITMS-20201204-LWX-001（甘肃电信拉流测速（上行速率）接口开发需求)
+	[*]/src/main/java/com/linkage/itms/dispatch/gsdx/service/DiagnoseTestService.java
+	[*]/src/main/java/com/linkage/itms/dispatch/gsdx/service/GetDiagnoseResultService.java
+
+VERSION: V4.0.1.151_20201208
+DATE: 2020-12-08
+author:chen.xiaojie
+TITLE: AHDX_ITMS-REQ-20201207YQW-001（路由互改接口）
+	[*]/src/main/java/com/linkage/itms/cao/ACSCorba.java
+	[*]/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+	[*]/src/main/java/com/linkage/itms/dispatch/obj/BridgeToRoutChecker.java
+	[*]/src/main/java/com/linkage/itms/dispatch/service/BridgeToRoutService4JX.java
+	[*]/src/main/java/com/linkage/itms/dispatch/service/RoutToBridgeService.java
+	[+]/src/main/java/com/linkage/itms/dispatch/util/ChangeConnectionNetForAHCorba.java
+
+VERSION: V4.0.1.150_20201123
+DATE: 2020-11-23
+author:ou.yuan
+TITLE: GSDX-REQ-ITMS-20201119-LWX-001（甘肃电信终端远程修改WIFI能力接口开发及其loid和宽带账号一对多问题优化需求)
+	[*]/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+	[+]/src/main/java/com/linkage/itms/dispatch/obj/ModifyWifiChannlChecker.java
+	[+]/src/main/java/com/linkage/itms/dispatch/service/ModifyWifiChannlService.java
+	[+]/src/main/java/com/linkage/itms/dispatch/obj/ModifyWifiPowerChecker.java
+	[+]/src/main/java/com/linkage/itms/dispatch/service/ModifyWifiPowerService.java
+
+VERSION: V4.0.1.149_20201102
+DATE: 2020-11-02
+author:ou.yuan
+TITLE: JLDX-ITMS-REQ-20201029-JH-001(政企网关SN和mac查询接口)
+	[*]/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+	[*]/src/main/java/com/linkage/itms/dao/DeviceInfoDAO.java
+	[+]/src/main/java/com/linkage/itms/dispatch/obj/QueryBbmsDevSNMACChecker.java
+	[+]/src/main/java/com/linkage/itms/dispatch/service/QueryBbmsDevSNMACService.java
+
+VERSION: V4.0.1.148_20201030
+DATE: 2020-10-30
+author:zhangyu25
+TITLE: HLJDX-REQ-ITMS-20201028-JL001黑龙江电信ITMS与网厅接口升级改造
+	[*]/src/main/java/com/linkage/itms/dao/QueryDevDAO.java
+	[*]/src/main/java/com/linkage/itms/dispatch/obj/BaseChecker.java
+	[*]/src/main/java/com/linkage/itms/dispatch/obj/QueryDeviceMACChecker.java
+	[*]/src/main/java/com/linkage/itms/dispatch/service/QueryDeviceMACService.java
+	
+
+VERSION: V4.0.1.147_20200915
+DATE: 2020-09-15
+author:ou.yuan
+TITLE: JXDX-REQ-ITMS-20200910-WWF-001(BBMS政企网关对外接口-新增调用方需求)
+	[*]/src/main/java/com/linkage/itms/dispatch/obj/BaseChecker.java
+
+VERSION: V4.0.1.146_20200827
+DATE: 2020-08-27
+author:zhangyu25
+TITLE: SXDX-REQ-ITMS-20200818-ZJ-001(陕西电信ITMS网管采集光猫流量节点并获取数值提供端到端查询功能需求单)
+	[*]/src/main/java/com/linkage/itms/dispatch/main/DiagnoseService.java
+	[*]/src/main/webapp/WEB-INF/server-config.wsdd
+	[+]/src/main/java/com/linkage/itms/dispatch/sxdx/holders/CpeFlowHolder.java
+	[+]/src/main/java/com/linkage/itms/dispatch/sxdx/beanObj/CpeFlow.java
+	[+]/src/main/java/com/linkage/itms/dispatch/sxdx/service/GetCpeFlowService.java
+	[+]/src/main/java/com/linkage/itms/dispatch/sxdx/obj/GetCpeFlowXML.java
+
+
+VERSION: V4.0.1.145_20200730
+DATE: 2020-07-30
+author:yaoli
+TITLE: 
+	测试发现修改
+	[*]src/main/java/com/linkage/init/InitBIO.java
+	[*]src/main/java/com/linkage/itms/Global.java
+	[*]src/main/java/com/linkage/itms/dispatch/service/CloudOpenVXLANCRMService.java
+	[*]src/main/java/com/linkage/itms/dispatch/service/CloudPingDiagnosticService.java
+	[*]src/main/java/com/linkage/itms/dispatch/service/CloudPingVXLANDiagnosticService.java
+	[*]src/main/java/com/linkage/itms/dispatch/service/CloudQueryServIpAddrService.java
+	[*]src/main/java/com/linkage/itms/dispatch/service/CloudVXLANServiceDoneService.java
+	[*]src/main/java/com/linkage/stbms/init/InitBIO.java
+	[*]src/main/java/com/linkage/stbms/ids/service/SetItvPasswdService.java
+	
+
+VERSION: V4.0.1.144_20200428
+DATE: 2020-04-28
+author:wanghong5
+TITLE: 
+	JXDX-REQ-ITMS-20200427-WWF-001(ITMS+家庭网关对外接口-用户绑定实时查询接口)
+	[*]src.main.java.com.linkage.itms.dispatch.obj/BindInfoCpmisChecker.java
+
+VERSION: V4.0.1.143_20200416
+DATE: 2020-04-16
+author:yaoli
+TITLE: 
+	XJDX-ITMS-20200409-LJ-001(终端与套餐不匹配和旧终端报表、用户绑定设备情况查询接口改造)
+	[*]/src/main/java/com/linkage/itms/dao/UserDeviceDAO.java
+	[*]/src/main/java/com/linkage/itms/dispatch/obj/BindInfoChecker.java
+	[*]/src/main/java/com/linkage/itms/dispatch/service/BindInfoService.java
+	[*]/src/main/java/com/linkage/stbms/ids/obj/SetItvPasswdServiceChecker.java
+	
+
+VERSION: V4.0.1.142_20200407
+DATE: 2020-04-07
+author:zhoupeng3
+TITLE: 
+	HLJDX-REQ-ITMS-20200224-JL001（黑龙江电信ITMS系与端到端系统接口升级改造）
+	[*]/src/main/java/com/linkage/itms/hlj/dispatch/main/HljService.java
+	[*]/src/main/java/com/linkage/itms/hlj/dispatch/obj/DownLoadByHTTPChecker.java
+	[*]/src/main/java/com/linkage/itms/hlj/dispatch/service/DownLoadByHTTP.java
+    
+VERSION: V4.0.1.141_20200401
+DATE: 2020-04-01
+author:songxq
+TITLE: 
+	JLLT-REQ-RMS-20200316-JH002【吉林联通RMS语音呼叫仿真功能需求】
+	[*]/src/main/java/com/linkage/itms/dispatch/service/VoiceDial.java
+	[*]/src/main/java/com/linkage/itms/dispatch/service/GetDeviceInfoService.java
+
+VERSION: V4.0.1.140_20200318
+DATE: 2020-03-18
+author:wanghong5
+TITLE: 
+	JLLT-REQ-RMS-20200316-JH003【大唐工单整改获取签约带宽需求】 
+	[*]com.huawei.northinterface.operation.service/OperationDistributeServiceJllt.java
+	[*]src.main.java.com.linkage.itms.os.bio/OperationDistributeBIOJllt.java
+
+VERSION: V4.0.1.139_20200304
+DATE: 2020-03-04
+author:wanghong5
+TITLE: 
+	JLLT-REQ-RMS-20200119-JH001【大唐工单整改获取签约带宽需求】
+	[*]src.main.java.com.linkage.itms.os.bio/OperationDistributeBIOJllt.java
+	[*]src.main.java.com.linkage.itms.dispatch.main/CallService.java
+	[+]src.main.java.com.linkage.itms.dispatch.service/TestServerJLLTService.java
+
+VERSION: V4.0.1.138_20191127
+DATE: 2019-11-27
+author: 管凯
+TITLE: XJDX-ITMS-20191125-LJ-001(家庭网关在线时间接口)
+	[*]/src/main/main/java/com/linkage/itms/dispatch/main/CallService.java
+	[+]/src/main/main/java/com/linkage/itms/dispatch/service/LatestOnlineTimeService.java
+	[+]/src/main/main/java/com/linkage/itms/dispatch/obj/LatestOnlineTimeChecker.java
+	[+]/src/main/main/java/com/linkage/itms/dao/LatestOnlineTimeDAO.java
+
+VERSION: V4.0.1.137_20191126
+DATE: 2019-11-26
+author: 管凯
+TITLE: 甘肃模块优化
+    [*]src/main/java/com/linkage/itms/dispatch/gsdx/PvcVlanldTool.java
+	[*]src/main/java/com/linkage/itms/dispatch/gsdx/dao/CpelnfoDao.java
+    [*]src/main/java/com/linkage/itms/dispatch/gsdx/service/DlagnoseTestServlce.java
+    [*]src/main/java/com/linkage/itms/dispatch/gsdx/service/GetCpelnfoService.java
+    [*]src/main/java/com/linkage/itms/dispatch/gsdx/service/GetDiagnoseResultService.java
+    [*]src/main/java/com/linkage/itms/dispatch/gsdx/service/NorthQueryCPEParaService.java
+    [*]src/main/java/com/linkage/itms/dispatch/main/DlagnoseService.java
+    [*]src/main/java/com/linkage/itms/dispatch/main/OperationDistributeService.java
+
+VERSION: V4.0.1.137_20191126
+DATE: 2019-11-26
+author: 管凯
+TITLE: 陕西模块
+	[+]src/main/java/com/linkage/itms/dispatch/sxdx/*
+
+
+VERSION: V4.0.1.137_20191126
+DATE: 2019-11-26
+author: 管凯
+TITLE: 陕西模块
+	[+]src/main/java/com/linkage/itms/dispatch/sxdx/*
+
+
+
+VERSION: V4.0.1.136_20191107
+DATE: 2019-11-07
+author: lingmin
+TITLE: XJDX-ITMS-20191104-LJ-001(宽带工单带宽改造和带宽的自动化接口、核销接口改造)
+     [*]/src/main/main/java/com/linkage/itms/dispatch/main/CallService.java
+     [*]/src/main/main/java/com/linkage/itms/dispatch/obj/QueryDevSnChecker.java
+     [*]/src/main/main/java/com/linkage/itms/dispatch/service/QueryDevSnService.java
+     [*]/src/main/main/java/com/linkage/itms/dao/UserDeviceDAO.java
+     [*]/src/main/main/java/com/linkage/init/InitBIO.java
+     [*]/src/main/main/java/com/linkage/itms/socket/userBandSyn/UserBandSynListener.java
+     [*]/src/main/main/java/com/linkage/itms/socket/userBandSyn/bean/UserBandSynBean.java
+     [*]/src/main/main/java/com/linkage/itms/socket/userBandSyn/bio/UserBandSynBIO.java
+     [*]/src/main/main/java/com/linkage/itms/socket/userBandSyn/dao/UserBandSynDAO.java
+
+
+VERSION: V4.0.1.136_20191014
+DATE: 2019-10-14
+author: wanghong5
+TITLE: XJDX-ITMS-20191009-LJ-001(机顶盒核销接口改造)
+	[*]/src/main/main/java/com/linkage/stbms/ids/bio/BoxCheck.java
+	[*]/src/main/main/java/com/linkage/stbms/ids/dao/StbDevSNServiceDAO.java
+	[*]/src/main/main/java/com/linkage/stbms/ids/obj/BoxCheckObj.java
+	[*]/src/main/main/java/com/linkage/stbms/ids/util/Box_check.java
+
+
+VERSION: V4.0.1.135_20191009
+DATE: 2019-10-09
+author: wanghong5
+TITLE: XJDX-ITMS-20190929-LJ-001(家庭网关核销接口改造)
+	[*]/src/main/main/java/com/linkage/itms/dispatch/main/CallService.java
+	[*]/src/main/main/java/com/linkage/itms/dispatch/service/QueryDevSnService.java
+	[*]/src/main/main/java/com/linkage/itms/dispatch/obj/QueryDevSnChecker.java
+	[*]/src/main/main/java/com/linkage/itms/dao/DeviceInfoDAO.java
+
+
+VERSION: V4.0.1.134_20190930
+DATE: 2019-09-30
+author: yaoli
+TITLE: NXDX-REQ-ITMS-20190918-LX-001(修改宽带密码-接口)
+       NXDX-REQ-ITMS-20190918-LX-002(修改机顶盒密码-接口)
+       NXDX-REQ-ITMS-20190917-LX-001(修改wifi密码和SSID-接口)
+main/java/com/linkage/itms/dispatch/main/CallService.java
+[+]/src/main/main/java/com/linkage/itms/dispatch/service/SetGMPasswdService.java
+[+]/src/main/main/java/com/linkage/itms/dispatch/service/SetGMPasswdServiceChecker.java
+[+]/src/main/main/java/com/linkage/itms/dispatch/service/SetWIFIPasswdService.java
+[+]/src/main/main/java/com/linkage/itms/dispatch/service/SetWIFIPasswdServiceChecker.java
+[+]/src/main/main/java/com/linkage/stbms/ids/obj/SetItvPasswdServiceChecker.java
+[+]/src/main/main/java/com/linkage/stbms/ids/service/SetItvPasswdService.java
+[*]/src/main/java/com/linkage/itms/dao/DeviceInfoDAO.java
+[*]/src/main/java/com/linkage/itms/dao/QueryDeviceVersionDAO.java
+[*]/src/main/java/com/linkage/itms/dispatch/cqdx/dao/OUIoperateDao.java
+[*]/src/main/java/com/linkage/itms/dispatch/cqdx/service/OperateOuiService.java
+[*]/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/VlanStatusService.java
+[*]/src/main/java/com/linkage/stbms/ids/dao/UserStbInfoDAO.java
+[*]/src/main/java/com/linkage/stbms/ids/main/IdsService.java
+[*]/src/main/java/com/linkage/stbms/ids/util/BaseChecker.java
+[*]/src/main/java/com/linkage/stbms/init/InitBIO.java
+[*]/src/main/webapp/WEB-INF/sun-jaxws.xml
+
+
+VERSION: V4.0.1.133_20190924
+DATE: 2019-09-24
+author: lingmin
+TITLE: 宁夏接口-查询wifi密码和SSID-接口(NXDX-REQ-ITMS-20190917-LX-002)
+[*]/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+[*]/src/main/java/com/linkage/itms/common/enums/ErrorCodeEnum.java
+[*]/src/main/java/com/linkage/itms/dispatch/main/obj/QuerySSIDWifiPwdChecker.java
+[*]/src/main/java/com/linkage/itms/dispatch/main/service/QuerySSIDWifiPwdService.java
+
+VERSION: V4.0.1.132_20190909
+DATE: 2019-09-09
+author: guankai
+TITLE: 甘肃接口
+[*]/src/main/webapp/WEB-INF/server-config.wsdd
+[*]/src/main/webapp/deploy.sh
+[*]/src/main/webapp/deploy.wsdd
+[*]/src/main/webapp/deploy.wsdd
+[*]/src/main/java/com/linkage/itms/dao/UserDeviceDAO.java
+[*]/src/main/java/com/linkage/itms/dispatch/gsdx/beanObj/UserIndex.java
+[+]/src/main/java/com/linkage/itms/dispatch/gsdx/beanObj/CpeOnlineInfoRst.java
+[+]/src/main/java/com/linkage/itms/dispatch/gsdx/holders/CpeOnlineInfoRstHolder.java
+[*]/src/main/java/com/linkage/itms/dispatch/gsdx/PvcVlanIdTool.java
+[*]/src/main/java/com/linkage/itms/dispatch/gsdx/dao/PublicDAO.java
+[*]/src/main/java/com/linkage/itms/dispatch/gsdx/obj/CpeFactoryResetDealXML.java
+[*]/src/main/java/com/linkage/itms/dispatch/gsdx/obj/CpeRebootDealXML.java
+[*]/src/main/java/com/linkage/itms/dispatch/gsdx/obj/CpeParameterByNodePathXML.java
+[*]/src/main/java/com/linkage/itms/dispatch/gsdx/obj/GetCpeParameterByNodeNameXML.java
+[*]/src/main/java/com/linkage/itms/dispatch/gsdx/obj/StartPingDealXML.java
+[*]/src/main/java/com/linkage/itms/dispatch/gsdx/obj/WanConnObj.java
+[*]/src/main/java/com/linkage/itms/dispatch/gsdx/obj/ResetServiceXML.java
+[*]/src/main/java/com/linkage/itms/dispatch/gsdx/service/CpeFactoryResetService.java
+[*]/src/main/java/com/linkage/itms/dispatch/gsdx/service/CpeRebootService.java
+[*]/src/main/java/com/linkage/itms/dispatch/gsdx/service/DelSingleCPEService.java
+[*]/src/main/java/com/linkage/itms/dispatch/gsdx/service/GetCpeOnlineInfoService.java
+[*]/src/main/java/com/linkage/itms/dispatch/gsdx/service/DiagnoseTestService.java
+[*]/src/main/java/com/linkage/itms/dispatch/gsdx/service/GetCpeInfoService.java
+[*]/src/main/java/com/linkage/itms/dispatch/gsdx/service/GetCpeParameterByNodeNameService.java
+[*]/src/main/java/com/linkage/itms/dispatch/gsdx/service/SetCpeParameterValuesService.java
+[*]/src/main/java/com/linkage/itms/dispatch/gsdx/service/StartPingService.java
+[*]/src/main/java/com/linkage/itms/dispatch/gsdx/service/GetDiagnoseResultService.java
+[*]/src/main/java/com/linkage/itms/dispatch/gsdx/service/ResetService.java
+[+]/src/main/java/com/linkage/itms/dispatch/gsdx/service/GetCpeOnlineInfoForDslService.java
+[*]/src/main/java/com/linkage/itms/dispatch/gsdx/dao/CpeInfoDao.java
+[*]/src/main/java/com/linkage/itms/dispatch/main/OperationDistributeService.java
+[*]/src/main/java/com/linkage/itms/dispatch/main/DiagnoseService.java
+
+
+
+
+
+
+VERSION: V4.0.1.131_20190719
+DATE: 2019-07-19
+author: zhoupeng3
+TITLE: NXDX-REQ-ITMS-20190709-LX-003(对有第二部宽带的光猫更改上网方式)
+[*]/src/main/java/com/linkage/itms/dao/UserDeviceDAO.java
+[*]/src/main/java/com/linkage/itms/dispatch/obj/BridgeToRoutChecker.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/BridgeToRoutService4JX.java
+
+VERSION: V4.0.1.130_20190711
+DATE: 2019-07-11
+author: yaoli
+TITLE: CQDX-REQ-ITMS-20190621-YZJ-001OUI接口功能
+[+]srcjava/com/alcatel/asb/hdm/report/webservice/OUIMager/entity/IParam.java
+[+]srcjava/com/alcatel/asb/hdm/report/webservice/OUIMager/entity/OperType.java
+[+]srcjava/com/alcatel/asb/hdm/report/webservice/OUIMager/entity/OUIRes.java
+[+]srcjava/com/alcatel/asb/hdm/report/webservice/OUIMager/entity/Request.java
+[+]srcjava/com/alcatel/asb/hdm/report/webservice/OUIMager/entity/Response.java
+[+]srcjava/com/alcatel/asb/hdm/report/webservice/OUIMager/OperateOui.java
+[+]srcjava/com/linkage/itms/dispatch/cqdx/dao/OUIoperateDao.java
+[+]srcjava/com/linkage/itms/dispatch/cqdx/service/OperateOuiService.java
+
+
+VERSION: V4.0.1.129_20190626
+DATE: 2019-06-26
+author: liaosr
+TITLE: XJDX-ITMS-20190624-LJ-001(家庭网关核销接口改造)
+[*]src/main/java/com/linkage/itms/dispatch/service/QueryDevSnService.java
+[*]src/main/java/com/linkage/itms/dispatch/obj/QueryDevSnChecker.java
+[*]src/main/java/com/linkage/itms/cao/ResourceBindCorba.java
+
+VERSION: V4.0.1.128_20190603
+DATE: 2019-06-03
+author: songxiaoqiang
+TITLE: NXDX-REQ-ITMS-20190530-LX-001(涉及接口调用打印调用方IP到日志中)
+[*]/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+[*]/src/main/java/com/linkage/stbms/ids/main/IdsService.java
+
+VERSION: V4.0.1.127_20190520
+DATE: 2019-05-20
+author: wangyan10
+TITLE: JLDX-ITMS-20190514-JH-001(家庭网关查询宽带ipv6开启情况及光猫mac地址查询接口修改)
+[*]src/main/java/com/linkage/itms/dispatch/service/QueryDevSNMACService.java
+[+]src/main/java/com/linkage/itms/dispatch/service/DevInternetIpv6InfoService.java
+[+]src/main/java/com/linkage/itms/dispatch/obj/DevInternetIpv6InfoChecker.java
+
+VERSION: V4.0.1.126_20190510
+DATE: 2019-05-10
+author: songxq
+TITLE: NXDX-NX-BUG-20190508-LiuX-001（当设备不在线时调用接口queryDevConfigInfo失败）
+[*]src/main/java/com/linkage/itms/dispatch/service/QueryDevConfigInfoService4NX.java
+
+VERSION: V4.0.1.125_20190410
+DATE: 2019-04-10
+author: banyr
+TITLE: XJDX-ITMS-20190326-LJ-001(终端上网数限制接口和web里上网数批量修改）
+[*]src/main/java/com/linkage/itms/dispatch/obj/HowTerminalChecker.java
+
+VERSION: V4.0.1.124_20190409
+DATE: 2019-04-09
+author: wangyan10
+TITLE: JXDX-REQ-ITMS-20190329-WWF-001(ITMS+家庭网关对外接口-百兆千兆光猫查询接口调整)
+[*]/src/main/java/com/linkage/itms/dao/UserDeviceDAO.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/QueryOnuRateBySNService.java
+
+VERSION: V4.0.1.123_20190409
+DATE: 2019-04-09
+author: wangyan10
+TITLE: JXDX-REQ-ITMS-20190220-WWF-001(ITMS+家庭网关互联网专线测速接口需求）
+[*]/src/main/java/com/linkage/init/InitBIO.java
+[*]/src/main/java/com/linkage/itms/Global.java
+[*]/src/main/java/com/linkage/itms/dao/DeviceInfoDAO.java
+[*]/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+[*]/src/main/webapp/conf/ItmsService_cfg.xml
+[+]/src/main/java/com/linkage/itms/dispatch/service/SpecialSpeedService4JX.java
+[+]/src/main/java/com/linkage/itms/dispatch/obj/SpecialSpeedChecker4JX.java
+
+VERSION: V4.0.1.122_201903025
+DATE: 2019-03-25
+author: yaoli
+TITLE: 江西绑定接口/解绑接口/业务下发接口修改为兼容kafka
+[*]/src/main/java/com/linkage/itms/cao/ResourceBindCorba.java
+[*]/src/main/java/com/linkage/itms/CreateObjectFactory.java
+[*]/src/main/java/com/linkage/itms/message/PreProcessMessage.java
+[*]/src/main/java/com/linkage/itms/message/PreProcessMQ.java
+[*]/src/main/java/com/linkage/itms/message/ResourceBindMQ.java
+[*]/src/main/java/com/linkage/itms/ResourceBindInterface.java
+[*]/src/main/java/com/linkage/stbms/ids/service/BindIptvStbMacService.java
+[*]/src/main/java/com/linkage/stbms/ids/service/UnbindIptvStbMacService.java
+[*]/src/main/java/com/linkage/stbms/init/InitBIO.java
+
+
+VERSION: V4.0.1.121_201903022
+DATE: 2019-03-22
+author: fanjm
+TITLE: NXDX-ITMS-20190314-LX-001(ITMS对外提供给一键诊断系统的接口耗时优化)
+[*]/src/main/java/com/linkage/itms/dispatch/service/DevConfigServiceNew.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/QueryDevConfigInfoService.java
+[*]/src/main/java/com/linkage/itms/dao/UserDeviceDAO.java
+
+VERSION: V4.0.1.120_201903014
+DATE: 2019-03-14
+author: guxl3
+TITLE: JXDX-ITMS-BUG-20190308-WUWF-001(ITMS平台家庭网关预检预修ping拨测页面bug)
+[*]/src/main/java/com/linkage/itms/dispatch/obj/PingDiagnosticChecker.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/PingDiagnostic.java
+
+
+
+
+VERSION: V4.0.1.119_20190308
+DATE: 2019-03-08
+author: zhoupeng3
+TITLE: vxlan相关代码
+[*]/src/main/java/com/linkage/WSClient/WebServiceUtil.java
+[*]/src/main/java/com/linkage/init/InitBIO.java
+[*]/src/main/java/com/linkage/itms/Global.java
+[*]/src/main/java/com/linkage/itms/commom/StringUtil.java
+[*]/src/main/java/com/linkage/itms/dao/IpsecServParamDAO.java
+[*]/src/main/java/com/linkage/itms/dispatch/main/CloudCallService.java
+[*]/src/main/java/com/linkage/itms/dispatch/obj/CloudBaseChecker.java
+[+]/src/main/java/com/linkage/itms/dispatch/obj/CloudPingVXLANDiagnosticChecker.java
+[+]/src/main/java/com/linkage/itms/dispatch/obj/CloudQueryVXLANBssStatsChecker.java
+[+]/src/main/java/com/linkage/itms/dispatch/obj/CloudQueryVXLANConfigureChecker.java
+[+]/src/main/java/com/linkage/itms/dispatch/obj/CloudQueryVXLANGetWayChecker.java
+[+]/src/main/java/com/linkage/itms/dispatch/obj/CloudVXLANServiceDoneChecker.java
+[*]/src/main/java/com/linkage/itms/dispatch/obj/DeleteVXLANChecker.java
+[*]/src/main/java/com/linkage/itms/dispatch/obj/UpdateVXLANChecker.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/CloudGetWayRebootService.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/CloudPingDiagnosticService.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/CloudPingIPSecDiagnosticService.java
+[+]/src/main/java/com/linkage/itms/dispatch/service/CloudPingVXLANDiagnosticService.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/CloudQueryBssStatsService.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/CloudQueryConfigureService.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/CloudQueryDevOnlineService.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/CloudQueryGetWayService.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/CloudQueryServIpAddrService.java
+[+]/src/main/java/com/linkage/itms/dispatch/service/CloudQueryVXLANBssStatsService.java
+[+]/src/main/java/com/linkage/itms/dispatch/service/CloudQueryVXLANConfigureService.java
+[+]/src/main/java/com/linkage/itms/dispatch/service/CloudQueryVXLANGetWayService.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/CloudQueryVpnStatsService.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/CloudServiceDoneService.java
+[+]/src/main/java/com/linkage/itms/dispatch/service/CloudVXLANServiceDoneService.java
+[*]/src/main/java/com/linkage/itms/jms/DeviceInfo.java
+[*]/src/main/java/com/linkage/itms/jms/IpSecCallBackThread.java
+[*]/src/main/webapp/conf/ItmsService_cfg.xml
+
+VERSION: V4.0.1.118_20190304
+DATE: 2019-03-04
+author: banyr
+TITLE: NXDX-ITMS-20190225-LX-001(光猫上行速率接口) 
+[*]/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+[*]/src/main/java/com/linkage/itms/dispatch/obj/UpLoadByHTTPSpeadChecker.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/UpLoadByHTTPSpeadService.java
+
+VERSION: V4.0.1.117_20190222
+DATE: 2019-02-22
+author: zhangyu25
+TITLE: AHDX_ITMS-BUG-YQW-20190214-001(终端连接方式查询接口bug)
+[*]/src/main/java/com/linkage/itms/dispatch/service/OnuConnTypeService.java
+
+
+VERSION: V4.0.1.116_20190116
+DATE: 2019-01-16
+author: yaoli
+desc：XJDX-ITMS-20181112-LJ-001(web接口优化)
+[*]/src/main/java/com/linkage/itms/dao/UserDeviceDAO.java
+[*]/src/main/java/com/linkage/itms/dispatch/obj/BindInfoChecker.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/BindInfoService.java
+[*]/src/main/java/com/linkage/stbms/ids/bio/BoxCheck.java
+[*]/src/main/java/com/linkage/stbms/ids/bio/GetStbInfoXJBIO.java
+[*]/src/main/java/com/linkage/stbms/ids/bio/StbRebootBIO.java
+[*]/src/main/java/com/linkage/stbms/ids/service/GetStbAccountService.java
+[*]/src/main/java/com/linkage/stbms/ids/service/GetStbIpService.java
+[*]/src/main/java/com/linkage/stbms/ids/service/GetStbOnlineStatusService.java
+[*]/src/main/java/com/linkage/stbms/ids/service/GetStbOrderStatusService.java
+[*]/src/main/java/com/linkage/stbms/ids/service/StbPingService.java
+[*]/src/main/java/com/linkage/stbms/ids/service/StbServiceDoneService.java
+
+
+VERSION: V4.0.1.115_20190114
+DATE: 2019-01-14
+author: yaoli
+desc：JXDX-ITMS-REQ-20181105-WUWF-001修改查询设备信息的条件为序列号和oui(如果存在)
+[*]/src/main/java/com/linkage/itms/dispatch/service/QueryOnuRateBySNService.java
+[*]/src/main/java/com/linkage/itms/dao/UserDeviceDAO.java
+
+
+VERSION: V4.0.1.114_20181206
+DATE: 2018-12-06
+author: zhaozisen
+desc:  AHDX_ITMS-REQ-20181126YQW-001（终端连接方式查询接口）
+[+]/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/obj/OnuConnTypeChecker.java
+[+]/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/OnuConnTypeService.java
+[*]/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+
+VERSION: V4.0.1.114_20181119
+DATE: 2018-11-19
+author: yaoli
+desc:  JXDX-ITMS-REQ-20181114-WUWF-001(ITMS平台家庭网关对外接口-新新增百兆千兆光猫查询接口)
+[+]/src/main/java/com/linkage/itms/dispatch/service/QueryOnuRateBySNService.java
+[+]/src/main/java/com/linkage/itms/dispatch/obj/QueryOnuRateBySNCheck.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/QueryLoidNetService.java
+[*]/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+[*]/src/main/java/com/linkage/itms/dao/UserDeviceDAO.java
+
+
+VERSION: V4.0.1.113_20181119
+DATE: 2018-11-19
+author: zhaixx
+desc:  JXDX-ITMS-REQ-20181105-WUWF-001(ITMS平台家庭网关对外接口-新增ping诊断接口)
+[*]/src/main/java/com/linkage/itms/dispatch/service/PingDiagnostic.java
+[*]/src/main/java/com/linkage/itms/dispatch/obj/PingDiagnosticChecker.java
+
+VERSION: V4.0.1.112_20181119
+DATE: 2018-11-19
+author: zhaixx
+desc:  HLJDX_HRB-REQ-20181109-JIALEI-001(黑龙江电信ITMS 系统与网厅系统接口升级改造)
+[*]/src/main/java/com/linkage/itms/dispatch/service/QueryDeviceMACService.java
+
+VERSION: V4.0.1.111_20181115
+DATE: 2018-11-15
+author: zhoupeng3
+desc:  XJDX-ITMS-20181016-LJ-001(机顶盒业务下发接口)v1.1
+[*]/src/main/java/com/linkage/stbms/dao/InitDAO.java
+[*]/src/main/java/com/linkage/stbms/ids/dao/UserStbInfoDAO.java
+[*]/src/main/java/com/linkage/stbms/ids/main/IdsService.java
+[+]/src/main/java/com/linkage/stbms/ids/obj/StbServiceDoneChecker.java
+[+]/src/main/java/com/linkage/stbms/ids/service/StbServiceDoneService.java
+[*]/src/main/java/com/linkage/stbms/init/InitBIO.java
+[*]/src/main/java/com/linkage/stbms/itv/main/Global.java
+
+VERSION: V4.0.1.110_20181106
+DATE: 2018-11-06
+author: yaoli
+desc:  NXDX-ITMS-20180905-LX-001(通过设备序列号查询逻辑ID和宽带账号接口)
+[*]/src/java/com/linkage/itms/dao/UserDeviceDAO.java
+[*]/src/java/com/linkage/itms/dispatch/main/CallService.java
+[+]/src/java/com/linkage/itms/dispatch/obj/QueryLoidNetServiceChecker.java
+[+]/src/java/com/linkage/itms/dispatch/service/QueryLoidNetService.java
+
+
+VERSION: V4.0.1.109_20181030
+DATE: 2018-10-31
+author: zhaixx
+desc:  NXDX-ITMS-20181029-LX-001(通过LOID查询设备MAC接口)
+[*]/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+[+]/src/main/java/com/linkage/itms/dispatch/obj/DevMacQueryBySNCheck.java
+[+]/src/main/java/com/linkage/itms/dispatch/service/DevMacQueryBySNService.java
+
+VERSION: V4.0.1.110_20181030
+DATE: 2018-10-30
+author: zhoupeng3
+desc: JLDX-ITMS-20181016-JH-001(家庭网关mac和sn查询接口)
+[*]/src/main/java/com/linkage/itms/dao/DeviceInfoDAO.java
+[*]/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+[+]/src/main/java/com/linkage/itms/dispatch/obj/QueryDevSNMACChecker.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/QueryDevRegInfoService.java
+[+]/src/main/java/com/linkage/itms/dispatch/service/QueryDevSNMACService.java
+
+VERSION: V4.0.1.109_20181030
+DATE: 2018-10-26
+author: zhaixx
+desc:
+[*]/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+[+]/src/main/java/com/linkage/itms/dispatch/obj/OpenIgmpSnoopingChecker.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/OpenIgmpSnoopingService.java
+
+VERSION: V4.0.1.108_20181026
+DATE: 2018-10-26
+author: zhoupeng3
+desc: 	NMGDX_HHHT-REQ-20180925-JIALEI-002
+		AHDX_ITMS-BUG-YQW-20180929-001(vlan连接状态查询)
+[*]/src/main/java/com/linkage/itms/dao/ActivationOfVoiceDAO.java
+[+]/src/main/java/com/linkage/itms/dao/GetServInfofromDevDAO.java
+[*]/src/main/java/com/linkage/itms/dao/IsRouteDeviceDao.java
+[*]/src/main/java/com/linkage/itms/dao/NetPasswordDAO.java
+[*]/src/main/java/com/linkage/itms/dao/QueryDevDAO.java
+[*]/src/main/java/com/linkage/itms/dao/QueryMultiInterPortDAO.java
+[*]/src/main/java/com/linkage/itms/dao/UserDeviceDAO.java
+[*]/src/main/java/com/linkage/itms/dao/WifiDeviceDAO.java
+[*]/src/main/java/com/linkage/itms/dispatch/cqdx/dao/PublicDAO.java
+[*]/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+[*]/src/main/java/com/linkage/itms/dispatch/obj/CloudPingIPSecDiagnosticChecker.java
+[+]/src/main/java/com/linkage/itms/dispatch/obj/GetServInfofromDevChecker.java
+[+]/src/main/java/com/linkage/itms/dispatch/obj/QueryDevRegInfoChecker.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/ActivationOfVoiceService.java
+[+]/src/main/java/com/linkage/itms/dispatch/service/GetServInfofromDevService.java
+[+]/src/main/java/com/linkage/itms/dispatch/service/QueryDevRegInfoService.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/QueryWanTypeService.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/WifiInfoService.java
+
+VERSION: V4.0.1.107_20180912
+DATE: 2018-10-15
+author: zhaixx
+desc: JXDX-ITMS-REQ-20180918-WUWF-001(ITMS平台对外接口-2.27调整)
+Modified :/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/DownLoadByHTTPSpeadService4JX.java
+Modified :/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/BindInfoCpmisService.java
+Modified :/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/DownLoadByHTTPSpeadService4JX.java
+
+VERSION: V4.0.1.106_20180912
+DATE: 2018-09-27
+author: zhaozs6
+desc: JXDX-ITV-REQ-20180918-WUWF-001(ITV终端管理平台对外接口-机顶盒信息)
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/stbms/ids/bio/GetStbInfoBIO.java
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/stbms/ids/dao/UserStbInfoDAO.java
+
+VERSION: V4.0.1.105_20180927
+DATE: 2018-09-27
+author: yaoli
+desc: socket超时时间由3s改为10s
+Modified :/ailk-itms-ItmsService/src/main/java/com/linkage/itms/commom/util/SocketUtil.java
+----
+
+VERSION: V4.0.1.104_20180810
+Author: songxiaoqiang
+Date: 2018年8月10日
+Message:
+JXDX-ITV-REQ-20180620-WUWF-001(ITV终端网管平台APK调用业务下发需求)
+----
+Modified : /code/web/ailk-itms-ItmsService/src/main/java/com/linkage/stbms/init/InitBIO.java
+Modified : /code/web/ailk-itms-ItmsService/src/main/java/com/linkage/stbms/itv/main/Global.java
+Modified : /code/web/ailk-itms-ItmsService/src/main/webapp/conf/ItmsService_cfg.xml
+Modified : /code/web/ailk-itms-ItmsService/src/main/resources/VERSION
+Modified : /code/web/ailk-itms-ItmsService/src/main/java/com/linkage/WSClient/WSClientProcess.java
+Added : /code/web/ailk-itms-ItmsService/src/main/java/com/linkage/stbms/pic/service/ApkSetDownService.java
+Added : /code/web/ailk-itms-ItmsService/src/main/java/com/linkage/stbms/pic/service/ApkSetDownChecker.java
+Added : /code/web/ailk-itms-ItmsService/src/main/java/com/linkage/stbms/pic/dao/ApkSetDownDao.java
+Added : /code/web/ailk-itms-ItmsService/src/main/java/com/linkage/stbms/pic/bio/ApkSetDownBio.java
+Added : /code/web/ailk-itms-ItmsService/src/main/java/com/linkage/stbms/itv/main/ApkService.java
+
+
+
+VERSION: V4.0.1.103_20180730
+Author: songxiaoqiang
+Date: 2018年7月30日
+Message:
+NXDX-ITMS-20180710-LX-002(修改WIFI工作信道、WIFI发送功率、传真工作模式)
+----
+Modified : /code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dao/QueryDevDAO.java
+Modified : /code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dao/RecordLogDAO.java
+Modified : /code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+Modified : /code/web/ailk-itms-ItmsService/src/main/resources/VERSION
+Added : /code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/nx/dispatch/obj/ModifyWifiChannelChecker.java
+Added : /code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/nx/dispatch/obj/ModifyWifiFaxModelChecker.java
+Added : /code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/nx/dispatch/obj/ModifyWifiSendPowerChecker.java
+Added : /code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/nx/dispatch/obj/NxBaseChecker.java
+Added : /code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/nx/dispatch/service/ModifyWifiChannelService.java
+Added : /code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/nx/dispatch/service/ModifyWifiFaxModelService.java
+Added : /code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/nx/dispatch/service/ModifyWifiSendPowerService.java
+Added : /code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/nx/dispatch/service/NxIService.java
+
+
+
+VERSION: V4.0.1.102_20180717
+Author: banyr
+Date: 2018年7月17日
+Message:
+NXDX-ITMS-20180712-LX-001(HTTP下载业务质量测试接口),NXDX-ITMS-20180710-LX-001-10000号查询终端设备信息接口
+----
+Modified : /code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dao/DeviceInfoDAO.java
+Modified : /code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dao/QueryDeviceVersionDAO.java
+Modified : /code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+Modified : /code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/obj/QueryDeviceVersionChecker.java
+Modified : /code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/DownLoadByHTTPSpeadService4JX.java
+Modified : /code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/QueryDeviceVersion.java
+Added : /code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/commom/DateTimeUtil.java
+
+
+VERSION: V4.0.1.101_20180710
+Author: wanglei7
+Date: 2018年7月10日 11:21:14
+Message:
+吉林综调接口获取3A密码，VLAN状态接口，新疆获取ip接口优化
+----
+Modified : /code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/Global.java
+Modified : /code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dao/UserDeviceDAO.java
+Modified : /code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dao/VlanStatusServiceDao.java
+Modified : /code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/obj/VlanStatusChecker.java
+Modified : /code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/BridgeToRoutService4JX.java
+Modified : /code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/VlanStatusService.java
+Added : /code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/util
+Added : /code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/util/SocketUtil.java
+Added : /code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/util/encryptionUtil.java
+Modified : /code/web/ailk-itms-ItmsService/src/main/java/com/linkage/stbms/ids/dao/UserStbInfoDAO.java
+Modified : /code/web/ailk-itms-ItmsService/src/main/java/com/linkage/stbms/ids/service/GetStbIpService.java
+
+
+VERSION: V4.0.1.100_2018068
+DATE: 2018-06-28
+author: banyr
+desc: （XJDX-ITMS-20180611-LJ-001-智慧客服的一键整断接口改造）
+[*]/src/main/java/com/linkage/itms/dispatch/obj/QueryLanStateAddStatusChecker.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/QueryLanStateAddStatusService.java
+[*]/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+
+VERSION: V4.0.1.99_20180621
+DATE: 2018-06-21
+author: chenxj6
+desc: AHDX_ITMS-BUG-YQW-20180605-001(200M-500m信息查询接口)
+[*]/src/main/java/com/linkage/itms/dispatch/service/QuerySheetDataService.java
+
+VERSION: V4.0.1.98_20180619
+DATE: 2018-06-19
+author: chenxj6
+desc: HLJDX_HRB-REQ-20180531-JIALEI-002黑龙江电信ITMS与端到端系统(宽带上网信息查询接口升级改造)
+[*]/src/main/java/com/linkage/itms/hlj/dispatch/service/QueryNetService.java
+
+VERSION: V4.0.1.97_20180509
+DATE: 2018-05-09
+author: wangyan10
+desc: JXDX-ITMS-REQ-20180413-WUWF-001(ITMS平台家庭网关对外接口-HTTP下载接口测速逻辑调整)
+[*]/src/main/java/com/linkage/itms/dao/DeviceInfoDAO.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/DownLoadByHTTPSpeadService4JX.java
+
+VERSION: V4.0.1.96_20180508
+DATE: 2018-05-08
+author: chenxj6
+desc: JLDX-REQ-20180428-JIANGHAO6-001
+[*]/src/main/java/com/linkage/itms/cao/ResourceBindCorba.java
+[*]/src/main/java/com/linkage/itms/dao/DeviceInfoDAO.java
+[*]/src/main/java/com/linkage/itms/dispatch/obj/ZeroConfigReportChecker.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/ZeroConfigReportService4JL.java
+[*]/src/main/java/com/linkage/itms/message/ResourceBindMQ.java
+[*]/src/main/java/com/linkage/itms/ResourceBindInterface.java
+
+VERSION: V4.0.1.95_20180426
+DATE: 2018-04-26
+author: chenxj6
+desc: HLJDX_HRB-REQ-20180411-JIALEI-001
+[*]/src/main/java/com/linkage/itms/os/obj/RecieveSheetOBJ.java
+
+VERSION: V4.0.1.94_20180424
+DATE: 2018-04-24
+author: os_jiangk
+desc: SDLT-REQ-2018-01-12-FANMENGKAI-001（山东联通RMS平台新增修改宽带密码的页面）
+[+]/src/main/webapp/gwms/resource/KdPasswordModification.jsp
+[+]/src/main/java/com/linkage/module/gwms/resource/act/KdPasswordModificationACT.java
+[+]/src/main/java/com/linkage/module/gwms/resource/bio/KdPasswordModificationACT.java
+[+]/src/main/java/com/linkage/module/gwms/resource/dao/KdPasswordModificationACT.java
+[*]/src/main/resources/struts-config-gwms/struts_gwms_resource.xml
+[*]/src/main/resources/application-config-gwms/spring_gwms_resource.xml
+
+VERSION: V4.0.1.93_20180424
+DATE: 2018-04-24
+author: os_jiangk
+desc: HBLT-RMS-20180412-LH-026（千兆光猫标识)
+[*]/src/main/webapp/gwms/diagnostics/deviceInfo.jsp
+[*]/src/main/webapp/gtms/stb/resource/DeviceType_info_list.jsp
+[*]/src/main/webapp/gtms/stb/resource/DeviceType_info_new.jsp
+[*]/src/main/webapp/itms/service/bssSheetServList_Standard.jsp
+[*]/src/main/webapp/Resource/DeviceList_prt_operate.jsp
+[*]/src/main/webapp/Resource/DeviceShow.jsp
+[*]/src/main/webapp/Resource/QueryDeviceList.jsp
+[*]/src/main/java/com/linkage/litms/resource/DeviceAct.java
+[*]/src/main/java/com/linkage/module/gwms/diagnostics/bio/DeviceInfoBIO.java
+[*]/src/main/java/com/linkage/module/gwms/diagnostics/dao/DeviceInfoDAO.java
+[*]/src/main/java/com/linkage/module/itms/resource/act/DeviceTypeInfoACT.java
+[*]/src/main/java/com/linkage/module/itms/resource/bio/DeviceTypeInfoBIO.java
+[*]/src/main/java/com/linkage/module/itms/resource/dao/DeviceTypeInfoDAO.java
+[*]/src/main/java/com/linkage/module/itms/service/act/BssSheetServStandardACT.java
+[*]/src/main/java/com/linkage/module/itms/service/dao/BssSheetServStandardDAO.java
+VERSION: V4.0.1.92_20180424
+DATE: 2018-04-24
+author: os_jiangk
+desc: HBLT-RMS-20180126-LH-016 bug(机顶盒报表查询界面问题)
+[*]/src/main/webapp/gtms/stb/resource/removeBindPageList.jsp
+[*]/src/main/java/com/linkage/module/gtms/stb/resource/action/removeBindPageACT.java
+[*]/src/main/java/com/linkage/module/gtms/stb/resource/serv/removeBindPageBIO.java
+[*]/src/main/java/com/linkage/module/gtms/stb/resource/serv/userMessageManageBIO.java
+[*]/src/main/java/com/linkage/module/gtms/stb/resource/serv/bindPageBIO.java
+
+VERSION: V4.0.1.91_20180411
+DATE: 2018-04-11
+author: wangyan10
+desc: JXDX-ITMS-REQ-20180309-WUWF-001(ITMS平台家庭网关对外接口-HTTP下载接口优化调整)
+[*]/src/main/java/com/linkage/itms/Global.java
+[*]/src/main/java/com/linkage/init/InitBIO.java
+[*]/src/main/java/com/linkage/itms/dao/DeviceInfoDAO.java
+[*]/src/main/webapp/conf/ItmsService_cfg.xml
+[*]/src/main/java/com/linkage/itms/dispatch/service/DownLoadByHTTPSpeadService4JX.java
+[*]/src/main/java/com/linkage/itms/dispatch/obj/DownLoadByHTTPSpeadChecker4JX.java
+
+VERSION: V4.0.1.90_20180411
+DATE: 2018-04-11
+author: wangyan10
+desc: HBLT-RMS-20180302-LH-021（测速功能改造）
+[*]/src/main/java/com/linkage/itms/dispatch/service/TestSpeedHBLTService.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/TestSpeedService4HBLT.java
+[*]/src/main/java/com/linkage/itms/dao/UserDeviceDAO.java
+
+VERSION: V4.0.1.89_20180402
+DATE:2018-04-02
+author:chenxj6
+desc:AHDX_ITMS-REQ-20180319YQW-002（设备信息查询接口新增是否支持500M信息）
+[*]/src/main/java/com/linkage/itms/dao/QueryDeviceVersionDAO.java
+[*]/src/main/java/com/linkage/itms/dispatch/obj/QuerySheetDataChecker.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/QuerySheetDataService.java
+
+VERSION: V4.0.1.88_20180123
+DATE:2018-01-23
+author:os_jiangk
+desc:JXDX-ITV-REQ-20180111-WUWF-001(ITV终端网管平台对外接口-新增机顶盒最后一次上线时间需求)
+[*]/src/main/java/com/linkage/stbms/ids/main/IdsService.java
+[+]/src/main/java/com/linkage/stbms/ids/obj/GetStbLastTimeCheck.java
+[+]/src/main/java/com/linkage/stbms/ids/service/GetStbLastTimeService.java
+[+]/src/main/java/com/linkage/stbms/ids/dao/GetStbLastTimeDAO.java
+
+
+VERSION: V4.0.1.88_20180122
+DATE:2018-01-22
+author:wangyan10
+desc:HBDX-REQ-20180105-XuPan-001（湖北ITMS+接口改造需求)
+[*]/src/main/java/com/linkage/itms/dispatch/service/BindInfoService.java
+[*]/src/main/java/com/linkage/itms/dispatch/obj/BindInfoChecker.java
+[*]/src/main/java/com/linkage/itms/dao/UserDeviceDAO.java
+
+VERSION: V4.0.1.87_20180115
+DATE:2018-01-15
+author:wangyan10
+desc:JXDX-ITV-REQ-20171227-WUWF-001(ITV终端网管平台-对外接口机顶盒信息查询接口调整)
+[*]/src/main/java/com/linkage/stbms/ids/bio/GetStbInfoBIO.java
+[*]/src/main/java/com/linkage/stbms/ids/util/GetStbInfoChecker.java
+[*]/src/main/java/com/linkage/stbms/ids/dao/UserStbInfoDAO.java
+
+VERSION: V4.0.1.86_20171211
+DATE:2017-12-11
+author:os_jiangk
+desc:SDLT-REQ-2017-11-30-fanmengkai-001（山东联通RMS平台更新宽带密码）
+[*]/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+[+]/src/main/java/com/linkage/itms/dispatch/obj/UpdateNetPwdServic1.java
+
+VERSION: V4.0.1.86_20171207
+DATE:2017-12-07
+author:chenxj6
+desc:JLDX-REQ-20171012-JIANGHAO6-001(吉林即插即用)
+[*]/src/main/java/com/linkage/itms/dispatch/obj/BaseChecker.java
+[*]/src/main/java/com/linkage/itms/dispatch/obj/ZeroConfigReportChecker.java
+[*]/src/main/java/com/linkage/itms/itv/bio/GetItvAccountBIO.java
+[*]/src/main/java/com/linkage/itms/itv/dao/GetItvAccountDAO.java
+[*]/src/main/java/com/linkage/itms/itv/obj/GetItvAccountOBJ.java
+
+VERSION: V4.0.1.85_20171205
+DATE:2017-12-05
+author:os_jiangk
+desc:AHDX_ITMS-REQ-20171129YQW-001A8设备语音端口修改接口
+[*]/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+[+]/src/main/java/com/linkage/itms/dispatch/service/A8setVoipService.java
+[+]/src/main/java/com/linkage/itms/dispatch/obj/A8setVoipChecker.java
+[+]/src/main/java/com/linkage/itms/dao/A8setVoipDAO.java
+
+
+VERSION: V4.0.1.84_20171205
+DATE:2017-12-05
+author:zhoupeng3
+desc:JXDX-ITV-REQ-20171128-WUWF-001(ITV终端网管平台与预处理改密接口需求)
+/src/main/java/com/linkage/itms/dispatch/service/QueryVOIPWanInfoService.java
+[*]/src/main/java/com/linkage/stbms/ids/dao/UserStbInfoDAO.java
+[*]/src/main/java/com/linkage/stbms/ids/main/IdsService.java
+[+]/src/main/java/com/linkage/stbms/ids/obj/ChangePasswordCheck.java
+[+]/src/main/java/com/linkage/stbms/ids/service/ChangePasswordService.java
+
+VERSION: V4.0.1.83_20171114
+DATE:2017-11-14
+author:fanjm
+desc:JXDX-ITMS-REQ-20171107-WUWF-001(ITMS平台对外接口-语音三项接口优化需求)
+/src/main/java/com/linkage/itms/dispatch/service/QueryVOIPWanInfoService.java
+
+
+VERSION: V4.0.1.82_20171102
+DATE:2017-11-02
+author:os_jiangk
+desc:XJDX-REQ-20171023-laijun-001【查询光猫的节点是否有机顶盒的MAC地址上报】
+/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+/src/main/java/com/linkage/itms/dispatch/service/QueryStbMacService.java
+/src/main/java/com/linkage/itms/dispatch/obj/QueryStbMacChecker.java
+/src/main/java/com/linkage/itms/dao/QueryStbMacDAO.java
+
+VERSION: V4.0.1.81_20171025
+DATE:2017-10-25
+author:os_jiangk
+desc:AHDX_ITMS-REQ-20171011YQW-001（激活语音端口使用情况查询接口）
+/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+/src/main/java/com/linkage/itms/dispatch/service/ActivationOfVoiceService.java
+/src/main/java/com/linkage/itms/dao/ActivationOfVoiceDAO.java
+/src/main/java/com/linkage/itms/dispatch/obj/ActivationOfVoiceChecker.java
+
+VERSION: V4.0.1.80_20171025
+DATE:2017-10-25
+author:os_jiangk
+desc:XJDX-REQ-20171023-laijun-001【查询光猫的节点是否有机顶盒的MAC地址上报】
+/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+/src/main/java/com/linkage/itms/dispatch/obj/QueryStbMacChecker.java
+/src/main/java/com/linkage/itms/dispatch/service/QueryStbMacService.java
+/src/main/java/com/inkage/itms/dao/QueryStbMacDAO.java
+
+
+VERSION: V4.0.1.79_20171020
+DATE:2017-10-20
+author:os_jiangk
+desc:JXDX-ITMS-REQ-20171016-WUWF-001(ITMS平台对外接口-家庭及企业用户绑定设备查询需求)
+/src/main/java/com/linkage/itms/dispatch/service/BindInfoCpmisService.java
+/src/main/java/com/linkage/itms/dao/UserDeviceDAO.java
+
+
+VERSION: V4.0.1.78_20171016
+DATE:2017-10-16
+author:chenxj6
+desc:AHDX_ITMS-BUG-YQW-20170806-001(设备信息查询接口)
+/src/main/java/com/linkage/itms/dispatch/obj/QuerySheetDataChecker.java
+/src/main/java/com/linkage/itms/dispatch/service/QuerySheetDataService.java
+
+VERSION: V4.0.1.77_20170921
+DATE:2017-09-21
+author:os_jiangk
+desc:HBDX-REQ-20170912-XuPan-001（湖北ITMS+加V即插即用接口）
+[*]/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+[+]/src/main/java/com/linkage/itms/dispatch/service/ItvAutoConfigService.java
+[+]/src/main/java/com/linkage/itms/dispatch/obj/ItvAutoConfigChecher.java
+[+]/src/main/java/com/linkage/itms/dispatch/obj/BaseChecker.java
+
+
+VERSION: V4.0.1.76_20170913
+DATE:2017-09-13
+author:jiafh
+desc:HBDX-REQ-20170823-XuPan-001（湖北ITMS+家庭网关下挂设备信息采集接口）
+[*]src/main/java/com/linkage/itms/dao/UserDeviceDAO.java
+[*]src/main/java/com/linkage/itms/dispatch/main/CallService.java
+[*]src/main/java/com/linkage/itms/dispatch/obj/MacGatherServiceChecker.java
+[*]src/main/java/com/linkage/itms/dispatch/service/MacGatherService.java
+
+
+VERSION: V4.0.1.75_20170913
+DATE:2017-09-13
+author:chenxj6
+desc:JXDX-ITV-DEBUG-20170825-WUWF-001(ITV终端管理平台2个发现的BUG)
+[*]/src/main/java/com/linkage/stbms/pic/service/ZeroConfService.java
+
+
+VERSION: V4.0.1.74_20170912
+DATE:2017-09-12
+author:os_jiangk
+desc:JXDX-ITMS-REQ-20170904-WUWF-001(ITMS平台对外接口-采集ITV业务绑定的lan口信息)
+[*]/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+[+]/src/main/java/com/linkage/itms/dispatch/service/QueryITVLanStateService.java
+[+]/src/main/java/com/linkage/itms/dispatch/obj/QueryITVLanStateChecker.java
+[*]/src/main/java/com/linkage/itms/dao/QueryDevDAO.java
+[*]/src/main/java/com/linkage/itms/dispatch/obj/BaseChecker.java
+
+
+VERSION: V4.0.1.73_20170907
+DATE:2017-09-07
+author:chenxj6
+desc:HBLT-RMS-20170828-LH-007(北向工单接口优化）
+[*]/src/main/java/com/linkage/itms/os/bio/OperationDistributeBIO.java
+[*]/src/main/java/com/linkage/itms/os/main/OperationDistributeService.java
+
+
+VERSION: V4.0.1.72_20170906
+DATE:2017-09-06
+author:os_jiangk
+desc:HBDX-REQ-20170831-XuPan-001（湖北ITMS+光宽端到端2.0智能判障接口提供）
+[*]/src/main/java/com/linkage/itms/dao/UserDeviceDAO.java
+[*]/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+[*]/src/main/java/com/linkage/itms/dispatch/obj/BssSheetChecker.java
+[*]/src/main/java/com/linkage/itms/dispatch/obj/PonInfoChecker.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/PonInfoService.java
+[+]/src/main/java/com/linkage/itms/dispatch/service/QueryDeviceTempService.java
+[+]/src/main/java/com/linkage/itms/dao/DeviceConfigNewDAO.java
+[+]/src/main/java/com/linkage/itms/dispatch/obj/QueryDeviceServiceNew.java
+[+]/src/main/java/com/linkage/itms/dispatch/service/DevConfigServiceNewone.java
+
+
+
+VERSION: V4.0.1.71_20170831
+DATE:2017-08-31
+author:fanjm
+desc:SDLT-REQ-2017-07-26-FANMENGKAI-001（山东联通RMS单个测速功能）
+[*]/src/main/java/com/linkage/itms/dao/UserDeviceDAO.java
+[*]/src/main/java/com/linkage/itms/dao/DevTypeDAO.java
+[*]/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+[+]/src/main/java/com/linkage/itms/dispatch/service/TestSpeedService4SDLT.java
+[+]/src/main/java/com/linkage/itms/dispatch/service/TestSpeedChecker4SDLT.java
+[+]/src/main/java/com/linkage/itms/dispatch/obj/DeviceOBJ.java
+
+
+VERSION: V4.0.1.70_20170830
+DATE:2017-08-30
+author:chenxj6
+desc:NMGDX_HHHT-REQ-20170821-JIALEI-001
+[*]/src/main/java/com/linkage/itms/hlj/dispatch/dao/QueryDeviceIdDAO.java
+[*]/src/main/java/com/linkage/itms/hlj/dispatch/service/DevRebootService.java
+
+VERSION: V4.0.1.69_20170824
+DATE:2017-08-24
+author:chenxj6
+desc:NMGDX_HHHT-REQ-20170821-JIALEI-001
+[*]/src/main/java/com/linkage/itms/nmg/dispatch/dao/BindInfoDao.java
+[*]/src/main/java/com/linkage/itms/nmg/dispatch/main/NmgService.java
+[*]/src/main/java/com/linkage/itms/nmg/dispatch/service/BindInfoService.java
+[*]/src/main/java/com/linkage/itms/nmg/dispatch/service/DevResetService.java
+
+VERSION: V4.0.1.68_20170821
+DATE:2017-08-21
+author:chenxj6
+desc:XJDX-REQ-20170817-laijun-001【BSS用户业务工单及开通状态查询】
+[*]/src/main/java/com/linkage/init/InitBIO.java
+[*]/src/main/java/com/linkage/itms/dao/UserDeviceDAO.java
+[*]/src/main/java/com/linkage/itms/dispatch/obj/BssSheetChecker.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/BssSheetService.java
+
+VERSION: V4.0.1.67_20170817
+DATE:2017-08-17
+author:chenxj6
+desc:JLDX-REQ-20170814-JIANGHAO6-001
+[*]/src/main/java/com/linkage/itms/hlj/dispatch/main/JlService.java
+[*]/src/main/java/com/linkage/itms/hlj/dispatch/obj/XmlTranslate.java
+
+VERSION: V4.0.1.66_20170816
+DATE:2017-08-16
+author:zhoupeng3
+desc:JLDX-REQ-20170801-JIANGHAO6-001
+[*]/src/main/java/com/linkage/itms/hlj/dispatch/main/JlService.java
+[+]/src/main/java/com/linkage/itms/hlj/dispatch/obj/DoVoipChecker.java
+[+]/src/main/java/com/linkage/itms/hlj/dispatch/obj/QueryVoipBssStateChecker.java
+[+]/src/main/java/com/linkage/itms/hlj/dispatch/obj/QueryVoipDeviceIdStateChecker.java
+[+]/src/main/java/com/linkage/itms/hlj/dispatch/service/DoVoipService.java
+[+]/src/main/java/com/linkage/itms/hlj/dispatch/service/QueryVoipBssStateService.java
+[+]/src/main/java/com/linkage/itms/hlj/dispatch/service/QueryVoipDeviceIdStateService.java
+
+VERSION: V4.0.1.65_20170814
+DATE:2017-08-14
+author:zhoupeng3
+desc:JXDX-ITMS-REQ-20170804-WUWF-001(ITMS平台对外接口-用户绑定设备情况查询cpmis侧需求调整)
+[*]/src/main/java/com/linkage/itms/dao/UserDeviceDAO.java
+[*]/src/main/java/com/linkage/itms/dispatch/obj/BindInfoCpmisChecker.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/BindInfoCpmisService.java
+
+VERSION: V4.0.1.64_20170803
+DATE:2017-08-03
+author:wangyan10
+desc:NMGDX_HHHT-REQ-20170724-JIALEI-001
+[*]/src/main/java/com/linkage/itms/nmg/dispatch/main/NmgService.java
+[*]/src/main/java/com/linkage/itms/dao/UserDeviceDAO.java
+[+]/src/main/java/com/linkage/itms/nmg/dispatch/service/QueryRunningstatService.java
+[+]/src/main/java/com/linkage/itms/nmg/dispatch/obj/QueryRunningstatChecker.java
+
+VERSION: V4.0.1.63_20170720
+DATE:2017-07-20
+author:chenxj6
+desc:JXDX-ITV-REQ-20170628-LINBX-001(ITV自服务功能需求-3天未装机用户派单需求)
+[*]/src/main/java/com/linkage/stbms/pic/dao/ZeroConfDao.java
+[*]/src/main/java/com/linkage/stbms/ids/dao/UserChangeStbDAO.java
+
+VERSION: V4.0.1.62_20170712
+DATE:2017-07-12
+author:zhoupeng3
+desc:SDLT-REQ-2017-06-29-YUZHIJIAN-001(山东电信ITMS平台光宽接口)
+[*]/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+[+]/src/main/java/com/linkage/itms/dispatch/obj/ChangePasChecker.java
+[+]/src/main/java/com/linkage/itms/dispatch/service/ChangePasService.java
+
+VERSION: V4.0.1.61_20170705
+DATE:2017-07-05
+author:zhoupeng3
+desc:JXDX-ITV-REQ-20170626-WUWF-001(ITV终端管理平台对外接口-机顶盒信息修改调整)
+[*]/src/main/java/com/linkage/stbms/ids/util/GetStbInfoChecker.java
+
+VERSION: V4.0.1.60_20170630
+DATE:2017-06-30
+author:zhoupeng3
+desc:JXDX-ITMS-REQ-20170628-WUWF-001(ITMS平台对外接口-用户绑定设备情况查询cpmis侧需求)
+[*]/src/main/java/com/linkage/itms/dao/UserDeviceDAO.java
+[*]/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+[+]/src/main/java/com/linkage/itms/dispatch/obj/BindInfoCpmisChecker.java
+[+]/src/main/java/com/linkage/itms/dispatch/service/BindInfoCpmisService.java
+
+VERSION: V4.0.1.59_20170623
+DATE:2017-06-23
+author:zhoupeng3
+desc:JXDX-ITV-DEBUG-20170622-WUWF-001(ITV终端管理平台对外接口-机顶盒信息查询BUG)
+[*]/src/main/java/com/linkage/stbms/ids/bio/GetStbInfoBIO.java
+[*]/src/main/java/com/linkage/stbms/ids/util/BaseChecker.java
+[*]/src/main/java/com/linkage/stbms/ids/util/GetStbInfoChecker.java
+
+VERSION: V4.0.1.58_20170623
+DATE:2017-06-22
+author:os_zhuzd
+desc:NMPC_REQ_20170410_0004(Itms 与光网端到端接口ponInfo采集光功率接口)
+[*]/src/main/java/com/linkage/itms/dispatch/service/PonInfoService4NX.java
+
+VERSION: V4.0.1.57_20170622
+DATE:2017-06-22
+author:wanghong5
+desc:JXDX-ITMS-REQ-20170615-WUWF-001(ITMS平台返回itv终端网管平台接入账号规则调整)
+[*]/src/main/java/com/linkage/itms/itv/bio/GetItvAccountBIO.java
+[*]/src/main/java/com/linkage/itms/itv/dao/GetItvAccountDAO.java
+
+VERSION: V4.0.1.56_20170622
+DATE:2017-06-22
+author:chenxj6
+desc:JXDX-ITV-REQ-20170615-WUWF-002(ITV终端管理平台零配置优化-多部ITV选择)
+[*]/src/main/java/com/linkage/itms/itv/bio/GetItvAccountBIO.java
+[*]/src/main/java/com/linkage/itms/itv/dao/GetItvAccountDAO.java
+[*]/src/main/java/com/linkage/stbms/pic/dao/ZeroConfDao.java
+[*]/src/main/java/com/linkage/stbms/pic/service/ZeroConfService.java
+
+VERSION: V4.0.1.55_20170614
+DATE:2017-06-14
+author:wanghong5
+TITLE:湖北接口mac地址小写转换大写
+[*]/src/main/java/com/linkage/itms/itv/main/ItmsService.java
+[*]/src/main/java/com/linkage/itms/bio/GetItvMacHBBIO.java
+[*]/src/main/java/com/linkage/itms/itv/obj/GetItvMacHBOBJ.java
+[*]/src/main/java/com/linkage/itms/itv/dao/GetItvMacHBDAO.java
+
+VERSION: V4.0.1.54_20170612
+DATE:2017-06-12
+author:chenxj6
+desc:JXDX-ITV-REQ-20170526-WUWF-001(ITV终端管理平台对零配置结果按照需求进行记录保存补充)
+[*]/src/main/java/com/linkage/stbms/pic/bio/ZeroConfBio.java
+[*]/src/main/java/com/linkage/stbms/pic/service/ZeroConfService.java
+[*]/src/main/java/com/linkage/stbms/pic/Global.java
+
+VERSION: V4.0.1.53_20170609
+DATE:2017-06-09
+author:chenxj6
+TITLE:XJDX-REQ-20170420-HUJG3-001【ITMS系统机顶盒即插即用需求】
+[*]/src/main/java/com/linkage/itms/itv/bio/GetItvAccountBIO.java
+[*]/src/main/java/com/linkage/itms/itv/dao/GetItvAccountDAO.java
+[*]/src/main/java/com/linkage/itms/itv/obj/AccountOBJ.java
+[*]/src/main/java/com/linkage/itms/itv/obj/GetItvAccountOBJ.java
+[*]/src/main/webapp/conf/ItmsService_cfg.xml
+
+VERSION: V4.0.1.52_20170602
+DATE:2017-06-02
+author:zhoupeng3
+TITLE:JLDX-REQ-20170216-JIANGHAO6-001
+[+]/src/main/java/com/linkage/itms/commom/util/PingUtil.java
+[*]/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+[+]/src/main/java/com/linkage/itms/dispatch/obj/PingConnectivityChecker.java
+[+]/src/main/java/com/linkage/itms/dispatch/service/PingConnectivityService.java
+[*]/src/main/java/com/linkage/itms/hlj/dispatch/main/JlService.java
+[+]/src/main/java/com/linkage/itms/hlj/dispatch/obj/PingConnectivityChecker.java
+[+]/src/main/java/com/linkage/itms/hlj/dispatch/service/PingConnectivityService.java
+
+VERSION: V4.0.1.51_20170601
+DATE:2017-06-01
+author:os_zhuzd
+TITLE:NMPC_ISSUE_20170524_0001
+[*]/src/main/java/com/linkage/itms/dispatch/service/UpdateNetPwdService.java
+=============================================================================
+VERSION: V4.0.1.50_20170515
+DATE:2017-05-15
+author:chenxj6
+TITLE:JXDX-ITV-REQ-20170425-WUWF-001(ITV终端管理平台对零配置结果按照需求进行记录保存)
+[*]/src/main/java/com/linkage/stbms/pic/bio/ZeroConfBio.java
+[*]/src/main/java/com/linkage/stbms/pic/dao/ZeroConfDao.java
+[*]/src/main/java/com/linkage/stbms/pic/object/StbDeviceOBJ.java
+[*]/src/main/java/com/linkage/stbms/pic/service/ZeroConfService.java
+[*]/src/main/java/com/linkage/stbms/pic/Global.java
+
+VERSION: V4.0.1.49_20170515
+DATE:2017-05-15
+author:wangyan10
+TITLE:AHDX_ITMS-REQ-20170509YQW-001（是否支持零配置开通设备版本查询接口）
+[*]/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+[*]/src/main/java/com/linkage/itms/dao/DeviceInfoDAO.java
+[+]/src/main/java/com/linkage/itms/dispatch/obj/IsStbBindChecker.java
+[+]/src/main/java/com/linkage/itms/dispatch/service/IsStbBindService.java
+
+VERSION: V4.0.1.48_20170511
+DATE:2017-05-11
+author:zhoupeng3
+TITLE:JXDX-ITMS-REQ-20170412-LINBX-001(ITMS平台与CRM实时查询光猫设备序列号信息接口）
+[*]/src/main/java/com/linkage/itms/dao/UserDeviceDAO.java
+[*]/src/main/java/com/linkage/itms/dispatch/obj/BindInfoChecker.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/BindInfoService.java
+
+VERSION: V4.0.1.47_20170511
+DATE:2017-05-11
+author:wangyan10
+TITLE:AHDX_ITMS-REQ-20170420YQW-001（企业网关接口开发）
+[*]/src/main/java/com/linkage/itms/dao/DeviceConfigDAO.java
+
+VERSION: V4.0.1.46_20170505
+DATE:2017-05-05
+author:zhoupeng3
+TITLE:JSDX_ITMS-REQ-20170410-WJY-001（综调接口新增终端属地查询接口)
+[*]/src/main/java/com/linkage/itms/dao/DeviceInfoDAO.java
+[*]/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+[+]/src/main/java/com/linkage/itms/dispatch/obj/QueryCityIdChecker.java
+[+]/src/main/java/com/linkage/itms/dispatch/service/QueryCityIdService.java
+
+VERSION: V4.0.1.45_20170505
+DATE:2017-05-05
+author:os_zhuzd
+TITLE:NMGDX_HHHT-REQ-20170425-JIALEI-001
+[*]/src/main/java/com/linkage/itms/nmg/dispatch/service/QuerySheetDataService.java
+
+VERSION: V4.0.1.44_20170505
+DATE:2017-05-05
+author:os_zhuzd
+TITLE:NMGDX_HHHT-REQ-20170424-JIALEI-001
+[*]/src/main/java/com/linkage/itms/dispatch/service/UpdateNetPwdService.java
+[*]/src/main/java/com/linkage/itms/dispatch/obj/UpdateNetPwdChecker.java
+[*]/src/main/java/com/linkage/itms/dao/UserDeviceDAO.java
+
+VERSION: V4.0.1.43_20170504
+DATE:2017-05-04
+author:wanghong5
+TITLE:JXDX-ITV-REQ-20170427-WUWF-001(ITV终端管理平台对外接口-机顶盒信息修改)
+[*]/src/main/java/com/linkage/itms/itv/main/ItmsService.java
+[*]/src/main/java/com/linkage/stbms/ids/bio/GetStbInfoBIO.java
+[*]/src/main/java/com/linkage/stbms/ids/dao/UserStbInfoDAO.java
+[*]/src/main/java/com/linkage/stbms/ids/util/GetStbInfoChecker.java
+
+VERSION: V4.0.1.42_20170427
+DATE:2017-04-27
+author:jianglp
+TITLE:HBDX-REQ-20170330-XuPan-001(湖北ITMS+机顶盒即插即用零配置接口)
+[*]/src/main/java/com/linkage/itms/itv/main/ItmsService.java
+[+]/src/main/java/com/linkage/itms/bio/GetItvMacHBBIO.java
+[+]/src/main/java/com/linkage/itms/itv/obj/GetItvMacHBOBJ.java
+[+]/src/main/java/com/linkage/itms/itv/dao/GetItvMacHBDAO.java
+
+VERSION: V4.0.1.41_20170421
+DATE:2017-04-21
+author:zhoupeng3
+TITLE:SDLT-REQ-2017-04-10-YUZHIJIAN-002（山东联通RMS平台机顶盒用户业务查询接口）
+[*]/src/main/java/com/linkage/stbms/ids/dao/GetStbDeviceInfoDAO.java
+[*]/src/main/java/com/linkage/stbms/ids/service/GetStbDeviceInfoService.java
+
+VERSION: V4.0.1.40_20170418
+DATE:2017-04-18
+author:zhoupeng3
+TITLE:SDLT-REQ-2017-04-13-YUZHIJIAN-001（山东联通RMS平台用户业务查询接口)
+[*]/src/main/java/com/linkage/itms/dao/ServUserDAO.java
+[*]/src/main/java/com/linkage/itms/dispatch/obj/BssSheetChecker.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/BssSheetService.java
+
+VERSION: V4.0.1.39_20170414
+DATE:2017-04-14
+author:chenxj6
+TITLE:AHDX_ITMS-REQ-20170329YQW-001（ITMS与激活语音注册仿真接口）
+[*]/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+[+]/src/main/java/com/linkage/itms/dispatch/obj/VoipRegistTestChecker4AH.java
+[+]/src/main/java/com/linkage/itms/dispatch/service/VoipRegistTestService4AH.java
+[*]/src/main/java/com/linkage/itms/dao/DeviceInfoDAO.java
+
+VERSION: V4.0.1.38_20170410
+DATE:2017-04-10
+author:zhoupeng3
+TITLE:AHDX_ITMS-REQ-20170329YQW-002激活串口信息查询接口
+[*]/src/main/java/com/linkage/init/InitBIO.java
+[*]/src/main/java/com/linkage/itms/dao/UserDeviceDAO.java
+[*]/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+[+]/src/main/java/com/linkage/itms/dispatch/obj/SerialNoChecker.java
+[+]/src/main/java/com/linkage/itms/dispatch/service/SerialNoService.java
+
+VERSION: V4.0.1.37_20170405
+DATE:2017-04-05
+author:zhoupeng3
+TITLE:JSDX_ITMS-REQ-20170323-XJJ-001（综调接口宽带对应多个LOID需求改造）
+[*]/src/main/java/com/linkage/itms/dispatch/service/BindFailedService.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/BridgeToRoutServiceForJs.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/ModifySSID1Service.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/OpenOrCloseAwifiService.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/QueryAccessTypeService.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/QueryDeviceCurrentService.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/QueryDeviceIPorDNSService.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/QueryDeviceMACService.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/QueryDeviceTempService.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/QueryDeviceVottageService.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/QueryDevNumberService.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/QueryFailedCodeService.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/QueryIsAwifiService.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/QueryLanStateService.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/QuerySSIDNameService.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/QuerySSIDPowerService.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/QueryVoipStateService.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/QueryWiFiDeviceMACService.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/QueryWiFiService.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/QueryWlanStateService.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/RoutToBridgeServiceForJs.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/SimulationSpeedService.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/TelepasswdService.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/VoiceUserService.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/VoiceUserSetResultService.java
+[*]/src/main/java/com/linkage/itms/dao/BindFailedDao.java
+[*]/src/main/java/com/linkage/itms/dao/UserDeviceDAO.java
+
+VERSION: V4.0.1.36_20170329
+DATE:2017-03-29
+author:jiafh
+TITLE:内蒙古电信ITMS与端到端修改宽带密码接口的问题
+[*]/src/main/java/com/linkage/itms/dispatch/service/UpdateNetPwdService.java
+
+VERSION: V4.0.1.35_20170324
+DATE:2017-03-24
+author:chenxj6
+TITLE:JXDX-ITMS-REQ-20170306-WUWF-001(ITMS平台对外接口增加itv业务组播参数查看)
+[*]/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+[+]/src/main/java/com/linkage/itms/dispatch/service/QueryMulticastVlanService.java
+[+]/src/main/java/com/linkage/itms/dispatch/obj/QueryMulticastVlanChecker.java
+[+]/src/main/java/com/linkage/itms/dao/QueryMulticastVlanDAO.java
+
+VERSION: V4.0.1.34_20170323
+DATE:2017-03-23
+author:os_jiangk
+TITLE:XJDX-REQ-20170309-HUJG3-001【ITMS系统家庭网关和机顶盒核销接口需求】
+[*]/src/main/java/com/linkage/itms/dispatch/obj/QueryDevSnChecker.java
+[+]/src/main/java/com/linkage/stbms/ids/main/IdsService.java
+[+]/src/main/java/com/linkage/stbms/ids/service/UserStbInfoService.java
+[+]/src/main/java/com/linkage/stbms/ids/bio/BoxCheck.java
+[+]/src/main/java/com/linkage/stbms/ids/util/Box_check.java
+[+]/src/main/java/com/linkage/stbms/ids/obj/BoxCheckObj.java
+[+]/src/main/java/com/linkage/stbms/ids/dao/StbDevSNServiceDAO.java
+
+VERSION: V4.0.1.33_20170322
+DATE:2017-03-22
+author:wanghong5
+TITLE:AHDX_ITMS-REQ-20170227YQW-001（itv零配置开通接口开发）
+	HBDX-REQ-20170330-XuPan-001(湖北ITMS+机顶盒即插即用零配置接口)
+[*]/src/main/java/com/linkage/itms/itv/main/ItmsService.java
+[+]/src/main/java/com/linkage/itms/bio/GetItvMacBIO.java
+[+]/src/main/java/com/linkage/itms/itv/obj/GetItvMacOBJ.java
+[+]/src/main/java/com/linkage/itms/itv/dao/GetItvMacDAO.java
+
+VERSION: V4.0.1.32_20170314
+DATE:2017-03-16
+author:fanjm
+TITLE:JLDX-REQ-20170303-JIANGHAO6-001（吉林电信端到端新增pppoe模拟拨测和桥接路由修改接口）
+[*]/src/main/java/com/linkage/itms/hlj/dispatch/main/JlService.java
+[*]/src/main/java/com/linkage/itms/hlj/dispatch/obj/XmlTranslate.java
+[+]/src/main/java/com/linkage/itms/hlj/dispatch/obj/PPPoEDialChecker4JL.java
+[+]/src/main/java/com/linkage/itms/hlj/dispatch/service/PPPoEDial4JL.java
+
+VERSION: V4.0.1.31_20170314
+DATE:2017-03-14
+author:fanjm
+TITLE:JSDX_ITMS-REQ-20170224-WJY-001（终端版本审核自动流程)
+[+]/src/main/java/com/linkage/itms/dao/TerminalVersionAuditDAO.java
+[*]/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+[+]/src/main/java/com/linkage/itms/dispatch/service/TerminalVersionAuditService.java
+
+VERSION: V4.0.1.30_20170306
+DATE:2017-03-06
+author:fanjm
+TITLE:NMGDX_HHHT-REQ-20170227-JIALEI-001（查询家庭网关的基本属性信息接口改造）
+[*]src/main/java/com/linkage/itms/nmg/dispatch/service/BindInfoService.java
+[*]src/main/java/com/linkage/itms/nmg/dispatch/obj/BindInfoChecker.java
+[*]src/main/java/com/linkage/itms/nmg/dispatch/dao/BindInfoDao.java
+
+
+VERSION: V4.0.1.29_20170303
+DATE:2017-03-03
+author:fanjm
+TITLE:JLDX-REQ-20170216-JIANGHAO6-001（吉林Ping测试和下载测速)
+[*]src/main/java/com/linkage/itms/hlj/dispatch/main/JlService.java
+[*]src/main/java/com/linkage/itms/dispatch/service/PingDiagnostic.java
+[*]src/main/java/com/linkage/itms/dispatch/obj/PingDiagnosticChecker.java
+[*]src/main/java/com/linkage/itms/hlj/dispatch/obj/XmlTranslate.java
+[+]src/main/java/com/linkage/itms/hlj/dispatch/obj/DownLoadByHTTPChecker4JL.java
+[+]src/main/java/com/linkage/itms/hlj/dispatch/service/DownLoadByHTTP4JL.java
+
+
+VERSION: V4.0.1.28_20170301
+DATE:2017-03-01
+author:yinlei3
+TITLE:JSDX_ITMS-REQ-20170112-WJY-001（仿真测速需求新增功能)+
+[*]src/main/java/com/linkage/itms/dispatch/service/DownLoadByHTTP.java
+[*]src/main/java/com/linkage/itms/dispatch/service/WanConnService.java
+[*]src/main/java/com/linkage/itms/dao/UserDeviceDAO.java
+[*]src/main/java/com/linkage/itms/dispatch/service/SimulationSpeedService.java
+[*]src/main/java/com/linkage/itms/dispatch/obj/BaseChecker.java
+[*]src/main/java/com/linkage/itms/dao/SimulationSpeedDao.java
+[+]src/main/java/com/linkage/itms/dispatch/obj/SpeedResultChecker.java
+[*]src/main/java/com/linkage/itms/dispatch/main/CallService.java
+[+]src/main/java/com/linkage/itms/dispatch/service/SpeedResultService.java
+
+VERSION: V4.0.1.27_20170216
+DATE:2017-02-16
+author:yinlei3
+TITLE:JSDX_ITMS-REQ-20170113-WJY-001（语音数图零配置管理新增功能)
+[+]/src/main/java/com/linkage/itms/dispatch/service/VoiceUserSetResultService.java
+[+]/src/main/java/com/linkage/itms/dispatch/obj/VoiceUserServiceChecker.java
+[+]/src/main/java/com/linkage/itms/dispatch/service/VoiceUserService.java
+[*]/src/main/java/com/linkage/itms/dao/ServUserDAO.java
+[+]/src/main/java/com/linkage/itms/dispatch/obj/VoiceUserSetResultChecker.java
+
+VERSION: V4.0.1.26_20170109
+DATE:2017-01-09
+author:chenxj6
+TITLE:XJDX-REQ-20161128-HUJG3-001【ITMS系统集团端到端相关接口需求v1.3】(需求变更)
+	[*]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/CheckCpeDataService.java
+	[*]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dao/CheckCpeDataDAO.java
+
+
+VERSION: V4.0.1.25_20170106
+DATE:2017-01-06
+author:wangyan10
+TITLE:JLDX-REQ-20161228-JIANGHAO6-001
+	[*]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/hlj/dispatch/main/JlService.java
+	[*]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/hlj/dispatch/obj/XmlTranslate.java
+
+VERSION: V4.0.1.24_20161229
+DATE:2016-12-29
+author:wangyan10
+TITLE:JLDX-REQ-20161210-JIANGHAO6-001
+	[*]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/hlj/dispatch/main/JlService.java
+	[*]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/hlj/dispatch/obj/XmlTranslate.java
+
+VERSION: V4.0.1.23_20161227
+DATE:2016-12-27
+author:fanjm
+TITLE:NMPC_REQ_20161220_0002（ITMS和综调设备版本信息查询接口变更需求 ）
+	[*]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+	[*]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/obj/QueryDeviceVersionChecker.java
+	[*]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/QueryDeviceVersion.java
+
+VERSION: V4.0.1.22_20161215
+DATE:2016-12-15
+author:fanjm
+TITLE:NXDX_ITMS-REQ-20161213-LIUGUOMIN-001（宁夏Ping测试功能接口）
+	[*]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/obj/PingDiagnosticChecker.java
+	[*]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/PingDiagnostic.java
+
+VERSION: V4.0.1.21_20161214
+DATE:2016-12-14
+author:fanjm
+TITLE:NMPC_REQ_20161209_0002（宁夏电信ITMS与端到端接口）
+	[*]/ailk-itms-ItmsService/src/main/java/com/linkage/stbms/ids/bio/GetStbInfoXJBIO.java
+	[*]/ailk-itms-ItmsService/src/main/java/com/linkage/stbms/ids/main/IdsService.java
+
+
+VERSION: V4.0.1.20_20161208
+DATE:2016-12-08
+author:fanjm
+TITLE:JSDX_ITMS-REQ-20161130-WJY-001（业务帐号查询接口)
+	[*]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+	[+]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/UpdateNetPwdService.java
+	[+]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/obj/UpdateNetPwdChecker.java
+	[*]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dao/UserDeviceDAO.java
+
+
+VERSION: V4.0.1.19_20161208
+DATE:2016-12-08
+author:fanjm
+TITLE:SDLT-REQ-2016-11-22-YUZHIJIAN-001（山东电信ITMS平台宽带更改用户密码业务接口)
+	[*]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+	[+]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/UpdateNetPwdService.java
+	[+]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/obj/UpdateNetPwdChecker.java
+	[*]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dao/UserDeviceDAO.java
+
+
+VERSION: V4.0.1.18_20161226
+DATE:2016-12-26
+author:fanjm
+code_version:7181
+TITLE:SDLT-REQ-2016-11-21-YUZHIJIAN-001（山东联通RMS平台机HGU单个用户测速接口）
+	[*]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+	[+]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/TestSpeedService.java
+	[+]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/obj/TestSpeedChecker.java
+	[*]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dao/UserDeviceDAO.java
+
+VERSION: V4.0.1.17_20161130
+DATE:2016-11-30
+author:fanjiaming
+DESC:NMPC_REQ_20161121_0001（宁夏电信ITMS与端到端接口）
+	[*]/ailk-itms-ItmsService/src/main/java/com/linkage/stbms/ids/main/IdsService.java
+	[*]/ailk-itms-ItmsService/src/main/java/com/linkage/stbms/ids/service/StbRebootService.java
+
+VERSION: V4.0.1.16_20161130
+DATE:2016-11-30
+author:wangyan10
+TITLE:JLDX-REQ-20161117-JIANGHAO6-001
+	[*]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/hlj/dispatch/main/JlService.java
+	[*]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/hlj/dispatch/obj/XmlTranslate.java
+
+VERSION: V4.0.1.15_20161130
+DATE:2016-11-30
+author:wangyan10
+TITLE:JSDX_ITMS-REQ-20161107-WJY-001（语音数图配置接口)
+	[*]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+	[+]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/VoiceMapConfiguration.java
+	[+]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/obj/VoiceMapConfigurationChecker.java
+	[+]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dao/VoiceMapConfigurationDao.java
+
+VERSION: V4.0.1.14.2_20161118
+DATE:2016-11-18
+author:fanjm
+TITLE:XJDX-REQ-20161115-HUJG3-001 (ITMS系统机顶盒零配置接口对MAC地址规范化处理需求)
+	[*]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/obj/ZeroConfigReportChecker.java
+
+
+VERSION: V4.0.1.13_20161114
+DATE:20161114
+author:wangyan
+desc:吉林电信ITMS与端到端系统接口 ,NMPC_REQ_20161027_0010
+	[+]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/nmg/dispatch/service/PasswordResetService.java
+	[+]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/nmg/dispatch/service/QueryWanStateService.java
+	[+]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/nmg/dispatch/obj/PasswordResetChecker.java
+	[+]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/nmg/dispatch/obj/QueryWanStateChecker.java
+	[*]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/nmg/dispatch/main/NmgService.java
+
+
+VERSION: V4.0.1.12_20161114
+DATE:20161114
+author:wangyan
+desc:吉林电信ITMS与端到端系统接口 ,NMPC_REQ_20161027_0010
+	[+]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/hlj/dispatch/main/JlService.java
+	[+]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/hlj/dispatch/obj/XmlTranslate.java
+
+
+VERSION: V4.0.1.11_20161114
+DATE:20161114
+author:chenxj6
+desc:XJDX-REQ-20161103-HUJG3-001【ITMS系统集团端到端相关接口需求v1.4】
+	[*]/ailk-itms-ItmsService/src/main/java/com/linkage/stbms/ids/dao/UserStbInfoDAO.java
+	[*]/ailk-itms-ItmsService/src/main/java/com/linkage/stbms/ids/main/IdsService.java
+	[+]/ailk-itms-ItmsService/src/main/java/com/linkage/stbms/ids/service/GetStbOrderStatusService.java
+	[+]/ailk-itms-ItmsService/src/main/java/com/linkage/stbms/ids/util/GetStbOrderStatusChecker.java
+
+
+VERSION: V4.0.1.10_20161111
+DATE:20161111
+author:chenxj6
+desc:XJDX-REQ-20161101-HUJG3-001【ITMS系统集团端到端相关接口需求v1.3】
+	[+]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dao/CheckCpeDataDAO.java
+	[*]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+	[+]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/obj/CheckCpeDataChecker.java
+	[+]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/CheckCpeDataService.java
+
+
+VERSION: V4.0.1.9_20161031
+DATE:20161031
+author:chenxj6
+desc:JXDX-ITMS-REQ-20161012-LINBX-001(预检预修HTTP下载宽带上网测速对外接口需求)
+	[*]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dao/DeviceInfoDAO.java
+	[*]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+	[+]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/obj/DownLoadByHTTPSpeadChecker4JX.java
+	[+]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/DownLoadByHTTPSpeadService4JX.java
+
+
+VERSION: V4.0.1.8_20161014
+DATE:20161014
+author:chenxj6
+desc:NXDX_ITMS-REQ-20161011-LIUGUOMIN-001（宁夏电信家庭网关端到端）
+	[*]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dao/ChangVlanParamDAO.java
+	[*]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dao/DeviceConfigDAO.java
+	[*]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dao/UserDeviceDAO.java
+	[*]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+	[*]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/obj/BaseChecker.java
+	[*]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/obj/BaseQueryChecker.java
+	[+]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/obj/ChangVlanParamChecker4NX.java
+	[+]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/obj/DevConfigChecker4NX.java
+	[*]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/obj/DevOnlineChecker.java
+	[*]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/obj/DevRebootChecker.java
+	[*]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/obj/PonInfoChecker.java
+	[*]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/obj/QueryDeviceTempChecker.java
+	[*]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/obj/QueryLanStateChecker.java
+	[+]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/ChangVlanParamService4NX.java
+	[*]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/DevOnlineService.java
+	[*]/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/PonInfoService.java
+
+VERSION: V4.0.1.7_20161008
+DATE:20161008
+author:chenxj6
+desc:XJDX-REQ-20160922-HUJG3-001【ITMS系统集团端到端相关接口需求v1.2】
+	[*]/src/main/java/com/linkage/itms/dao/DeviceInfoDAO.java
+	[*]/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+	[+]/src/main/java/com/linkage/itms/dispatch/obj/GetNetAccountChecker.java
+	[*]/src/main/java/com/linkage/itms/dispatch/obj/PingDiagnosticChecker.java
+	[*]/src/main/java/com/linkage/itms/dispatch/obj/UpgradeToStandardVersionChecker.java
+	[+]/src/main/java/com/linkage/itms/dispatch/service/GetNetAccountService.java
+	[*]/src/main/java/com/linkage/itms/dispatch/service/PingDiagnostic.java
+	[+]/src/main/java/com/linkage/stbms/ids/bio/GetStbInfoXJBIO.java
+	[*]/src/main/java/com/linkage/stbms/ids/dao/UserStbInfoDAO.java
+	[*]/src/main/java/com/linkage/stbms/ids/main/IdsService.java
+	[+]/src/main/java/com/linkage/stbms/ids/service/GetStbAccountService.java
+	[+]/src/main/java/com/linkage/stbms/ids/service/GetStbInfo4xjService.java
+	[*]/src/main/java/com/linkage/stbms/ids/service/GetStbIpService.java
+	[+]/src/main/java/com/linkage/stbms/ids/util/GetStbAccountChecker.java
+	[+]/src/main/java/com/linkage/stbms/ids/util/GetStbInfoXJChecker.java
+
+VERSION: V4.0.1.6_20161017
+DATE:20161017
+author:yinlei3
+desc:JSDX_ITMS-BUG-20161009-WJY-001（对外服务器接口、变更上网方式WEB，关闭路由通知radius)
+	[*]/src/main/java/com/linkage/itms/init/InitBIO.java
+	[*]/src/main/java/com/linkage/itms/Global.java
+	[*]/src/main/java/com/linkage/itms/dispatch/service/RoutToBridegServiceForJs.java
+	[*]/src/main/webapp/conf/ItmsService_cfg.xml
+
+
+VERSION: V4.0.1.5_20160930
+DATE:20160930
+author:wangyan
+desc:HLJDX_HRB-REQ-20160902-JIALEI-002【ITMS与判障系统接口HTTP下载业务质量测试功能开发】
+	[+]/src/main/java/com/linkage/itms/hlj/dispatch/service/DownLoadByHTTP.java
+	[+]/src/main/java/com/linkage/itms/hlj/dispatch/obj/DownLoadByHTTPChecker.java
+	[*]/src/main/java/com/linkage/itms/hlj/dispatch/main/HljService.java
+
+VERSION: V4.0.1.4_20160918
+DATE:20160918
+author:wangyan
+desc:JXDX-ITMS-REQ-20160909-WUWF-001(ITMS对外接口业务状态查询增加设备序列号用户类型）
+	[*]/src/main/java/com/linkage/itms/dispatch/service/BssSheetService.java
+	[*]/src/main/java/com/linkage/itms/dispatch/obj/BssSheetChecker.java
+	[*]/src/main/java/com/linkage/itms/dao/UserDeviceDAO.java
+
+VERSION: V4.0.1.3_20160905
+DATE:20160905
+author:yinlei3
+desc:JXDX-ITMS-REQ-20160819-LINBX-002(ITMS提供串码导入对外接口需求）
+	[*]/src/main/java/com/linkage/itms/dao/CityDAO.java
+	[*]/src/main/java/com/linkage/itms/dao/UserDeviceDAO.java
+	[*]/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+	[+]/src/main/java/com/linkage/itms/dispatch/obj/AddDevSnParamChecker.java
+	[+]/src/main/java/com/linkage/itms/dispatch/service/AddDevSnParamService.java
+
+VERSION: V4.0.1.2_20160901
+DATE:20160901
+author:chenxj6
+desc:XJDX-REQ-20160819-HUJG3-001【ITMS系统集团端到端相关接口需求】
+	[+]/src/main/java/com/linkage/itms/dao/CheckITVDataDAO.java
+	[+]/src/main/java/com/linkage/itms/dao/QueryIsMulticastVlanDAO.java
+	[*]/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+	[+]/src/main/java/com/linkage/itms/dispatch/obj/CheckITVDataChecker.java
+	[+]/src/main/java/com/linkage/itms/dispatch/obj/QueryIsMulticastVlanChecker.java
+	[+]/src/main/java/com/linkage/itms/dispatch/service/CheckITVDataService.java
+	[+]/src/main/java/com/linkage/itms/dispatch/service/QueryIsMulticastVlanService.java
+	[*]/src/main/java/com/linkage/stbms/dao/UserDeviceDAO.java
+	[*]/src/main/java/com/linkage/stbms/ids/dao/UserStbInfoDAO.java
+	[*]/src/main/java/com/linkage/stbms/ids/main/IdsService.java
+	[+]/src/main/java/com/linkage/stbms/ids/service/GetStbIpService.java
+	[*]/src/main/java/com/linkage/stbms/ids/service/StbPingService.java
+	[+]/src/main/java/com/linkage/stbms/ids/util/GetStbIpChecker.java
+	[+]/src/main/java/com/linkage/stbms/ids/util/StbPingCheckerXJ.java
+	[*]/src/main/java/com/linkage/stbms/itv/main/Global.java
+
+
+VERSION: V4.0.1.1_20160819
+DATE:20160819
+author:chenxj6
+desc:43039742AHDX_ITMS-REQ-20160816YQW-002（设备信息查询接口新增是否支持200M信息）
+	[*]/src/main/java/com/linkage/itms/dao/QueryDeviceVersionDAO.java
+	[*]/src/main/java/com/linkage/itms/dispatch/obj/QuerySheetDataChecker.java
+	[*]/src/main/java/com/linkage/itms/dispatch/service/QuerySheetDataService.java
+
+VERSION: V4.0.1.0_20160818
+DATE:20160818
+author:yinlei3
+desc:JSDX_ITMS-REQ-20160810-SHUJIE-001(仿真测速取值变更需求)
+	[*]/src/main/java/com/linkage/itms/dispatch/obj/DownLoadByHTTPChecker.java
+	[*]/src/main/java/com/linkage/itms/dispatch/service/DownLoadByHTTP.java
+
+VERSION: V4.0.0.99_20160817
+DATE:20160817
+author:wangyan
+TITLE:HLJDX_HRB-REQ-20160715-JIALEI-003(黑龙江端对端工程)
+[+]/src/main/java/com/linkage/itms/hlj/dispatch/dao/BindInfoDAO.java
+[+]/src/main/java/com/linkage/itms/hlj/dispatch/dao/DevResetDAO.java
+[+]/src/main/java/com/linkage/itms/hlj/dispatch/dao/ModifyWanTypeDAO.java
+[+]/src/main/java/com/linkage/itms/hlj/dispatch/dao/QueryDeviceIdDAO.java
+[+]/src/main/java/com/linkage/itms/hlj/dispatch/dao/QueryDeviceVersionDAO.java
+[+]/src/main/java/com/linkage/itms/hlj/dispatch/dao/QueryNetDAO.java
+[+]/src/main/java/com/linkage/itms/hlj/dispatch/dao/QueryPerformanceDAO.java
+[+]/src/main/java/com/linkage/itms/hlj/dispatch/dao/ServiceDoneFailDAO.java
+[+]/src/main/java/com/linkage/itms/hlj/dispatch/dao/SuperPwdDAO.java
+[+]/src/main/java/com/linkage/itms/hlj/dispatch/main/HljService.java
+[+]/src/main/java/com/linkage/itms/hlj/dispatch/obj/BindInfoChecker.java
+[+]/src/main/java/com/linkage/itms/hlj/dispatch/obj/DevOnlineChecker.java
+[+]/src/main/java/com/linkage/itms/hlj/dispatch/obj/DevRebootChecker.java
+[+]/src/main/java/com/linkage/itms/hlj/dispatch/obj/DevResetChecker.java
+[+]/src/main/java/com/linkage/itms/hlj/dispatch/obj/HljBaseChecker.java
+[+]/src/main/java/com/linkage/itms/hlj/dispatch/obj/HljStream.java
+[+]/src/main/java/com/linkage/itms/hlj/dispatch/obj/ModifyWanTypeChecker.java
+[+]/src/main/java/com/linkage/itms/hlj/dispatch/obj/PasswordResetChecker.java
+[+]/src/main/java/com/linkage/itms/hlj/dispatch/obj/PingDiagnosticChecker.java
+[+]/src/main/java/com/linkage/itms/hlj/dispatch/obj/QueryDeviceVersionChecker.java
+[+]/src/main/java/com/linkage/itms/hlj/dispatch/obj/QueryLanStateChecker.java
+[+]/src/main/java/com/linkage/itms/hlj/dispatch/obj/QueryNetChecker.java
+[+]/src/main/java/com/linkage/itms/hlj/dispatch/obj/QueryPerformanceChecker.java
+[+]/src/main/java/com/linkage/itms/hlj/dispatch/obj/QuerySheetDataChecker.java
+[+]/src/main/java/com/linkage/itms/hlj/dispatch/obj/QuerySuperPwdChecker.java
+[+]/src/main/java/com/linkage/itms/hlj/dispatch/obj/QueryWlanStateChecker.java
+[+]/src/main/java/com/linkage/itms/hlj/dispatch/obj/ReleaseByIpChecker.java
+[+]/src/main/java/com/linkage/itms/hlj/dispatch/obj/ServiceDoneFailChecker.java
+[+]/src/main/java/com/linkage/itms/hlj/dispatch/obj/ServiceHandle.java
+[+]/src/main/java/com/linkage/itms/hlj/dispatch/service/*
+
+VERSION: V4.0.0.98_20160816
+DATE:20160816
+author:chenxj6
+TITLE:JSDX_ITMS-REQ-20160811-SHUJIE-001(设备配置查询接口支持多宽带的展示)
+[*]/src/main/java/com/linkage/itms/dispatch/obj/DevConfigChecker.java
+
+VERSION: V4.0.0.97_20160728
+DATE:20160810
+author:yinlei3
+desc:内蒙古预检预修个性化定制6个性能参数
+		[*]/src/main/java/com/linkage/itms/ids/util/IdsUtil.java
+
+VERSION: V4.0.0.96_20160728
+DATE:20160728
+author:贾方浩
+TITLE:JXDX-ITV-REQ-20160708-WUWF-001(机顶盒零配置爱运维APP扫MAC接口业务开通需求)
+[*]/src/main/java/com/linkage/stbms/ids/dao/UserChangeStbDAO.java
+[*]/src/main/java/com/linkage/stbms/ids/service/UserChangeStbService.java
+[*]/src/main/java/com/linkage/stbms/ids/util/BaseChecker.java
+[*]/src/main/java/com/linkage/stbms/ids/util/UserChangeStbChecker.java
+VERSION: V4.0.0.95_20160718
+DATE:20160718
+author:wangyan
+TITLE:JXDX-ITV-REQ-20160712-WUWF-001(ITV终端管理平台对外接口新增零配结果查询接口需求)
+[*]/src/main/java/com/linkage/stbms/ids/main/IdsService.java
+[+]/src/main/java/com/linkage/stbms/ids/service/GetStbConfigResultService.java
+[+]/src/main/java/com/linkage/stbms/ids/util/GetStbConfigResultChecker.java
+[+]/src/main/java/com/linkage/stbms/ids/dao/GetStbConfigResultDAO.java
+VERSION: V4.0.0.94_20160715
+DATE:20160715
+author:wangyan
+TITLE:JXDX-ITMS-REQ-20160708-LINBX-002(ITMS工单接口修改ONU的VLANID接口需求)
+[*]/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+[+]/src/main/java/com/linkage/itms/dao/ChangVlanParamDAO.java
+[+]/src/main/java/com/linkage/itms/dispatch/obj/ChangVlanParamChecker.java
+[+]/src/main/java/com/linkage/itms/dispatch/service/ChangVlanParamService.java
+VERSION: V4.0.0.93_20160706
+DATE:20160706
+author:wangyan
+TITLE:JXDX-ITMS-REQ-20160702-LINBX-001(ITMS对外接口业务状态查询增加VLANID字段需求）
+[*]/src/main/java/com/linkage/itms/dao/ServUserDAO.java
+[*]/src/main/java/com/linkage/itms/dispatch/obj/BssSheetChecker.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/BssSheetService.java
+VERSION: V4.0.0.92_20160706
+DATE:20160706
+author:yinlei3
+TITLE:JXDX-ITMS-REQ-20160628-WUWF-001(ITMS预检预修新测速单台页面整改需求)
+[*]/src/main/java/com/linkage/itms/dispatch/obj/DownLoadByHTTPChecker.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/DownLoadByHTTP.java
+
+VERSION: V4.0.0.91_20160704
+DATE:20160704
+author:jiafh
+desc:JXDX-ITV-DEBUG-20160517-WUWF-001(ITV终端管理平台功能优化及BUG修复)
+[+]/src/main/java/com/linkage/stbms/pic/service/ZeroConfService.java
+
+VERSION: V4.0.0.90_20160704
+DATE:20160704
+author:jiafh
+desc:JXDX-ITV-REQ-20160520-WUWF-001(机顶盒零配置爱运维APP扫MAC接口业务开通需求）
+[+]/src/main/java/com/linkage/stbms/ids/dao/UserChangeStbDAO.java
+[+]/src/main/java/com/linkage/stbms/pic/service/ZeroConfService.java
+
+VERSION: V4.0.0.89_20160701
+DATE:20160701
+author:wangyan
+DESC:SDLT-REQ-2016-06-23-YUZHIJIAN-001（山东联通电信ITMS平台工单状态查询接口）
+[+]/src/main/java/com/linkage/itms/dispatch/service/QueryLoidStatusService.java
+[+]/src/main/java/com/linkage/itms/dispatch/obj/QueryLoidStatusChecker.java
+[+]/src/main/java/com/linkage/itms/dao/QueryLoidStatusDAO.java
+[*]/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+
+VERSION: V4.0.0.88_20160630
+DATE:2016-06-30
+author:yinlei3
+TITLE:AHDX_ITMS-REQ-201606023YQW-001（HTTP下载业务质量检测规则变更）
+[+]/src/main/java/com/linkage/itms/dispatch/service/DownLoadByHTTPSpeadService.java
+[+]/src/main/java/com/linkage/itms/dispatch/obj/DownLoadByHTTPSpeadChecker.java
+[+]/src/main/java/com/linkage/itms/ids/obj/ProccesDataThread.java
+[*]/src/main/java/com/linkage/itms/Global.java
+[*]/src/main/java/com/linkage/init/InitBIO.java
+[*]/src/main/java/com/linkage/itms/dispatch/obj/DownLoadByHTTPChecker.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/DownLoadByHTTP.java
+[*]/src/main/java/com/linkage/itms/dao/DeviceInfoDAO.java
+[*]/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+[*]/src/main/webapp/conf/ItmsService_cfg.xml
+
+VERSION: V4.0.0.87_20160614
+DATE:20160614
+author:yinlei3
+DESC:NMGDX_HHHT-REQ-20160530-JIALEI-003(宽带和IPTV端到端判障系统对集成共享平台的接口规范V1.0-20160528（ITMS与判障系统）)
+[*]/src/main/java/com/linkage/itms/dao/DeviceConfigDAO.java
+[*]/src/main/java/com/linkage/itms/dao/RecordLogDAO.java
+[*]/src/main/java/com/linkage/itms/dao/UserDeviceDAO.java
+[+]/src/main/java/com/linkage/itms/nmg/dispatch/main/NmgService.java
+[+]/src/main/java/com/linkage/itms/nmg/dispatch/obj/NmgBaseChecker.java
+[+]/src/main/java/com/linkage/itms/nmg/dispatch/obj/PingDiagnosticChecker.java
+[+]/src/main/java/com/linkage/itms/nmg/dispatch/obj/QueryPerformanceChecker.java
+[+]/src/main/java/com/linkage/itms/nmg/dispatch/obj/QuerySheetDataChecker.java
+[+]/src/main/java/com/linkage/itms/nmg/dispatch/service/PingDiagnostic.java
+[+]/src/main/java/com/linkage/itms/nmg/dispatch/service/QueryPerformanceService.java
+[+]/src/main/java/com/linkage/itms/nmg/dispatch/service/QuerySheetDataService.java
+
+
+VERSION: V4.0.0.86_20160614
+DATE:20160614
+author:wangyan
+DESC:JXDX-ITV-REQ-20160528-WUWF-001(ITV终端管理平台对外接口-2个接口修改)
+[*]/src/main/java/com/linkage/stbms/ids/bio/GetStbInfoBIO.java
+[*]/src/main/java/com/linkage/stbms/ids/dao/UserStbInfoDAO.java
+[*]/src/main/java/com/linkage/stbms/ids/service/GetStbOnlineStatusService.java
+[*]/src/main/java/com/linkage/stbms/ids/util/GetStbOnlineStatusChecker.java
+
+VERSION: V4.0.0.85_20160601
+DATE:20160601
+author:liyl10
+DESC:HLJDX_HRB-REQ-20160524-JIALEI-001（黑龙江电信ITMS系统与服开系统工单接口升级改造）
+[*]/src/main/java/com/linkage/itms/os/bio/OpenServiceBIO.java
+[*]/src/main/java/com/linkage/itms/os/obj/RecieveSheetOBJ.java
+
+VERSION: V4.0.0.84_20160530
+DATE:20160530
+author:yinlei3
+DESC:JXDX-ITMS-REQ-20160511-LINBX-001(ITMS串码管控日志查询功能接口)
+[*]/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+[*]/src/main/java/com/linkage/itms/dao/UserDeviceDAO.java
+[+]/src/main/java/com/linkage/itms/dispatch/obj/RegLogInfoChecker.java
+[+]/src/main/java/com/linkage/itms/dispatch/service/RegLogInfoService.java
+
+VERSION: V4.0.0.83_20160518
+DATE:20160518
+author:yinlei3
+DESC:JSDX_ITMS-REQ-20160510-WJY-001（ITMS与综调接口改造)
+[+]/src/main/java/com/linkage/itms/dispatch/service/BridgeToRoutServiceForJs.java
+[+]/src/main/java/com/linkage/itms/dispatch/service/RoutToBridgeServiceForJs.java
+[*]/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+[*]/src/main/java/com/linkage/itms/dao/UserDeviceDAO.java
+[*]/src/main/java/com/linkage/itms/dispatch/obj/BridgeToRoutChecker.java
+[*]/src/main/java/com/linkage/itms/dispatch/obj/RoutToBridgeChecker.java
+
+VERSION: V4.0.0.82_20160510
+DATE:20160510
+author:xiangzl
+DESC:SDCT-REQ-2016-04-25-liujun-001 （山东电信ITMS系统需要开发PING诊断功能以及OSS-功能前置需要扩展相应的接口）
+[*]src/main/java/com/linkage/itms/dispatch/obj/WanConnChecker.java
+[*]src/main/java/com/linkage/itms/dispatch/service/WanConnService.java
+
+
+VERSION: V4.0.0.82_20160504
+DATE:20160504
+author:xiangzl
+DESC:JXDX-ITMS-REQ-20160407-LINBX-001(ITMS针对穿测的工单反馈时间调整优化)
+[*]/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/obj/DecayServInfoCheck.java
+[*]/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/DecayServInfoService.java
+
+VERSION: V4.0.0.83_20160503
+DATE:20160503
+author:yinlei3
+DESC:JSDX_ITMS-BUG-20160429-WJY-001（ITMS与综调绑定失败查询接口需求变更)
+[*]/src/main/java/com/linkage/itms/dao/BindFailedDao.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/BindFailedService.java
+
+VERSION: V4.0.0.82_20160428
+DATE:20160428
+author:chensq5
+DESC:JXDX-ITMS-REQ-20160408-WUWF-001(ITMS平台对外接口语音需求)
+[*]main/java/com/linkage/itms/dispatch/main/CallService.java
+[+]main/java/com/linkage/itms/dao/QueryVOIPWanInfoDao.java
+[+]main/java/com/linkage/itms/dispatch/obj/QueryVoiceProfileChecker.java
+[+]main/java/com/linkage/itms/dispatch/obj/QueryVOIPWanInfoChecker.java
+[+]main/java/com/linkage/itms/dispatch/obj/SetVoiceProfileChecker.java
+[+]main/java/com/linkage/itms/dispatch/service/QueryVoiceProfileService.java
+[+]main/java/com/linkage/itms/dispatch/service/QueryVOIPWanInfoService.java
+[+]main/java/com/linkage/itms/dispatch/service/SetVoiceProfileService.java
+
+
+VERSION: V4.0.0.82_20160331
+DATE:20160331
+author:chensq5
+DESC:安徽itv机顶盒零配置mac地址和业务账号绑定关系接口
+[*]/src/main/java/com/linkage/stbms/ids/dao/UserChangeStbDAO.java
+[*]/src/main/java/com/linkage/stbms/ids/main/IdsService.java
+[*]/src/main/java/com/linkage/stbms/ids/service/SetStbBindSNService.java
+[*]/src/main/java/com/linkage/stbms/ids/util/SetStbBindSNChecker.java
+
+
+VERSION: V4.0.0.27_20160330
+DATE:20160330
+author：yinlei3
+DESC:JXDX-ITMS-REQ-20160323-WUWF-001(ITMS平台对外接口增加查询设备是否管控需求)
+	[*]/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+	[+]/src/main/java/com/linkage/itms/dispatch/obj/QueryDeviceControlChecker.java
+	[*]/src/main/java/com/linkage/itms/dao/UserDeviceDAO.java
+	[+]/src/main/java/com/linkage/itms/dispatch/service/QueryDeviceControlService.java
+
+VERSION: V4.0.0.26_20160325
+DATE:20160325
+author：jiafh
+DESC:ITMS与ITV网管机顶盒上报MAC地址功能优化
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/itv/dao/GetItvAccountDAO
+/src/main/webapp/conf/proxool.xml
+
+VERSION: V4.0.0.25_20160324
+DATE:20160324
+author：xiangzl
+DESC:新疆语音业务仿真，语音业务质量监测接口开发
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dao/DeviceInfoDAO.java
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/obj/VoiceQualityChecker.java
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/VoiceDial.java
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/VoiceDial4ctc.java
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/VoiceQuality.java
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/os/obj/RecieveSheetOBJ.java
+
+VERSION: V4.0.0.24_20160126
+DATE:20160126
+author：yinlei3
+DESC:JSDX_ITMS-REQ-20160122-WJY-001（关于综调与ITMS系统终端序列号查询接口回参变更需求）
+[*]/src/main/java/com/linkage/itms/dispatch/obj/QueryDevSnChecker.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/QueryDevSnService.java
+
+VERSION: V4.0.0.23_20160119
+DATE:20160119
+author：chensq5
+DESC:JSDX_ITMS-REQ-20160114-WJY-001（机顶盒上报MAC地址存入报表库及相关查询接口查询报表库数据)
+[*]src/main/java/com/linkage/itms/itv/dao/GetItvAccountDAO.java
+
+
+VERSION: V4.0.0.23_20160105
+DATE:20160105
+author：chensq5
+DESC:JXDX-ITMS-REQ-20151223-WUWF-001(ITMS平台对外接口需求)
+[*]src/main/java/com/linkage/itms/dao/DeviceConfigDAO.java
+[*]src/main/java/com/linkage/itms/dao/QueryDevDAO.java
+[*]src/main/java/com/linkage/itms/dispatch/main/CallService.java
+[*]src/main/java/com/linkage/itms/dispatch/obj/DevInfoGatherCheck.java
+[*]src/main/java/com/linkage/itms/dispatch/obj/QueryWiFiDeviceMACChecker.java
+[*]src/main/java/com/linkage/itms/dispatch/service/DevInfoGatherService.java
+[*]src/main/java/com/linkage/itms/obj/ParameValueOBJ.java
+[*]src/main/java/com/linkage/itms/dispatch/obj/ReleaseChecker.java
+[*]src/main/java/com/linkage/itms/dao/UserDeviceDAO.java
+[+]src/main/java/com/linkage/itms/dao/UserInfoDAO.java
+[+]src/main/java/com/linkage/itms/dispatch/obj/ModifyChannelChecker.java
+[+]src/main/java/com/linkage/itms/dispatch/service/ModifyChannelService.java
+[+]src/main/java/com/linkage/itms/dispatch/service/QueryJXDeviceMACService.java
+[+]src/main/java/com/linkage/itms/dispatch/obj/QueryJXWiFiMACChecker.java
+[+]src/main/java/com/linkage/itms/dispatch/service/JXReleaseService.java
+
+
+VERSION: V4.0.0.23_20160104
+DATE:20160104
+author：liyl10
+DESC:SDLT-REQ-2015-12-18-YUZHIJIAN-001(山东联通RMS平台与端到端故障诊断接口)
+[*]/src/main/java/com/linkage/stbms/ids/main/IdsService.java
+
+VERSION: V4.0.0.22_20151229
+DATE:20151229
+author：chensq5
+DESC:XJDX-REQ-20151028-HUJG3-001【ITMS系统自动零配置需求】
+[*]src/main/java/com/linkage/init/InitBIO.java
+[*]src/main/java/com/linkage/itms/cao/ResourceBindCorba.java
+[*]src/main/java/com/linkage/itms/dao/DeviceInfoDAO.java
+[*]src/main/java/com/linkage/itms/dao/InitDAO.java
+[*]src/main/java/com/linkage/itms/dispatch/main/CallService.java
+[*]src/main/java/com/linkage/itms/dispatch/obj/BaseChecker.java
+[*]src/main/java/com/linkage/itms/dispatch/service/ServiceHandle.java
+[*]src/main/java/com/linkage/itms/Global.java
+[*]src/main/java/com/linkage/stbms/dao/InitDAO.java
+[*]src/main/java/com/linkage/stbms/ids/service/UnbindIptvStbMacService.java
+[*]src/main/java/com/linkage/stbms/itv/main/Global.java
+[+]src/main/java/com/linkage/stbms/cao/ResourceBindCorba.java
+[+]src/main/java/com/linkage/itms/dispatch/obj/ZeroConfigReportChecker.java
+[+]src/main/java/com/linkage/itms/dispatch/service/ZeroConfigReportService.java
+[+]src/main/java/com/linkage/itms/dao/ZeroConfigReportDAO.java
+
+
+VERSION: V4.0.0.22_20151217
+DATE:2015-12-17
+author：yinlei3
+DESC:SDLT-REQ-2015-12-11-YUZHIJIAN-001(山东联通RMS平台与端到端故障诊断接口）
+[+]/src/main/java/com/linkage/stbms/ids/dao/GetStbBaseInfoDAO.java
+[+]/src/main/java/com/linkage/stbms/ids/dao/GetStbConfInfoDAO.java
+[+]/src/main/java/com/linkage/stbms/ids/dao/GetStbDeviceInfoDAO.java
+[*]/src/main/java/com/linkage/stbms/ids/main/IdsService.java
+[+]/src/main/java/com/linkage/stbms/ids/service/GetStbBaseInfoService.java
+[+]/src/main/java/com/linkage/stbms/ids/service/GetStbConfInfoService.java
+[+]/src/main/java/com/linkage/stbms/ids/service/GetStbDeviceInfoService.java
+[+]/src/main/java/com/linkage/stbms/ids/util/GetStbBaseInfoChecker.java
+[+]/src/main/java/com/linkage/stbms/ids/util/GetStbConfInfoCheck.java
+[+]/src/main/java/com/linkage/stbms/ids/util/GetStbDeviceInfoCheck.java
+
+VERSION: V4.0.0.21_20151020
+DATE:2015-10-20
+author：yinlei3
+DESC:JXDX-ITV-REQ-20151012-LINBX-001(机顶盒更换业务人工开通流程需求增加解绑操作）
+[*]/src/main/java/com/linkage/stbms/pic/service/ZeroConfService.java
+
+
+VERSION: V4.0.0.20_20151020
+DATE:2015-10-20
+author：chensq5
+DESC:JSDX_ITMS-REQ-20151014-SHUJIE-001(宽带路由改桥接口)+
+[*]/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+[+]/src/main/java/com/linkage/itms/dispatch/service/RoutToBridgeService.java
+[+]/src/main/java/com/linkage/itms/dispatch/obj/RoutToBridgeChecker.java
+[+]/src/main/java/com/linkage/itms/dao/RoutToBridgeDAO.java
+
+
+VERSION: V4.0.0.19_20151012
+DATE:2015-10-12
+author：yinlei3
+DESC:JXDX-ITMS-REQ-20150918-WUWF-001(ITMS平台业务下发状态过滤需求)+
+[*]/src/main/java/com/linkage/itms/dispatch/service/DevOnlineService.java
+[*]/src/main/java/com/linkage/init/InitBIO.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/DevInfoGatherService.java
+[+]/src/main/java/com/linkage/commom/util/CheckStrategyUtil.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/ServiceDoneService.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/DevRebootService.java
+[*]/src/main/webapp/conf/ItmsService_cfg.xml
+[*]/src/main/java/com/linkage/itms/dispatch/service/BridgeToRoutService4JX.java
+[*]/src/main/java/com/linkage/itms/Global.java
+[*]/src/main/java/com/linkage/itms/dispatch/service/DevResetService.java
+
+VERSION: V4.0.0.18_20150929
+DATE:2015-09-29
+author：zhongcc
+DESC:NMPC_REQ_20150914_0007(ITMS系统上网模式查询接口需求)
+[*]/src/main/java/com/linkage/itms/dao/UserDeviceDAO.java
+[*]/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+[+]/src/main/java/com/linkage/itms/dispatch/obj/QueryWanTypeChecker.java
+[+]/src/main/java/com/linkage/itms/dispatch/service/QueryWanTypeService.java
+
+
+VERSION: V4.0.0.17_20150928
+DATE:2015-09-28
+author：yinlei3
+DESC:JSDX_ITMS-REQ-20150911-ZJQ-001（+与OSS关于修改用户终端规格信息的接口）
+[*]/src/main/java/com/linkage/itms/dao/UserDeviceDAO.java
+[*]/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+[+]/src/main/java/com/linkage/itms/dispatch/obj/MoSpecInfoChecker.java
+[+]/src/main/java/com/linkage/itms/dispatch/service/MoSpecInfoService.java
+
+VERSION: V4.0.0.16_20150917
+DATE:2015-09-17
+author：liyl10
+DESC:JXDX-ITV-REQ-20150813-LINBX-001(零配置增加手工注册流程更新需求)
+[*]/src/main/java/com/linkage/stbms/itv/main/StbService.java
+[*]/src/main/java/com/linkage/stbms/pic/service/ZeroConfService.java
+[*]/src/main/java/com/linkage/stbms/pic/service/ZeroConfChecker.java
+[*]/src/main/java/com/linkage/stbms/pic/dao/ZeroConfDao.java
+[*]/src/main/java/com/linkage/stbms/pic/bio/ZeroConfBio.java
+[*]/src/main/java/com/linkage/stbms/pic/object/StbDeviceOBJ.java
+
+VERSION: V4.0.0.15_20150915
+DATE:2015-09-15
+author:yinlei3
+DESC:JXDX-ITMS-REQ-20150909-WUWF-001(ITMS对外接口优化-多记录情况选择机制优化)
+[*]/src/main/java/com/linkage/itms/dao/UserDeviceDAO.java
+
+VERSION: V4.0.0.14_20150914
+DATE:2015-09-14
+author:yinlei3
+DESC:JXDX-ITV-REQ-20150826-LINBX-001(机顶盒更换业务人工开通需求）
+[+]/src/main/java/com/linkage/stbms/ids/dao/UserChangeStbDAO.java
+[*]/src/main/java/com/linkage/stbms/ids/main/IdsService.java
+[+]/src/main/java/com/linkage/stbms/ids/obj/ResultBean.java
+[+]/src/main/java/com/linkage/stbms/ids/service/UserChangeStbService.java
+[*]/src/main/webapp/conf/ItmsService_cfg.xml
+[+]/src/main/java/com/linkage/stbms/ids/util/UserChangeStbChecker.java
+
+VERSION: V4.0.0.13_20150831
+DATE:2015-08-31
+author:yinlei3
+DESC:StbService代码移植
+[+]/src/main/java/com/linkage/commom/util/StaticTypeCommon.java
+[*]/src/main/java/com/linkage/init/InitBIO.java
+[+]/src/main/java/com/linkage/stbms/cao/ACSCorba.java
+[+]/src/main/java/com/linkage/stbms/cao/DevOnlineCAO.java
+[+]/src/main/java/com/linkage/stbms/cao/DevReset.java
+[+]/src/main/java/com/linkage/stbms/cao/DeviceGatherCAO.java
+[+]/src/main/java/com/linkage/stbms/cao/ParameValueOBJ.java
+[+]/src/main/java/com/linkage/stbms/cao/PingCAO.java
+[+]/src/main/java/com/linkage/stbms/cao/ResourceBindCorba.java
+[+]/src/main/java/com/linkage/stbms/cao/SuperGatherCorba.java
+[+]/src/main/java/com/linkage/stbms/dao/GatherInfoDAO.java
+[+]/src/main/java/com/linkage/stbms/dao/InitDAO.java
+[+]/src/main/java/com/linkage/stbms/dao/RecordLogDAO.java
+[+]/src/main/java/com/linkage/stbms/dao/UserDeviceDAO.java
+[+]/src/main/java/com/linkage/stbms/ids/bio/GetStbInfoBIO.java
+[+]/src/main/java/com/linkage/stbms/ids/bio/StbRebootBIO.java
+[+]/src/main/java/com/linkage/stbms/ids/bio/StbTraceRouteBIO.java
+[+]/src/main/java/com/linkage/stbms/ids/dao/SuperDAO.java
+[+]/src/main/java/com/linkage/stbms/ids/dao/UnbindIptvStbMacServiceDAO.java
+[+]/src/main/java/com/linkage/stbms/ids/dao/UserStbInfoDAO.java
+[+]/src/main/java/com/linkage/stbms/ids/main/IdsService.java
+[+]/src/main/java/com/linkage/stbms/ids/obj/StrategyOBJ.java
+[+]/src/main/java/com/linkage/stbms/ids/obj/SysConstant.java
+[+]/src/main/java/com/linkage/stbms/ids/service/GetStbInfoService.java
+[+]/src/main/java/com/linkage/stbms/ids/service/GetStbOnlineStatusService.java
+[+]/src/main/java/com/linkage/stbms/ids/service/StbPingService.java
+[+]/src/main/java/com/linkage/stbms/ids/service/StbRebootService.java
+[+]/src/main/java/com/linkage/stbms/ids/service/StbResetService.java
+[+]/src/main/java/com/linkage/stbms/ids/service/StbTraceRouteService.java
+[+]/src/main/java/com/linkage/stbms/ids/service/UnbindIptvStbMacService.java
+[+]/src/main/java/com/linkage/stbms/ids/util/BaseChecker.java
+[+]/src/main/java/com/linkage/stbms/ids/util/CommonParamUtil.java
+[+]/src/main/java/com/linkage/stbms/ids/util/CommonUtil.java
+[+]/src/main/java/com/linkage/stbms/ids/util/GetStbInfoChecker.java
+[+]/src/main/java/com/linkage/stbms/ids/util/GetStbOnlineStatusChecker.java
+[+]/src/main/java/com/linkage/stbms/ids/util/PreProcessCorba.java
+[+]/src/main/java/com/linkage/stbms/ids/util/StbPingChecker.java
+[+]/src/main/java/com/linkage/stbms/ids/util/StbRebootChecker.java
+[+]/src/main/java/com/linkage/stbms/ids/util/StbResetChecker.java
+[+]/src/main/java/com/linkage/stbms/ids/util/StbTraceRouteChecker.java
+[+]/src/main/java/com/linkage/stbms/ids/util/UnbindIptvStbMacChecker.java
+[+]/src/main/java/com/linkage/stbms/init/InitBIO.java
+[+]/src/main/java/com/linkage/stbms/init/InitServlet.java
+[+]/src/main/java/com/linkage/stbms/itv/inter/IService.java
+[+]/src/main/java/com/linkage/stbms/itv/main/Global.java
+[+]/src/main/java/com/linkage/stbms/itv/main/StbServGlobals.java
+[+]/src/main/java/com/linkage/stbms/itv/main/StbService.java
+[+]/src/main/java/com/linkage/stbms/obj/PingOBJ.java
+[+]/src/main/java/com/linkage/stbms/obj/RetPingOBJ.java
+[+]/src/main/java/com/linkage/stbms/obj/UserStbInfoOBJ.java
+[+]/src/main/java/com/linkage/stbms/pic/service/LogoConChecker.java
+[+]/src/main/java/com/linkage/stbms/pic/service/LogoConService.java
+[+]/src/main/java/com/linkage/stbms/pic/sheet/TableOBJ.java
+[+]/src/main/java/com/linkage/stbms/policy/mq/thread/PicUpTaskThread.java
+[*]/src/main/webapp/WEB-INF/server-config.wsdd
+[*]/src/main/webapp/WEB-INF/web.xml
+[*]/src/main/webapp/conf/ItmsService_cfg.xml
+[*]/src/main/webapp/deploy.wsdd
+[*]/ailk-itms-ItmsService/pom.xml
+
+VERSION: V4.0.0.12_20150819
+DATE:2015-08-19
+author:zhongcc
+DESC:山东联通接口融合(SDLT-REQ-2015-08-12-YUZHIJIAN-003)
+    [*]{cczhong}:/src/main/java/com/linkage/itms/dao/DeviceConfigDao.java
+    [*]{cczhong}:/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+    [+]{cczhong}:/src/main/java/com/linkage/itms/dispatch/obj/PortPonInfoChecker.java
+    [+]{cczhong}:/src/main/java/com/linkage/itms/dispatch/service/PortPonInfoService.java
+
+
+
+
+VERSION: V4.0.0.11_20150810
+DATE:2015-08-10
+author:liyl10
+DESC:内蒙古电信ITMS系统与掌上综调系统接口升级改造(NMGDX_HHHT-REQ-20150731-JIALEI-002)
+		[*]src/main/java/com/linkage/itms/dispatch/obj/BaseChecker.java
+		[*]src/main/java/com/linkage/itms/dispatch/obj/BaseQueryChecker.java
+		[*]src/main/java/com/linkage/itms/dispatch/obj/BindChecker.java
+		[*]src/main/java/com/linkage/itms/dispatch/service/BindService.java
+		[*]src/main/java/com/linkage/itms/dispatch/service/DevOnlineService.java
+		[*]src/main/java/com/linkage/itms/dispatch/service/TelepasswdService.java
+
+VERSION: V4.0.0.10_20150810
+DATE:2015-08-10
+author:chenzj5
+DESC:山东联通PPPoE、Voice业务仿真功能
+		[*]/src/main/java/com/linkage/init/InitBIO.java
+		[*]/src/main/java/com/linkage/itms/Global.java
+		[*]/src/main/java/com/linkage/itms/dao/DeviceConfigDAO.java
+		[*]/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+		[*]/src/main/java/com/linkage/itms/dispatch/obj/DevConfigInfoObj.java
+		[*]/src/main/java/com/linkage/itms/dispatch/obj/QueryDevConfigInfoServiceChecker.java
+		[+]/src/main/java/com/linkage/itms/dispatch/obj/VoiceDialChecker.java
+		[*]/src/main/java/com/linkage/itms/dispatch/service/PPPoEDial.java
+		[*]/src/main/java/com/linkage/itms/dispatch/service/QueryDevConfigInfoService.java
+		[+]/src/main/java/com/linkage/itms/dispatch/service/VoiceDial.java
+		[*]/src/main/java/com/linkage/itms/dispatch/service/WanConnService.java
+		[*]/src/main/webapp/conf/ItmsService_cfg.xml
+
+VERSION: V4.0.0.9_20150805
+DATE:2015-08-05
+author:cczhong
+DESC:湖北接口
+	NMPC_REQ_20150708_0001
+		[*]/src/main/java/com/linkage/itms/dao/UserDeviceDao.java
+		[*]/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+		[*]/src/main/java/com/linkage/itms/dispatch/obj/BindInfoChecker.java
+		[*]/src/main/java/com/linkage/itms/dispatch/service/BindInfoService.java
+		[+]/src/main/java/com/linkage/itms/dispatch/obj/OuiSearchChecker.java
+		[+]/src/main/java/com/linkage/itms/dispatch/obj/QueryNormalVersionChecker.java
+		[+]/src/main/java/com/linkage/itms/dispatch/service/OuiSearchService.java
+		[+]/src/main/java/com/linkage/itms/dispatch/service/QueryNormalVersionService.java
+
+
+VERSION: V4.0.0.8_20150721
+DATE:2015-07-21
+author:yinlei3
+DESC:ITMS接入智能网管的账号同步和权限分配
+	JSDX_ITMS-REQ-20150701-ZJQ-002
+		[*]/src/main/java/com/linkage/itms/dao/SpringServiceDao.java
+		[*]/src/main/java/com/linkage/itms/dispatch/obj/SpringServiceChecker.java
+		[*]/src/main/java/com/linkage/itms/dispatch/service/SpringService.java
+
+VERSION: V4.0.0.7_20150630
+DATE:2015-06-30
+author:yinlei3
+DESC:ITMS对外接口增加属地条件优化
+	JXDX-ITMS-REQ-20150618-LINBX-001
+		[*]/src/main/java/com/linkage/itms/dispatch/service/TelepasswdService.java
+        [*]/src/main/java/com/linkage/itms/dispatch/service/BindService.java
+		[*]/src/main/java/com/linkage/itms/dispatch/obj/BssSheetChecker.java
+		[*]/src/main/java/com/linkage/itms/dispatch/obj/DevResetChecker.java
+		[*]/src/main/java/com/linkage/itms/dispatch/service/BridgeToRoutService4JX.java
+		[*]/src/main/java/com/linkage/itms/dispatch/service/BssSheetService.java
+		[*]/src/main/java/com/linkage/itms/dispatch/service/DevResetService.java
+		[*]/src/main/java/com/linkage/itms/dispatch/service/DevOnlineService.java
+		[*]/src/main/java/com/linkage/itms/dao/UserDeviceDAO.java
+		[*]/src/main/java/com/linkage/itms/dispatch/service/DevInfoGatherService.java
+		[*]/src/main/java/com/linkage/itms/dispatch/service/ServiceDoneService.java
+		[*]/src/main/java/com/linkage/itms/dispatch/obj/BridgeToRoutChecker.java
+		[*]/src/main/java/com/linkage/itms/dispatch/obj/DevRebootChecker.java
+		[*]/src/main/java/com/linkage/itms/dispatch/service/BindInfoService.java
+		[*]/src/main/java/com/linkage/itms/dispatch/service/DevRebootService.java
+
+VERSION: V4.0.0.6_20150629
+DATE:2015-06-29
+author:chenzj5
+DESC:宁夏电信与PON测试系统接口需求
+	NXDX_ITMS-REQ-20150619-LIUGUOMIN-001
+		[*]/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dao/DeviceConfigDAO.java
+		[*]/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+		[*]/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/obj/ServiceDoneChecker.java
+		[*]/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/ServiceDoneService.java
+		[+]src/main/java/com/linkage/itms/dispatch/obj/DevConfigInfoObj.java
+		[+]src/main/java/com/linkage/itms/dispatch/obj/QueryDevConfigInfoServiceChecker.java
+		[+]src/main/java/com/linkage/itms/dispatch/service/QueryDevConfigInfoService.java
+
+VERSION: V4.0.0.5_20150601
+DATE:2015-06-01
+author:yinlei3
+DESC:与综调接口queryDeviceMAC变更获取数据方式)
+	JSDX_ITMS-REQ-20150520-SHUJIE-001
+		[*]{yinlei3}:/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dao/QueryDevDAO.java
+		[*]{yinlei3}:/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/QueryDeviceMACService.java
+
+
+VERSION: V4.0.0.4_20150504
+DATE:2015-05-04
+author:liyl10
+DESC:黑龙江电信ITMS/BBMS系统对悦ME网关零配置业务自动开通，ITMS与服开系统的工单接口升级改造。
+	HLJDX_HRB-REQ-20150408-JIALEI-001
+		[*]{liyl10}:/ailk-itms-ItmsService/src/main/java/com/linkage/itms/os/obj/RecieveSheetOBJ.java
+		[*]{liyl10}:/ailk-itms-ItmsService/src/main/java/com/linkage/itms/os/bio/OpenServiceBIO.java
+
+VERSION: V4.0.0.3_20150423
+DATE:2015-04-23
+author:liyl10
+DESC:江苏电信终端能力开发
+	JSDX_ITMS-REQ-20150326-SHUJIE-001
+	JSDX_ITMS-REQ-20150401-SHUJIE-001
+		[*]{liyl10}:/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dao/UserDeviceDAO.java
+		[+]{liyl10}:/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dao/QueryDevDAO.java
+		[*]{liyl10}:/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+		[+]{liyl10}:/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/obj/ModifySSID1Checker.java
+		[+]{liyl10}:/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/obj/QueryDeviceCurrentChecker.java
+		[+]{liyl10}:/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/obj/QueryDeviceIPorDNSChecker.java
+		[+]{liyl10}:/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/obj/QueryDeviceMACChecker.java
+		[+]{liyl10}:/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/obj/QueryDeviceTempChecker.java
+		[+]{liyl10}:/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/obj/QueryDeviceVottageChecker.java
+		[+]{liyl10}:/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/obj/QueryLanStateChecker.java
+		[+]{liyl10}:/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/obj/QuerySSIDPowerChecker.java
+		[+]{liyl10}:/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/obj/QueryVoipStateChecker.java
+		[+]{liyl10}:/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/obj/QueryWiFiChecker.java
+		[+]{liyl10}:/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/obj/QueryWiFiDeviceMACChecker.java
+		[+]{liyl10}:/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/obj/QueryWlanStateChecker.java
+
+		[+]{liyl10}:/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/ModifySSID1Service.java
+		[+]{liyl10}:/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/QueryDeviceCurrentService.java
+		[+]{liyl10}:/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/QueryDeviceIPorDNSService.java
+		[+]{liyl10}:/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/QueryDeviceMACService.java
+		[+]{liyl10}:/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/QueryDeviceTempService.java
+		[+]{liyl10}:/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/QueryDeviceVottageService.java
+		[+]{liyl10}:/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/QueryLanStateService.java
+		[+]{liyl10}:/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/QuerySSIDPowerService.java
+		[+]{liyl10}:/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/QueryVoipStateService.java
+		[+]{liyl10}:/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/QueryWiFiDeviceMACService.java
+		[+]{liyl10}:/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/QueryWiFiService.java
+		[+]{liyl10}:/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/QueryWlanStateService.java
+
+
+VERSION: V4.0.0.2_20150410
+DATE:2015-04-10
+author:cczhong
+DESC:悦me业务开通-与综调接口新增绑定失败原因查询接口
+    NMPC_REQ_20150324_0010
+    [+]{cczhong}:/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dao/BindFailedDao.java
+    [+]{cczhong}:/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/obj/BindFailedChecker.java
+    [+]{cczhong}:/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/BindFailedService.java
+
+VERSION: V4.0.0.1_20150410
+DATE:2015-04-10
+author:cczhong
+DESC:ITMS与综调接口修改部分接口回参代码
+     NMPC_REQ_20150407_0001
+     [*]{liyl10}:/ailk-itms-ItmsService/src/main/java/com/linkage/itms/oss/bio/SpecInfoBIO.java
+
+VERSION: V4.0.0.0_20150319
+DATE:2015-03-19
+author:liyl10
+DESC:江苏电信终端能力开发
+	JSDX_ITMS-REQ-20150304-ZJQ-001
+		[*]{liyl10}:/ailk-itms-ItmsService/src/main/java/com/linkage/itms/cao/ACSCorba.java
+		[*]{liyl10}:/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dao/UserDeviceDAO.java
+		[+]{liyl10}:/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dao/QueryDevDAO.java
+		[*]{liyl10}:/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+		[+]{liyl10}:/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/obj/OpenOrCloseAwifiChecker.java
+		[+]{liyl10}:/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/obj/QueryAccessTypeChecker.java
+		[+]{liyl10}:/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/obj/QueryDevNumberChecker.java
+		[+]{liyl10}:/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/obj/QueryFailedCodeChecker.java
+		[+]{liyl10}:/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/obj/QueryIsAwifiChecker.java
+		[+]{liyl10}:/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/obj/QuerySSIDNameChecker.java
+		[+]{liyl10}:/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/obj/QueryWanTypeChecker.java
+
+		[+]{liyl10}:/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/OpenOrCloseAwifiService.java
+		[+]{liyl10}:/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/QueryAccessTypeService.java
+		[+]{liyl10}:/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/QueryDevNumberService.java
+		[+]{liyl10}:/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/QueryFailedCodeService.java
+		[+]{liyl10}:/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/QueryIsAwifiService.java
+		[+]{liyl10}:/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/QuerySSIDNameService.java
+		[+]{liyl10}:/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/QueryWanTypeService.java
+
+VERSION: V4.0.0.0_20150209
+DATE:2015-02-09
+author:liyl10
+DESC:版本统一规划为4.0，之后版本以此为起点
+
+
+VERSION: V3.0.03.19_20150104
+DATE:2015-01-04
+author:zhouli5
+DESC:ITMS与电子运维系统相关接口(JSDX_ITMS-REQ-20141130-WJY-001)
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/VersionReleaseService.java
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/obj/VersionReleaseChecker.java
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/UpgradeService.java
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/obj/UpgradeChecker.java
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dao/UpgradeDao.java
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/UpgradeResultsService.java
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/obj/UpgradeResultsChecker.java
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dao/UpgradeResultsDAO.java
+
+VERSION: V3.0.03.19_20150104
+DATE:2015-01-04
+author:liyl10
+DESC:黑龙江电信ITMS系统反向工单问题(NMPC_ISSUE_20141218_0001)
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/os/bio/OpenServiceBIO.java
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/os/dao/UserBindDAO.java
+
+
+VERSION: V3.0.03.19_20141202
+DATE:2014-12-02
+author:liyl10
+DESC:企业网关应用前置接口需求(JXDX-ITMS-REQ-20141027-LINBX-001)
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dao/BridgeToRoutDAO.java
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dao/DeviceConfigDAO.java
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dao/ServUserDAO.java
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dao/UserDeviceDAO.java
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dao/XJVoipProtocolDao.java
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dao/ZongDiaoServUserDao.java
+
+VERSION: V3.0.03.18_20140727
+DATE:2014-07-27
+author:xiangzl
+DESC:1.江苏竣工回单接口修改（JSDX_ITMS-REQ-20140114-WJY-002
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dao/ZongDiaoServUserDao.java
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/ZongDiaoEndOfWorkService.java）
+
+================================================================================
+VERSION: V3.0.03.17_20140627
+DATE:2014-06-27
+author:zhangsm
+DESC:1.日志优化
+		 2,江苏电信设备序列号查询接口
+	/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/obj/QueryDevSnChecker.java
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/BindInfoService.java
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/BindService.java
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/BridgeToRoutService.java
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/BridgeToRoutService4JX.java
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/BssSheetService.java
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/DevConfigService.java
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/DevOnlineService.java
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/DevRebootService.java
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/DevResetService.java
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/DiagnosticService.java
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/GetNetUsernameService.java
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/HowTerminal.java
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/IsRoute.java
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/KandianOpen.java
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/MoSSIDPW.java
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/NetPasswordService.java
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/OpenrouteResult.java
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/OperateSSID.java
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/PvcReformedService.java
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/QueryDevSnService.java
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/QueryDeviceInfoService.java
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/QueryDeviceVersion.java
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/QueryMultiInterPort.java
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/QueryResultByLoidService.java
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/QuerySheetDataService.java
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/ReleaseService.java
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/SendSheetByChinaMobileService.java
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/ServiceDoneService.java
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/TelepasswdService.java
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/UpgradeToStandardVersionService.java
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/VoipRegistTestService.java
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/WanConnService.java
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/WifiInfoService.java
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/XJVoipProtocolQueryService.java
+/code/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/ZongDiaoEndOfWorkService.java
+================================================================================
+VERSION: V3.0.03.16_20140307
+DATE:2014-03-07
+author:fangchao
+DESC:新疆电信/raduis和ITMS之间密码同步接口
+	java/com/linkage/init/InitBIO.java
+	webapp/conf/ItmsService_cfg.xml
+	java/com/linkage/itms/commom/DateUtil.java
+	java/com/linkage/itms/socket/core/DefaultMsgAction.java
+	java/com/linkage/itms/socket/core/MsgAction.java
+	java/com/linkage/itms/socket/core/MsgDispatcher.java
+	java/com/linkage/itms/socket/core/MsgListener.java
+	java/com/linkage/itms/socket/core/ShortSocketWorkder.java
+	java/com/linkage/itms/socket/core/SocketWorker.java
+	java/com/linkage/itms/socket/pwdsyn/bean/PwdSynBean.java
+	java/com/linkage/itms/socket/pwdsyn/bio/PwdSynBIO.java
+	java/com/linkage/itms/socket/pwdsyn/dao/PwdSynDAO.java
+	java/com/linkage/itms/socket/pwdsyn/util/Encryption.java
+	java/com/linkage/itms/socket/pwdsyn/util/PwdSynListener.java
+	java/com/linkage/itms/socket/pwdsyn/util/PwdSynUtil.java
+================================================================================
+VERSION: V3.0.03.16_20140507
+DATE:2014-05-07
+author:os_shizy
+DESC:安徽电信/修改计算丢包率算法修改
+	/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/PingDiagnostic.java
+================================================================================
+VERSION: V3.0.03.16_20140307
+DATE:2014-03-07
+author:fangchao
+DESC:新疆电信/raduis和ITMS之间密码同步接口
+	java/com/linkage/init/InitBIO.java
+	webapp/conf/ItmsService_cfg.xml
+	java/com/linkage/itms/commom/DateUtil.java
+	java/com/linkage/itms/socket/core/DefaultMsgAction.java
+	java/com/linkage/itms/socket/core/MsgAction.java
+	java/com/linkage/itms/socket/core/MsgDispatcher.java
+	java/com/linkage/itms/socket/core/MsgListener.java
+	java/com/linkage/itms/socket/core/ShortSocketWorkder.java
+	java/com/linkage/itms/socket/core/SocketWorker.java
+	java/com/linkage/itms/socket/pwdsyn/bean/PwdSynBean.java
+	java/com/linkage/itms/socket/pwdsyn/bio/PwdSynBIO.java
+	java/com/linkage/itms/socket/pwdsyn/dao/PwdSynDAO.java
+	java/com/linkage/itms/socket/pwdsyn/util/Encryption.java
+	java/com/linkage/itms/socket/pwdsyn/util/PwdSynListener.java
+	java/com/linkage/itms/socket/pwdsyn/util/PwdSynUtil.java
+================================================================================
+VERSION: V3.0.03.15_20131216
+DATE:2013-12-16
+author: xiangzl
+DESC：ftth测试，与网格系统接口对接
+
+	[*]/web/ailk-itms-ItmsService/src/main/java/com/linkage/init/InitBIO.java
+	[*]/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/main/CallService.java
+	[*]/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/Global.java
+	[*]/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/test/TestItmsService.java
+	[*]/web/ailk-itms-ItmsService/src/main/webapp/conf/ItmsService_cfg.xml
+	[+]/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dao/DecayServInfoDAO.java
+	[+]/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/obj/DecayServInfoCheck.java
+	[+]/web/ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/DecayServInfoService.java
+
+===============================================================================================================================
+
+VERSION: V3.0.03.14_20131030
+DATE:2013-10-30
+author: zhangchy
+DESC：HTTP下载业务质量仿真测试接口，拨号仿真测试，ping诊断仿真测试
+
+	增加了方法pingDiagnostic，PPPoEDial，downLoadByHTTP
+	[*]main/java/com/linkage/itms/dispatch/main/CallService.java
+
+	[+]/main/java/com/linkage/itms/dispatch/service/PingDiagnostic.java
+	[+]/main/java/com/linkage/itms/dispatch/service/PPPoEDial.java
+	[+]/main/java/com/linkage/itms/dispatch/service/DownLoadByHTTP.java
+	[+]/main/java/com/linkage/itms/dispatch/service/PingDiagnosticChecker.java
+	[+]/main/java/com/linkage/itms/dispatch/service/PPPoEDialChecker.java
+	[+]/main/java/com/linkage/itms/dispatch/service/DownLoadByHTTPChecker.java
+
+===============================================================================================================================
+
+VERSION: V3.0.03.14_20131028
+DATE:2013-10-28
+author: zhangsm
+DESC：语音业务注册仿真测试接口
+
+[+]ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/obj/VoipRegistTestChecker.java
+[+]ailk-itms-ItmsService/src/main/java/com/linkage/itms/dispatch/service/VoipRegistTestService.java
+
+===============================================================================================================================
+VERSION: V3.0.03.13_20131022
+DATE:2013-10-22
+author: zhangchy
+DESC：HTTP下载业务质量仿真测试接口
+
+	增加了方法downLoadByHTTP
+	[*]main/java/com/linkage/itms/dispatch/main/CallService.java
+	修改了getDevByStbMac中的sql
+	[*]main/java/com/linkage/itms/itv/dao/GetItvAccountDAO.java
+
+===============================================================================================================================
+VERSION: V3.0.03.12_20121212
+DATE:2012-12-12
+author: zhangsm
+DESC：新疆ITMS与掌上运维接口
+	[*]com/linkage/itms/commom/util/SocketUtil.java
+	[*]com/linkage/itms/dao/QueryDeviceVersionDAO.java
+	[*]com/linkage/itms/dao/UserDeviceDAO.java
+	[*]com/linkage/itms/dispatch/obj/BaseChecker.java
+	[*]com/linkage/itms/dispatch/obj/BaseQueryChecker.java
+	[*]com/linkage/itms/dispatch/service/BridgeToRoutService.java
+	[*]com/linkage/itms/dispatch/service/QueryDeviceVersion.java
+
+ItmsService 3.0.03.11_20120912
+===============================================================================================================================
+VERSION: V3.0.03.11_20120912
+DATE:2012-09-12
+author: xiangzl
+DESC：黑龙江电信ITMS系统与服开系统工单接口新增反向工单
+
+		[*]{xiangzl}: /home/svn/project/ItmsService/src/com/linkage/itms/os/obj/RecieveSheetOBJ.java
+		[*]{xiangzl}: /home/svn/project/ItmsService/src/com/linkage/itms/os/bio/OpenServiceBIO.java
+
+================================================================================================================================
+
+VERSION: V3.0.03.10_20120717
+DATE:2012-07-17
+author: xiangzl
+DESC：黑龙江电信ITMS系统与服开系统工单接口新增反向工单
+
+		[+]{zhangchy}: /home/svn/project/ItmsService/src/com/linkage/itms/os/bio/OpenServiceBIO.java
+		[+]{zhangchy}: /home/svn/project/ItmsService/src/com/linkage/itms/os/dao/UserBindDAO.java
+		[+]{zhangchy}: /home/svn/project/ItmsService/src/com/linkage/itms/os/main/OpenService.java
+			//增加属性 是否反向工单，提供get，set方法
+		[+]{zhangchy}: /home/svn/project/ItmsService/src/com/linkage/itms/os/obj/RecieveSheetOBJ.java
+===================================================================================================================================
+VERSION: V3.0.03.09_20120607
+DATE:2012-06-07
+author: zhangchy
+DESC：新疆电信ITMS与IP网管 语音协议查询接口
+
+		[+]{zhangchy}: /home/svn/project/ItmsService/src/com/linkage/itms/dao/XJVoipProtocolDao.java
+		[+]{zhangchy}: /home/svn/project/ItmsService/src/com/linkage/itms/dispatch/obj/XJVoipProtocolChecker.java
+		[+]{zhangchy}: /home/svn/project/ItmsService/src/com/linkage/itms/dispatch/service/XJVoipProtocolQueryService.java
+
+		// 增加了VOIP语音协议查询接口，用于新疆，方法名voipProtocol（）
+		[*]{zhangchy}: /home/svn/project/ItmsService/src/com/linkage/itms/dispatch/main/CallService.java
+		// 去掉了冗余的代码段
+		[*]{zhangchy}: /home/svn/project/ItmsService/src/com/linkage/itms/dispatch/service/BssSheetService.java
+		// 将<InstArea>节点调整了一下位置
+		[*]{zhangchy}: /home/svn/project/ItmsService/conf/ItmsService_cfg.xml
+
+
+=======================================================================================================================
+VERSION: 3.0.03.06_20120322
+DATE: 2012-03-22
+author: zhangsm
+
+DESC：1、云南与Radius接口
+      2、设备重启和设备恢复出厂接口
+    [*]ResourceBind/conf/config.xml
+		[*]com/linkage/init/InitBIO.java
+		[*]com/linkage/itms/dispatch/main/CallService.java
+		[*]com/linkage/itms/dispatch/service/DevRebootService.java
+		[*]com/linkage/itms/Global.java
+		[*]com/linkage/WSClient/WSClientProcess.java
+		[+]com/linkage/itms/cao/DevReset.java
+		[+]com/linkage/itms/dispatch/obj/DevResetChecker.java
+		[+]com/linkage/itms/dispatch/service/DevResetService.java
+		[+]com/linkage/itms/dispatch/service/GetNetUsernameService.java
+
+=======================================================================================================================
+VERSION: 3.0.03.05_20120312
+DATE: 2012-03-09
+author: zhangchy
+
+DESC：在提交3.0.3.2_20120308的时候忘记提交，现补提交。此调整是根据江苏ITMS需求单JSDX_ITMS-REQ-20120220-LUHJ-006做了相应调整
+
+      [*]{zhangchy}: /home/svn/project/ItmsService/src/com/linkage/itms/dispatch/service/DevConfigService.java
+      [*]{zhangchy}: /home/svn/project/ItmsService/src/com/linkage/itms/dao/UserDeviceDAO.java   // 将getAllUsername()方法中的SQL语句重写了
+
+
+========================================================================================================================
+
+
+VERSION: 3.0.03.04_20120309
+DATE: 2012-03-09
+author: zhangchy
+
+DESC：测试《BSS用户业务工单及开通状态查询》的itv多帐号，修改了相应的BUG
+
+      [*]{zhangchy}: /home/svn/project/ItmsService/src/com/linkage/itms/dispatch/service/BssSheetService.java
+      [*]{zhangchy}: /home/svn/project/ItmsService/src/com/linkage/itms/dao/ServUserDAO.java
+      [*]{zhangchy}: /home/svn/project/ItmsService/src/com/linkage/itms/dispatch/obj/BssSheetChecker.java
+
+
+========================================================================================================================
+
+VERSION: 3.0.03.03_20120309
+DATE: 2012-03-09
+author: zhangchy
+
+DESC：根据江苏ITMS需求单JSDX_ITMS-REQ-20120306-LUHJ-004以及江苏ItmsService接口文档1.5.8版本的需求，对《BSS用户业务工单及开通状态查询》做了相应的调整
+      增加了<IPTVUserName>节点，并对ServUserDAO.java中相关的SQL语句做了优化。
+
+      [*]{zhangchy}: /home/svn/project/ItmsService/src/com/linkage/itms/dao/UserDeviceDAO.java
+      [*]{zhangchy}: /home/svn/project/ItmsService/src/com/linkage/itms/dao/ServUserDAO.java
+      [*]{zhangchy}: /home/svn/project/ItmsService/src/com/linkage/itms/dispatch/obj/BssSheetChecker.java
+      [*]{zhangchy}: /home/svn/project/ItmsService/src/com/linkage/itms/dispatch/service/BssSheetService.java
+
+
+
+=========================================================================================================================
+
+VERSION: 3.0.3.2_20120308
+DATE: 2012-03-08
+author: zhangchy
+desc：
+       根据江苏ITMS的需求单JSDX_ITMS-REQ-20120220-LUHJ-003，JSDX_ITMS-REQ-20120220-LUHJ-004，
+       JSDX_ITMS-REQ-20120220-LUHJ-005，JSDX_ITMS-REQ-20120220-LUHJ-006
+	   以及根据江苏ItmsService接口文档1.5.8版本的2.11，2.13，2.14，2，15章节的要求做了相应的新增以及修改
+
+	   [*]{zhangchy}: /home/svn/project/ItmsService/src/com/linkage/itms/dispatch/main/CallService.java         增加了单个方法getSerResult(String param)，zdEndOfWork(String param)，BridgeToRout(String param)
+	   [*]{zhangchy}: /home/svn/project/ItmsService/src/com/linkage/itms/dao/UserDeviceDAO.java                 将方法queryUserInfo()中的SQL使用PrepareSQL 改写了
+	   [*]{zhangchy}: /home/svn/project/ItmsService/src/com/linkage/itms/dispatch/obj/BaseChecker.java          增加了loid的检验
+
+	   用于桥改路由  JSDX_ITMS-REQ-20120220-LUHJ-004
+	   [+]{zhangchy}: /home/svn/project/ItmsService/src/com/linkage/itms/cao/IParamTree.java
+	   [+]{zhangchy}: /home/svn/project/ItmsService/src/com/linkage/itms/dispatch/obj/LanEthObj.java
+	   [+]{zhangchy}: /home/svn/project/ItmsService/src/com/linkage/itms/dispatch/obj/BridgeToRoutChecker.java
+	   [+]{zhangchy}: /home/svn/project/ItmsService/src/com/linkage/itms/dao/BridgeToRoutDAO.java
+	   [+]{zhangchy}: /home/svn/project/ItmsService/src/com/linkage/itms/dispatch/service/BridgeToRoutService.java
+
+	   新疆 根据用户LOID获取用户业务放装情况
+	   [+]{zhangchy}: /home/svn/project/ItmsService/src/com/linkage/itms/dispatch/obj/QueryByLoidChecker.java
+	   [+]{zhangchy}: /home/svn/project/ItmsService/src/com/linkage/itms/dao/XinJiangFTTHSheetDao.java
+	   [+]{zhangchy}: /home/svn/project/ItmsService/src/com/linkage/itms/dispatch/service/QueryResultByLoidService.java
+
+	   综调报竣工  JSDX_ITMS-REQ-20120220-LUHJ-003
+	   [+]{zhangchy}: /home/svn/project/ItmsService/src/com/linkage/itms/dispatch/obj/CompleteProForZDChecker.java
+	   [+]{zhangchy}: /home/svn/project/ItmsService/src/com/linkage/itms/dispatch/service/ZongDiaoEndOfWorkService.java
+	   [+]{zhangchy}: /home/svn/project/ItmsService/src/com/linkage/itms/dao/ZongDiaoServUserDao.java
+
+
+	   JSDX_ITMS-REQ-20120220-LUHJ-005
+	   设备状态信息查询接口  根绝需求单JSDX_ITMS-REQ-20120220-LUHJ-005以及接口文档将不需要返回的节点信息注释了
+	   [*]{zhangchy}: /home/svn/project/ItmsService/src/com/linkage/itms/dispatch/obj/DiagnosticServiceChecker.java
+	   [*]{zhangchy}: /home/svn/project/ItmsService/src/com/linkage/itms/dispatch/service/DiagnosticService.java
+	   [*]{zhangchy}: /home/svn/project/ItmsService/src/com/linkage/itms/dispatch/obj/DiagnosticInfoOBJ.java
+
+	   JSDX_ITMS-REQ-20120220-LUHJ-006
+	   [*]{zhangchy}: /home/svn/project/ItmsService/src/com/linkage/itms/dispatch/obj/DevConfigChecker.java        设备配置查询接口 根绝需求单JSDX_ITMS-REQ-20120220-LUHJ-006，将方法getReturnXml进行了改写
+	   [*]{zhangchy}: /home/svn/project/ItmsService/src/com/linkage/itms/dao/DeviceConfigDAO.java                  增加了方法getVoiceService，getVoipLinesget，IGMPSnooping
+	   [*]{zhangchy}: /home/svn/project/ItmsService/src/com/linkage/itms/cao/DeviceGatherCAO.java                  增加了用于采集的端口用的节点参数，  line20，22行
+	   [*]{zhangchy}: /home/svn/project/ItmsService/src/com/linkage/itms/dispatch/service/BssSheetService.java     增加读取配置文件功能 line48,49行
+
+
+===========================================================================
+VERSION:3.0.3.1_20120221
+DATE:2012-02-21
+author:zhangshimin
+desc:
+黑龙江电信ITMS增加移机工单处理
+[*]ItmsService/src/com/linkage/itms/os/bio/OpenServiceBIO.java
+===========================================================================
+VERSION:3.0.3
+DATE:2012-02-02
+author:zhangchy
+desc:
+   由于目前新疆电信与江苏使用同一个ItmsService的同一个接口"BSS用户业务工单及开通状态查询"(queryBssSheetAndOpenStatus)，
+   由于新疆不能识别该接口返回信息中的cityId，只能识别cityName，同时新疆要求，如果用户未绑定设备，则返回用户信息，
+   原来返回的是提示信息，没有返回用户信息，所以为了区别对待，ItmsService做了如下改动。
+
+1、增加了全局变量G_instArea
+   [*]/ItmsService/src/com/linkage/itms/Global.java
+
+2、修改了配置文件litms_conf.xml，用于区分ItmsService是用于新疆还是用于江苏等其他地方
+   [*]/ItmsService/WebContent/WEB-INF/litms_conf.xml
+
+3、改动了返回值的节点，如果是新疆，则将cityId的节点变为cityName，否则不改变
+   [*]/ItmsService/src/com/linkage/itms/dispatch/obj/BssSheetChecker.java
+
+4、增加了cityName(属地名称)属性
+   [*]/ItmsService/src/com/linkage/itms/dispatch/obj/BaseChecker.java
+
+5、增加了读取配置文件，配置文件litms_conf.xml中配置了此ItmsService是用于新疆还是江苏等其他省或地市。
+   然后根据配置文件，如果是新疆，返回值显示属地名称(cityName)。
+   同时应新疆要求，如果用户未绑定设备，要返回该用户的信息，原来返回的是提示信息“此用户未绑定设备”。
+   [*]/ItmsService/src/com/linkage/itms/dispatch/service/BssSheetService.java
+
+
+===========================================================================
+VERSION:3.0.2
+DATE:20111221
+author:zhangchy
+desc:
+1、增加支持WebService调用的jar包
+  [+]ItmsService/WebContent/WEB-INF/lib/axis2.jar
+  [+]ItmsService/WebContent/WEB-INF/lib/axis-ant.jar
+  [+]ItmsService/WebContent/WEB-INF/lib/commons-httpclient-3.1.jar
+  [+]ItmsService/WebContent/WEB-INF/lib/httpcore-4.0.jar
+  [+]ItmsService/WebContent/WEB-INF/lib/log4j-1.2.8.jar
+  [+]ItmsService/WebContent/WEB-INF/lib/neethi-2.0.4.jar
+  [+]ItmsService/WebContent/WEB-INF/lib/XmlSchema-1.4.3.jar
+  [*]ItmsService/WebContent/WEB-INF/lib/mail.jar
+
+2、增加了根据device_id将设备信息及业务信息组装成XML字符串
+  [+]ItmsService/src/com/linkage/itms/mq/servinfo/xml/servInfoToXML.java
+
+3、增加或修改了相关代码，用于支持调用WebService,ServInfoDealThread.java中去掉了无用的代码段
+  [+]ItmsService/src/com/linkage/itms/mq/publish/MQSimplePublisher.java
+  [+]ItmsService/src/com/linkage/WSClient/WSClientProcess.java
+  [*]ItmsService/src/com/linkage/itms/mq/servinfo/thread/ServInfoDealThread.java   line71--108
+  [*]ItmsService/src/com/linkage/init/InitBIO.java   line 66-77
+
+4、业务诊断信息查询接口 在调用Corba采集时增加了一个参数3
+  [*]ItmsService/src/com/linkage/itms/dispatch/service/DiagnosticService.java   line89
+
+
+===========================================================================
+VERSION:3.0.1
+DATE:201101115
+author:zhangsm
+desc:
+1、增加支持查询ITMS配置的具体工单数据接口
+  [+]com/linkage/itms/dispatch/service/QuerySheetDataService.java
+  [+]com/linkage/itms/dispatch/obj/QuerySheetDataChecker.java
+  [*]com/linkage/itms/dispatch/main/CallService.java   line41--45
+2、对应接口文档的版本：V1.5.5
+===========================================================================
+VERSION:3.0.0
+DATE:201109015
+author:zhangsm
+desc:
+1、业务下发接口调整   之前取业务类型值时取错了，应取入参中ServiceType，而不是SearchType
+2、对应接口文档的版本：V1.5.3

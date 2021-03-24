@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!-- memcached -->
+<MemcachedPool>
+        <memcachedList>
+       	     <memcached>
+                <name>ItmsService</name>
+                <addr>192.168.1.248:14001 192.168.1.248:14002 192.168.1.248:14003</addr>
+                <weight>1,1,1</weight>
+                <!-- connectionPoolSize,default 1. -->
+                <connectionPoolSize>1</connectionPoolSize>
+                <!-- commandFactory: 0,Text;1,Bindary. -->
+                <commandFactory>0</commandFactory>
+                <!-- SessionLocator: 0,Array (default);1,Ketama(consistent hash). -->
+                <sessionLocator>1</sessionLocator>
+                <!-- FailureMode:0,false(default);1,true. -->
+                <failureMode>1</failureMode>
+             </memcached>
+        </memcachedList>
+</MemcachedPool>

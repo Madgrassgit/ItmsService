@@ -1,0 +1,523 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<deployment xmlns="http://xml.apache.org/axis/wsdd/" xmlns:java="http://xml.apache.org/axis/wsdd/providers/java">
+ <globalConfiguration>
+  <parameter name="sendMultiRefs" value="false"/>
+  <parameter name="disablePrettyXML" value="true"/>
+  <parameter name="adminPassword" value="admin"/>
+  <parameter name="attachments.Directory" value="D:\project\BBMS\ItmsService\WebContent\WEB-INF\attachments"/>
+  <parameter name="dotNetSoapEncFix" value="false"/>
+  <parameter name="enableNamespacePrefixOptimization" value="true"/>
+  <parameter name="sendXMLDeclaration" value="true"/>
+  <parameter name="sendXsiTypes" value="true"/>
+  <parameter name="attachments.implementation" value="org.apache.axis.attachments.AttachmentsImpl"/>
+  <requestFlow>
+   <handler type="java:org.apache.axis.handlers.JWSHandler">
+    <parameter name="scope" value="session"/>
+   </handler>
+   <handler type="java:org.apache.axis.handlers.JWSHandler">
+    <parameter name="scope" value="request"/>
+    <parameter name="extension" value=".jwr"/>
+   </handler>
+  </requestFlow>
+ </globalConfiguration>
+
+ <handler name="URLMapper" type="java:org.apache.axis.handlers.http.URLMapper"/>
+ <handler name="LocalResponder" type="java:org.apache.axis.transport.local.LocalResponder"/>
+ <handler name="Authenticate" type="java:org.apache.axis.handlers.SimpleAuthenticationHandler"/>
+ <service name="ItmsService" provider="java:RPC">
+  <parameter name="allowedMethods" value="*"/>
+  <parameter name="className" value="com.linkage.itms.itv.main.ItmsService"/>
+ </service>
+ <service name="CallService" provider="java:RPC">
+  <parameter name="allowedMethods" value="*"/>
+  <parameter name="className" value="com.linkage.itms.dispatch.main.CallService"/>
+ </service>
+ <service name="CloudCallService" provider="java:RPC">
+  <parameter name="allowedMethods" value="*"/>
+  <parameter name="className" value="com.linkage.itms.dispatch.main.CloudCallService"/>
+ </service>
+ <service name="OpenService" provider="java:RPC">
+  <parameter name="allowedMethods" value="*"/>
+  <parameter name="className" value="com.linkage.itms.os.main.OpenService"/>
+ </service>
+ <service name="getInfo" provider="java:RPC">
+        <parameter name="className" value="com.linkage.itms.oss.main.OssService"/>
+        <parameter name="allowedMethods" value="*"/>
+    </service>
+ <service name="CompletedService" provider="java:RPC">
+  <parameter name="allowedMethods" value="*"/>
+  <parameter name="className" value="com.linkage.itms.os.main.CompletedService"/>
+ </service>
+ <service name="QosServices" provider="java:RPC">
+  <parameter name="allowedMethods" value="*"/>
+  <parameter name="className" value="com.linkage.itms.dacs.main.Application"/>
+ </service>
+ <service name="AdminService" provider="java:MSG">
+  <parameter name="allowedMethods" value="AdminService"/>
+  <parameter name="enableRemoteAdmin" value="true"/>
+  <parameter name="className" value="org.apache.axis.utils.Admin"/>
+  <namespace>http://xml.apache.org/axis/wsdd/</namespace>
+ </service>
+ <service name="Version" provider="java:RPC">
+  <parameter name="allowedMethods" value="getVersion"/>
+  <parameter name="className" value="org.apache.axis.Version"/>
+ </service>
+ <service name="CtService" provider="java:RPC">
+  <parameter name="allowedMethods" value="*"/>
+  <parameter name="className" value="com.linkage.itms.ct.main.CtService"/>
+ </service>
+ <service name="IdsService" provider="java:RPC">
+  <parameter name="allowedMethods" value="*"/>
+  <parameter name="className" value="com.linkage.stbms.ids.main.IdsService"/>
+ </service>
+ <service name="StbService" provider="java:RPC">
+  <parameter name="allowedMethods" value="*"/>
+  <parameter name="className" value="com.linkage.stbms.itv.main.StbService"/>
+ </service>
+ <service name="iOperationService" provider="java:RPC">
+     <parameter name="className" value="com.linkage.stbms.ioperation.service.IOperationService"/>
+     <parameter name="allowedMethods" value="*"/>
+ </service>
+ <service name="NmgService" provider="java:RPC">
+        <parameter name="className" value="com.linkage.itms.nmg.dispatch.main.NmgService"/>
+        <parameter name="allowedMethods" value="*"/>
+    </service>
+ <service name="HljService" provider="java:RPC">
+    <parameter name="className" value="com.linkage.itms.hlj.dispatch.main.HljService"/>
+    <parameter name="allowedMethods" value="*"/>
+ </service>
+  <service name="JLService" provider="java:RPC">
+    <parameter name="className" value="com.linkage.itms.hlj.dispatch.main.JlService"/>
+    <parameter name="allowedMethods" value="*"/>
+ </service>
+    <service name="MobileOperationInterfaceService" provider="java:RPC" use="literal" style="wrapped">
+        <parameter name="className" value="com.alcatel.hdm.nbi.mo.MobileOperationInterface"/>
+        <parameter name="typeMappingVersion" value="1.2"/>
+        <parameter name="allowedMethods" value="*"/>
+        <beanMapping languageSpecificType="java:com.linkage.itms.dispatch.cqdx.beanObj.ChangeWifiPasswordResponse" qname="ns:ChangeWifiPasswordResponse" xmlns:ns="http://mo.nbi.hdm.alcatel.com" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+        <beanMapping languageSpecificType="java:com.linkage.itms.dispatch.cqdx.beanObj.StartGetUserInfoDiagResponse" qname="ns:StartGetUserInfoDiagResponse" xmlns:ns="http://mo.nbi.hdm.alcatel.com" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+        <beanMapping languageSpecificType="java:com.linkage.itms.dispatch.cqdx.beanObj.UserInfo" qname="ns:UserInfo" xmlns:ns="http://mo.nbi.hdm.alcatel.com" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+        <beanMapping languageSpecificType="java:com.linkage.itms.dispatch.cqdx.beanObj.StartPingDiagResponse" qname="ns:StartPingDiagResponse" xmlns:ns="http://mo.nbi.hdm.alcatel.com" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+        <beanMapping languageSpecificType="java:com.linkage.itms.dispatch.cqdx.beanObj.PingResult" qname="ns:PingResult" xmlns:ns="http://mo.nbi.hdm.alcatel.com" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+        <beanMapping languageSpecificType="java:com.linkage.itms.dispatch.cqdx.beanObj.PingPara" qname="ns:PingPara" xmlns:ns="http://mo.nbi.hdm.alcatel.com" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+        <beanMapping languageSpecificType="java:com.linkage.itms.dispatch.cqdx.beanObj.StartRebootDiagResponse" qname="ns:StartRebootDiagResponse" xmlns:ns="http://mo.nbi.hdm.alcatel.com" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+        <beanMapping languageSpecificType="java:com.linkage.itms.dispatch.cqdx.beanObj.GetFactoryResetDiagResponse" qname="ns:GetFactoryResetDiagResponse" xmlns:ns="http://mo.nbi.hdm.alcatel.com" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+        <beanMapping languageSpecificType="java:com.linkage.itms.dispatch.cqdx.beanObj.GetGetServiceStatusResponse" qname="ns:GetGetServiceStatusResponse" xmlns:ns="http://mo.nbi.hdm.alcatel.com" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+        <beanMapping languageSpecificType="java:com.linkage.itms.dispatch.cqdx.beanObj.ServiceStatus" qname="ns:ServiceStatus" xmlns:ns="http://mo.nbi.hdm.alcatel.com" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+        <beanMapping languageSpecificType="java:com.linkage.itms.dispatch.cqdx.beanObj.QueryTerminalPasswordResponse" qname="ns:QueryTerminalPasswordResponse" xmlns:ns="http://mo.nbi.hdm.alcatel.com" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+        <beanMapping languageSpecificType="java:com.linkage.itms.dispatch.cqdx.beanObj.QueryTerminalPasswordRequest" qname="ns:QueryTerminalPasswordRequest" xmlns:ns="http://mo.nbi.hdm.alcatel.com" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+        <beanMapping languageSpecificType="java:com.linkage.itms.dispatch.cqdx.beanObj.QueryBindInfoResponse" qname="ns:QueryBindInfoResponse" xmlns:ns="http://mo.nbi.hdm.alcatel.com" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+        <beanMapping languageSpecificType="java:com.linkage.itms.dispatch.cqdx.beanObj.QueryBindInfoRequest" qname="ns:QueryBindInfoRequest" xmlns:ns="http://mo.nbi.hdm.alcatel.com" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+        <beanMapping languageSpecificType="java:com.linkage.itms.dispatch.cqdx.beanObj.FactoryResetResponse" qname="ns:FactoryResetResponse" xmlns:ns="http://mo.nbi.hdm.alcatel.com" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+        <beanMapping languageSpecificType="java:com.linkage.itms.dispatch.cqdx.beanObj.QueryBussinessInfoResponse" qname="ns:QueryBussinessInfoResponse" xmlns:ns="http://mo.nbi.hdm.alcatel.com" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+        <beanMapping languageSpecificType="java:com.linkage.itms.dispatch.cqdx.beanObj.QueryBussinessInfoRequest" qname="ns:QueryBussinessInfoRequest" xmlns:ns="http://mo.nbi.hdm.alcatel.com" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+        <beanMapping languageSpecificType="java:com.linkage.itms.dispatch.cqdx.beanObj.QueryActionInfoResponse" qname="ns:QueryActionInfoResponse" xmlns:ns="http://mo.nbi.hdm.alcatel.com" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+        <beanMapping languageSpecificType="java:com.linkage.itms.dispatch.cqdx.beanObj.QueryActionInfoRequest" qname="ns:QueryActionInfoRequest" xmlns:ns="http://mo.nbi.hdm.alcatel.com" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+        <beanMapping languageSpecificType="java:com.linkage.itms.dispatch.cqdx.beanObj.QueryTerminalInfoResponse" qname="ns:QueryTerminalInfoResponse" xmlns:ns="http://mo.nbi.hdm.alcatel.com" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+        <beanMapping languageSpecificType="java:com.linkage.itms.dispatch.cqdx.beanObj.FeedbackWorkTicketsInfoResponse" qname="ns:FeedbackWorkTicketsInfoResponse" xmlns:ns="http://mo.nbi.hdm.alcatel.com" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+        <beanMapping languageSpecificType="java:com.linkage.itms.dispatch.cqdx.beanObj.RESULT_ARRAYType" qname="ns:RESULT_ARRAYType" xmlns:ns="http://mo.nbi.hdm.alcatel.com" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+        <beanMapping languageSpecificType="java:com.linkage.itms.dispatch.cqdx.beanObj.Loid_resultArray" qname="ns:Loid_resultArray" xmlns:ns="http://mo.nbi.hdm.alcatel.com" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+        <beanMapping languageSpecificType="java:com.linkage.itms.dispatch.cqdx.beanObj.LOID_ARRAYType" qname="ns:LOID_ARRAYType" xmlns:ns="http://mo.nbi.hdm.alcatel.com" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+        <arrayMapping xmlns:ns="http://mo.nbi.hdm.alcatel.com" qname="ns:loid" type="java:java.lang.String[]" innerType="cmp-ns:string" xmlns:cmp-ns="http://www.w3.org/2001/XMLSchema" encodingStyle=""/>
+
+        <beanMapping languageSpecificType="java:com.linkage.itms.dispatch.cqdx.beanObj.Loid_resultType" qname="ns:Loid_resultType" xmlns:ns="http://mo.nbi.hdm.alcatel.com" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+        <arrayMapping xmlns:ns="http://mo.nbi.hdm.alcatel.com" qname="ns:RESULT_ARRAYType1" type="java:com.linkage.itms.dispatch.cqdx.beanObj.Loid_resultType[]" innerType="cmp-ns:loid_resultType" xmlns:cmp-ns="http://mo.nbi.hdm.alcatel.com" encodingStyle=""/>
+
+
+        <beanMapping languageSpecificType="java:com.linkage.itms.dispatch.cqdx.beanObj.QueryWorkTicketsInfoResponse" qname="ns:QueryWorkTicketsInfoResponse" xmlns:ns="http://mo.nbi.hdm.alcatel.com" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+        <beanMapping languageSpecificType="java:com.linkage.itms.dispatch.cqdx.beanObj.QueryRgModeInfoResponse" qname="ns:QueryRgModeInfoResponse" xmlns:ns="http://mo.nbi.hdm.alcatel.com" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+        <beanMapping languageSpecificType="java:com.linkage.itms.dispatch.cqdx.beanObj.LanInfoType" qname="ns:LanInfoType" xmlns:ns="http://mo.nbi.hdm.alcatel.com" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+        <beanMapping languageSpecificType="java:com.linkage.itms.dispatch.cqdx.beanObj.UnbindWorkTicketResponse" qname="ns:UnbindWorkTicketResponse" xmlns:ns="http://mo.nbi.hdm.alcatel.com" serializer="org.apache.axis.encoding.ser.BeanSerializerFactory" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+        <beanMapping languageSpecificType="java:com.linkage.itms.dispatch.cqdx.beanObj.QueryConnectionInfoResponse" qname="ns:QueryConnectionInfoResponse" xmlns:ns="http://mo.nbi.hdm.alcatel.com" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+        <beanMapping languageSpecificType="java:com.linkage.itms.dispatch.cqdx.beanObj.DHCPType" qname="ns:DHCPType" xmlns:ns="http://mo.nbi.hdm.alcatel.com" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+        <beanMapping languageSpecificType="java:com.linkage.itms.dispatch.cqdx.beanObj.DHCPAddressType" qname="ns:DHCPAddressType" xmlns:ns="http://mo.nbi.hdm.alcatel.com" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+        <beanMapping languageSpecificType="java:com.linkage.itms.dispatch.cqdx.beanObj.CommonInterfaceOperationResponse" qname="ns:CommonInterfaceOperationResponse" xmlns:ns="http://mo.nbi.hdm.alcatel.com" deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory" encodingStyle=""/>
+    </service>
+    <service name="OperationDistributeService" provider="java:RPC"  use="encoded" style="rpc" >
+        <parameter name="className" value="com.linkage.itms.dispatch.main.OperationDistributeService"/>
+        <parameter name="scope" value="Request"/>
+        <parameter name="allowedMethods" value="*"/>
+        <beanMapping languageSpecificType="java:com.linkage.itms.dispatch.gsdx.beanObj.UserIndex" qname="ns1:UserIndex"
+                     xmlns:ns1="http://beanObj.gsdx.dispatch.itms.linkage.com"
+                     serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+                     deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"/>
+        <typeMapping languageSpecificType="java:com.linkage.itms.dispatch.gsdx.beanObj.UserIndex"
+                     qname="ns1:UserIndex" xmlns:ns1="http://beanObj.gsdx.dispatch.itms.linkage.com"
+                     deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+                     serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"/>
+
+        <beanMapping languageSpecificType="java:com.linkage.itms.dispatch.gsdx.beanObj.NorthQueryParaResult" qname="ns1:NorthQueryParaResult"
+                     xmlns:ns1="http://beanObj.gsdx.dispatch.itms.linkage.com"
+                     serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+                     deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"/>
+        <typeMapping languageSpecificType="java:com.linkage.itms.dispatch.gsdx.beanObj.NorthQueryParaResult"
+                     qname="ns1:NorthQueryParaResult" xmlns:ns1="http://beanObj.gsdx.dispatch.itms.linkage.com"
+                     deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+                     serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"/>
+
+        <beanMapping languageSpecificType="java:com.linkage.itms.dispatch.gsdx.beanObj.Para"
+                     qname="ns1:Para"
+                     xmlns:ns1="http://beanObj.gsdx.dispatch.itms.linkage.com"
+        />
+
+        <typeMapping qname="ns1:Para"
+                     xmlns:ns1="http://beanObj.gsdx.dispatch.itms.linkage.com"
+                     languageSpecificType="java:com.linkage.itms.dispatch.gsdx.beanObj.Para"
+                     serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+                     deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+                     encodingStyle=""
+        />
+        <arrayMapping xmlns:ns2="http://beanObj.gsdx.dispatch.itms.linkage.com"
+                      qname="ns2:ArrayOfPara"
+                      type="java:com.linkage.itms.dispatch.gsdx.beanObj.Para[]"
+                      innerType="ns1:Para" xmlns:ns1="http://beanObj.gsdx.dispatch.itms.linkage.com" encodingStyle=""/>
+        <typeMapping
+                xmlns:ns2="http://beanObj.gsdx.dispatch.itms.linkage.com"
+                qname="ns2:ArrayOfPara"
+                languageSpecificType="java:com.linkage.itms.dispatch.gsdx.beanObj.Para[]"
+                serializer="org.apache.axis.encoding.ser.ArraySerializerFactory"
+                deserializer="org.apache.axis.encoding.ser.ArrayDeserializerFactory"
+                encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+        />
+
+        <beanMapping languageSpecificType="java:com.linkage.itms.dispatch.gsdx.beanObj.ArrayOf_tns1_UserDetail"
+                     qname="ns:ArrayOf_tns1_UserDetail"
+                     xmlns:ns="http://beanObj.gsdx.dispatch.itms.linkage.com"
+                  />
+
+        <typeMapping qname="ns:ArrayOf_tns1_UserDetail"
+                     xmlns:ns="http://beanObj.gsdx.dispatch.itms.linkage.com"
+                     languageSpecificType="java:com.linkage.itms.dispatch.gsdx.beanObj.ArrayOf_tns1_UserDetail"
+                     serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+                     deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+                     encodingStyle=""
+        />
+
+        <beanMapping languageSpecificType="java:com.linkage.itms.dispatch.gsdx.beanObj.UserDetail"
+                     qname="ns1:UserDetail"
+                     xmlns:ns1="http://beanObj.gsdx.dispatch.itms.linkage.com"
+                     />
+
+        <typeMapping qname="ns1:UserDetail"
+                     xmlns:ns1="http://beanObj.gsdx.dispatch.itms.linkage.com"
+                     languageSpecificType="java:com.linkage.itms.dispatch.gsdx.beanObj.UserDetail"
+                     serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+                     deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+                     encodingStyle=""
+        />
+        <arrayMapping xmlns:ns2="http://beanObj.gsdx.dispatch.itms.linkage.com"
+                      qname="ns2:ArrayOfUserDetail"
+                      type="java:com.linkage.itms.dispatch.gsdx.beanObj.UserDetail[]"
+                      innerType="ns1:UserDetail" xmlns:ns1="http://beanObj.gsdx.dispatch.itms.linkage.com" encodingStyle=""/>
+        <typeMapping
+                xmlns:ns2="http://beanObj.gsdx.dispatch.itms.linkage.com"
+                qname="ns2:ArrayOfUserDetail"
+                languageSpecificType="java:com.linkage.itms.dispatch.gsdx.beanObj.UserDetail[]"
+                serializer="org.apache.axis.encoding.ser.ArraySerializerFactory"
+                deserializer="org.apache.axis.encoding.ser.ArrayDeserializerFactory"
+                encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+        />
+
+    </service>
+
+    <service name="DiagnoseService" provider="java:RPC"  use="encoded" style="rpc">
+        <parameter name="scope" value="Request"/>
+        <parameter name="className" value="com.linkage.itms.dispatch.main.DiagnoseService"/>
+        <parameter name="allowedMethods" value="*"/>
+        <!--UserIndex-->
+        <beanMapping languageSpecificType="java:com.linkage.itms.dispatch.gsdx.beanObj.UserIndex" qname="ns1:UserIndex"
+                     xmlns:ns1="http://beanObj.gsdx.dispatch.itms.linkage.com"
+                     serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+                     deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"/>
+        <typeMapping languageSpecificType="java:com.linkage.itms.dispatch.gsdx.beanObj.UserIndex"
+                     qname="ns1:UserIndex" xmlns:ns1="http://beanObj.gsdx.dispatch.itms.linkage.com"
+                     deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+                     serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"/>
+
+        <!--CPEMission-->
+        <beanMapping languageSpecificType="java:com.linkage.itms.dispatch.gsdx.beanObj.CPEMission"
+                     qname="ns1:CPEMission" xmlns:ns1="http://beanObj.gsdx.dispatch.itms.linkage.com"
+                     serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+                     deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"/>
+        <typeMapping languageSpecificType="java:com.linkage.itms.dispatch.gsdx.beanObj.CPEMission"
+                     qname="ns1:CPEMission" xmlns:ns1="http://beanObj.gsdx.dispatch.itms.linkage.com"
+                     deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+                     serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"/>
+
+        <!--CPEMissionResult-->
+        <beanMapping languageSpecificType="java:com.linkage.itms.dispatch.gsdx.beanObj.CPEMissionResult"
+                     qname="ns1:CPEMissionResult" xmlns:ns1="http://beanObj.gsdx.dispatch.itms.linkage.com"
+                     serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+                     deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"/>
+        <typeMapping languageSpecificType="java:com.linkage.itms.dispatch.gsdx.beanObj.CPEMissionResult"
+                     qname="ns1:CPEMissionResult" xmlns:ns1="http://beanObj.gsdx.dispatch.itms.linkage.com"
+                     deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+                     serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"/>
+
+        <!--CpeInfoRst-->
+        <beanMapping languageSpecificType="java:com.linkage.itms.dispatch.gsdx.beanObj.CpeInfoRst"
+                     qname="ns1:CpeInfoRst" xmlns:ns1="http://beanObj.gsdx.dispatch.itms.linkage.com"
+                     serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+                     deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"/>
+        <typeMapping languageSpecificType="java:com.linkage.itms.dispatch.gsdx.beanObj.CpeInfoRst"
+                     qname="ns1:CpeInfoRst" xmlns:ns1="http://beanObj.gsdx.dispatch.itms.linkage.com"
+                     deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+                     serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"/>
+
+        <!--CpeInfo-->
+        <beanMapping languageSpecificType="java:com.linkage.itms.dispatch.gsdx.beanObj.CpeInfo"
+                     qname="ns1:CpeInfo" xmlns:ns1="http://beanObj.gsdx.dispatch.itms.linkage.com"
+                     serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+                     deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"/>
+        <typeMapping languageSpecificType="java:com.linkage.itms.dispatch.gsdx.beanObj.CpeInfo"
+                     qname="ns1:CpeInfo" xmlns:ns1="http://beanObj.gsdx.dispatch.itms.linkage.com"
+                     deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+                     serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"/>
+
+        <!--CpeBasicInfo-->
+        <beanMapping languageSpecificType="java:com.linkage.itms.dispatch.gsdx.beanObj.CpeBasicInfo"
+                     qname="ns:CpeBasicInfo"
+                     xmlns:ns="http://beanObj.gsdx.dispatch.itms.linkage.com"
+        />
+
+        <typeMapping qname="ns:CpeBasicInfo"
+                     xmlns:ns="http://beanObj.gsdx.dispatch.itms.linkage.com"
+                     languageSpecificType="java:com.linkage.itms.dispatch.gsdx.beanObj.CpeBasicInfo"
+                     serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+                     deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+                     encodingStyle=""
+        />
+
+        <!--CpeOnlineInfoRst-->
+        <beanMapping languageSpecificType="java:com.linkage.itms.dispatch.gsdx.beanObj.CpeOnlineInfoRst"
+                     qname="ns1:CpeOnlineInfoRst" xmlns:ns1="http://beanObj.gsdx.dispatch.itms.linkage.com"
+                     serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+                     deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"/>
+        <typeMapping languageSpecificType="java:com.linkage.itms.dispatch.gsdx.beanObj.CpeOnlineInfoRst"
+                     qname="ns1:CpeOnlineInfoRst" xmlns:ns1="http://beanObj.gsdx.dispatch.itms.linkage.com"
+                     deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+                     serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"/>
+        <!--UserInfo-->
+        <beanMapping languageSpecificType="java:com.linkage.itms.dispatch.gsdx.beanObj.UserInfo"
+                     qname="ns:UserInfo"
+                     xmlns:ns="http://beanObj.gsdx.dispatch.itms.linkage.com"
+        />
+
+        <typeMapping qname="ns:UserInfo"
+                     xmlns:ns="http://beanObj.gsdx.dispatch.itms.linkage.com"
+                     languageSpecificType="java:com.linkage.itms.dispatch.gsdx.beanObj.UserInfo"
+                     serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+                     deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+                     encodingStyle=""
+        />
+
+        <!--CpeOnlineInfo-->
+        <beanMapping languageSpecificType="java:com.linkage.itms.dispatch.gsdx.beanObj.CpeOnlineInfo"
+                     qname="ns:CpeOnlineInfo"
+                     xmlns:ns="http://beanObj.gsdx.dispatch.itms.linkage.com"
+        />
+
+        <typeMapping qname="ns:CpeOnlineInfo"
+                     xmlns:ns="http://beanObj.gsdx.dispatch.itms.linkage.com"
+                     languageSpecificType="java:com.linkage.itms.dispatch.gsdx.beanObj.CpeOnlineInfo"
+                     serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+                     deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+                     encodingStyle=""
+        />
+        <!--ServiceInfo-->
+        <beanMapping languageSpecificType="java:com.linkage.itms.dispatch.gsdx.beanObj.ServiceInfo"
+                     qname="ns1:ServiceInfo"
+                     xmlns:ns1="http://beanObj.gsdx.dispatch.itms.linkage.com"
+        />
+
+        <typeMapping qname="ns1:ServiceInfo"
+                     xmlns:ns1="http://beanObj.gsdx.dispatch.itms.linkage.com"
+                     languageSpecificType="java:com.linkage.itms.dispatch.gsdx.beanObj.ServiceInfo"
+                     serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+                     deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+                     encodingStyle=""
+        />
+        <!--ServiceInfo[]-->
+        <arrayMapping xmlns:ns2="http://beanObj.gsdx.dispatch.itms.linkage.com"
+                      qname="ns2:ArrayOfServiceInfo"
+                      type="java:com.linkage.itms.dispatch.gsdx.beanObj.ServiceInfo[]"
+                      innerType="ns1:UserDetail" xmlns:ns1="http://beanObj.gsdx.dispatch.itms.linkage.com" encodingStyle=""/>
+        <typeMapping
+                xmlns:ns2="http://beanObj.gsdx.dispatch.itms.linkage.com"
+                qname="ns2:ArrayOfServiceInfo"
+                languageSpecificType="java:com.linkage.itms.dispatch.gsdx.beanObj.ServiceInfo[]"
+                serializer="org.apache.axis.encoding.ser.ArraySerializerFactory"
+                deserializer="org.apache.axis.encoding.ser.ArrayDeserializerFactory"
+                encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+        />
+
+        <!--para-->
+        <beanMapping languageSpecificType="java:com.linkage.itms.dispatch.gsdx.beanObj.Para"
+                     qname="ns1:Para"
+                     xmlns:ns1="http://beanObj.gsdx.dispatch.itms.linkage.com"
+        />
+
+        <typeMapping qname="ns1:Para"
+                     xmlns:ns1="http://beanObj.gsdx.dispatch.itms.linkage.com"
+                     languageSpecificType="java:com.linkage.itms.dispatch.gsdx.beanObj.Para"
+                     serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+                     deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+                     encodingStyle=""
+        />
+        <!--para[]-->
+        <arrayMapping xmlns:ns2="http://beanObj.gsdx.dispatch.itms.linkage.com"
+                      qname="ns2:ArrayOfPara"
+                      type="java:com.linkage.itms.dispatch.gsdx.beanObj.Para[]"
+                      innerType="ns1:Para" xmlns:ns1="http://beanObj.gsdx.dispatch.itms.linkage.com" encodingStyle=""/>
+        <typeMapping
+                xmlns:ns2="http://beanObj.gsdx.dispatch.itms.linkage.com"
+                qname="ns2:ArrayOfPara"
+                languageSpecificType="java:com.linkage.itms.dispatch.gsdx.beanObj.Para[]"
+                serializer="org.apache.axis.encoding.ser.ArraySerializerFactory"
+                deserializer="org.apache.axis.encoding.ser.ArrayDeserializerFactory"
+                encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+        />
+
+
+        <!--ParaWithType-->
+        <beanMapping languageSpecificType="java:com.linkage.itms.dispatch.gsdx.beanObj.ParaWithType"
+                     qname="ns1:ParaWithType"
+                     xmlns:ns1="http://beanObj.gsdx.dispatch.itms.linkage.com"
+        />
+
+        <typeMapping qname="ns1:ParaWithType"
+                     xmlns:ns1="http://beanObj.gsdx.dispatch.itms.linkage.com"
+                     languageSpecificType="java:com.linkage.itms.dispatch.gsdx.beanObj.ParaWithType"
+                     serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+                     deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+                     encodingStyle=""
+        />
+        <!--ParaWithType[]-->
+        <arrayMapping xmlns:ns2="http://beanObj.gsdx.dispatch.itms.linkage.com"
+                      qname="ns2:ArrayOfParaWithType"
+                      type="java:com.linkage.itms.dispatch.gsdx.beanObj.ParaWithType[]"
+                      innerType="ns1:Para" xmlns:ns1="http://beanObj.gsdx.dispatch.itms.linkage.com" encodingStyle=""/>
+        <typeMapping
+                xmlns:ns2="http://beanObj.gsdx.dispatch.itms.linkage.com"
+                qname="ns2:ArrayOfParaWithType"
+                languageSpecificType="java:com.linkage.itms.dispatch.gsdx.beanObj.ParaWithType[]"
+                serializer="org.apache.axis.encoding.ser.ArraySerializerFactory"
+                deserializer="org.apache.axis.encoding.ser.ArrayDeserializerFactory"
+                encodingStyle="http://schemas.xmlsoap.org/soap/encoding/"
+        />
+
+
+        <!--SetParameterResult-->
+        <beanMapping languageSpecificType="java:com.linkage.itms.dispatch.gsdx.beanObj.SetParameterResult"
+                     qname="ns1:SetParameterResult"
+                     xmlns:ns1="http://beanObj.gsdx.dispatch.itms.linkage.com"
+        />
+
+        <typeMapping qname="ns1:SetParameterResult"
+                     xmlns:ns1="http://beanObj.gsdx.dispatch.itms.linkage.com"
+                     languageSpecificType="java:com.linkage.itms.dispatch.gsdx.beanObj.SetParameterResult"
+                     serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+                     deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+                     encodingStyle=""
+        />
+
+        <!--pingInfo-->
+        <beanMapping languageSpecificType="java:com.linkage.itms.dispatch.gsdx.beanObj.pingInfo"
+                     qname="ns1:pingInfo"
+                     xmlns:ns1="http://beanObj.gsdx.dispatch.itms.linkage.com"
+        />
+
+        <typeMapping qname="ns1:pingInfo"
+                     xmlns:ns1="http://beanObj.gsdx.dispatch.itms.linkage.com"
+                     languageSpecificType="java:com.linkage.itms.dispatch.gsdx.beanObj.pingInfo"
+                     serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+                     deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+                     encodingStyle=""
+        />
+
+        <!--pingResult-->
+        <beanMapping languageSpecificType="java:com.linkage.itms.dispatch.gsdx.beanObj.pingResult"
+                     qname="ns1:pingResult"
+                     xmlns:ns1="http://beanObj.gsdx.dispatch.itms.linkage.com"
+        />
+
+        <typeMapping qname="ns1:pingResult"
+                     xmlns:ns1="http://beanObj.gsdx.dispatch.itms.linkage.com"
+                     languageSpecificType="java:com.linkage.itms.dispatch.gsdx.beanObj.pingResult"
+                     serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+                     deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+                     encodingStyle=""
+        />
+
+        <!--oResult-->
+        <beanMapping languageSpecificType="java:com.linkage.itms.dispatch.gsdx.beanObj.oResult"
+                     qname="ns1:oResult"
+                     xmlns:ns1="http://beanObj.gsdx.dispatch.itms.linkage.com"
+        />
+
+        <typeMapping qname="ns1:oResult"
+                     xmlns:ns1="http://beanObj.gsdx.dispatch.itms.linkage.com"
+                     languageSpecificType="java:com.linkage.itms.dispatch.gsdx.beanObj.oResult"
+                     serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+                     deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+                     encodingStyle=""
+        />
+
+        <!--GetParameterResult-->
+        <beanMapping languageSpecificType="java:com.linkage.itms.dispatch.gsdx.beanObj.GetParameterResult"
+                     qname="ns1:GetParameterResult"
+                     xmlns:ns1="http://beanObj.gsdx.dispatch.itms.linkage.com"
+        />
+
+        <typeMapping qname="ns1:GetParameterResult"
+                     xmlns:ns1="http://beanObj.gsdx.dispatch.itms.linkage.com"
+                     languageSpecificType="java:com.linkage.itms.dispatch.gsdx.beanObj.GetParameterResult"
+                     serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+                     deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+                     encodingStyle=""
+        />
+        <!--DiagnoseResult-->
+        <beanMapping languageSpecificType="java:com.linkage.itms.dispatch.gsdx.beanObj.DiagnoseResult"
+                     qname="ns1:DiagnoseResult"
+                     xmlns:ns1="http://beanObj.gsdx.dispatch.itms.linkage.com"
+        />
+
+        <typeMapping qname="ns1:DiagnoseResult"
+                     xmlns:ns1="http://beanObj.gsdx.dispatch.itms.linkage.com"
+                     languageSpecificType="java:com.linkage.itms.dispatch.gsdx.beanObj.DiagnoseResult"
+                     serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+                     deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+                     encodingStyle=""
+        />
+        
+        <!--CpeFlow-->
+        <beanMapping languageSpecificType="java:com.linkage.itms.dispatch.sxdx.beanObj.CpeFlow"
+                     qname="ns1:CpeFlow" xmlns:ns1="http://beanObj.gsdx.dispatch.itms.linkage.com"
+                     serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"
+                     deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"/>
+        <typeMapping languageSpecificType="java:com.linkage.itms.dispatch.sxdx.beanObj.CpeFlow"
+                     qname="ns1:CpeFlow" xmlns:ns1="http://beanObj.gsdx.dispatch.itms.linkage.com"
+                     deserializer="org.apache.axis.encoding.ser.BeanDeserializerFactory"
+                     serializer="org.apache.axis.encoding.ser.BeanSerializerFactory"/>
+        
+        <namespace>http://service.operation.northinterface.huawei.com</namespace>
+    </service>
+
+ <transport name="http">
+  <requestFlow>
+   <handler type="URLMapper"/>
+   <handler type="java:org.apache.axis.handlers.http.HTTPAuthHandler"/>
+  </requestFlow>
+  <parameter name="qs:list" value="org.apache.axis.transport.http.QSListHandler"/>
+  <parameter name="qs:wsdl" value="org.apache.axis.transport.http.QSWSDLHandler"/>
+  <parameter name="qs.list" value="org.apache.axis.transport.http.QSListHandler"/>
+  <parameter name="qs.method" value="org.apache.axis.transport.http.QSMethodHandler"/>
+  <parameter name="qs:method" value="org.apache.axis.transport.http.QSMethodHandler"/>
+  <parameter name="qs.wsdl" value="org.apache.axis.transport.http.QSWSDLHandler"/>
+ </transport>
+ <transport name="local">
+  <responseFlow>
+   <handler type="LocalResponder"/>
+  </responseFlow>
+ </transport>
+</deployment>

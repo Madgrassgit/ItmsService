@@ -1,0 +1,271 @@
+<?xml version="1.0" encoding="gb2312"?>
+<config>
+	<!-- 系统类型，0:综合ITMS 1:itv） -->
+	<SystemType>0</SystemType>
+	<InstArea>sd_lt</InstArea>
+	<!-- 运营商 电信:CTC 联通:CUC 移动:CMCC -->
+	<Operator>CTC</Operator>
+
+	<mq>
+		<!-- 每个模块唯一的标识，目前暂定：web、PreProcess、SuperGather -->
+		<clientId>ItmsService</clientId>
+		<systemName>ITMS</systemName>
+		<mqACSAlive>
+			<!-- enable. 0:false,default; 1:yes. -->
+			<enab>1</enab>
+			<url>tcp://192.168.28.21:61616</url>
+			<topic>acs.alive</topic>
+		</mqACSAlive>
+
+		<mqDevRPC>
+			<!-- enable. 0:false,default; 1:yes. -->
+			<enab>1</enab>
+			<url>tcp://192.168.28.21:61616</url>
+			<topic>dev.rpc</topic>
+		</mqDevRPC>
+
+		<!-- 配置模块业务下发成功后通知ItmsService begin -->
+		<mqServInfo>
+			<!-- enable. 0:false,default; 1:yes. -->
+			<enab>1</enab>
+			<url>tcp://192.168.28.21:61616</url>
+			<topic>servinfo</topic>
+		</mqServInfo>
+		<!-- 配置模块业务下发成功后通知ItmsService end -->
+		<!-- 配置模块业务下发成功后通知ItmsService  湖北竣工  -->
+		<mqServInfoFinish>
+			<!-- enable. 0:false,default; 1:yes. -->
+			<enab>1</enab>
+			<url>tcp://192.168.28.21:61616</url>
+			<topic>dev.servinfo</topic>
+		</mqServInfoFinish>
+
+		<!-- 采集集群的配置 -->
+		<!-- <mqSgLive> <enab>1</enab> <url>tcp://192.168.2.14:61616</url> <topic>dev.rpc</topic> 
+			</mqSgLive> -->
+		<stb>
+			<mqACSAlive>
+				<!-- enable. 0:false,default; 1:yes. -->
+				<enab>1</enab>
+				<url>tcp://192.168.28.16:61616</url>
+				<topic>acs.alive</topic>
+			</mqACSAlive>
+			<mqDevRPC>
+				<!-- enable. 0:false,default; 1:yes. -->
+				<enab>1</enab>
+				<url>tcp://192.168.28.16:61616</url>
+				<topic>dev.rpc</topic>
+			</mqDevRPC>
+
+			<!-- 机顶盒运营画面 策略同步接口 数据入库后发送MQ通知配置模块 begin -->
+			<mqPicUpTask>
+				<!-- enable. 0:false,default; 1:yes. -->
+				<enab>1</enab>
+				<url>tcp://192.168.28.16:61616</url>
+				<topic>picUp.task</topic>
+			</mqPicUpTask>
+		</stb>
+	</mq>
+
+	<!-- 增加此配置项的原因：目前回参中的编码为encoding="GBK"，且宁夏联调两边用的框架不一样，导致客户端接收到的回参无法转义， 但又为了不影响其他地市的使用，所以增加了此配置项，宁夏联调涉及到的方法有call,bindInfo, 
+		bind,serviceDone,devOnline,release,queryBssSheetAndOpenStatus,queryDeviceConfig， 
+		其他方法不受此影响 -->
+	<codeType>
+		<codeTypeValue>UTF-8</codeTypeValue>
+	</codeType>
+
+	<!-- Socket服务端 -->
+	<ServerSocket>
+		<!-- 是否启动服务监听(true|false),default false -->
+		<enable>true</enable>
+		<!-- 如果配置启动监听，则需要配置监听端口号 -->
+		<port>40000</port>
+		<!-- 处理Socket消息的线程数据量,当并发量特别大时，可以适当调整该该值 -->
+		<processTheads>3</processTheads>
+	</ServerSocket>
+
+	<!-- Radius WebServie接口 -->
+	<Radius>
+		<url>http://202.102.39.141:9090/ItmsService/services/CallService?wsdl
+		</url>
+		<namespace>http://main.dispatch.itms.linkage.com</namespace>
+	</Radius>
+
+	<!-- 软件升级 -->
+	<initSoftUp>
+		<!-- enable. 0:false,default; 1:yes. -->
+		<enab>0</enab>
+	</initSoftUp>
+
+	<!-- 江苏移动测试，通过WebService向工单服务器发送工单 -->
+	<bss_sheet>
+		<server>10.40.11.118</server>
+		<port>10000</port>
+	</bss_sheet>
+		<!-- 湖北竣工回单webservice url -->
+	<finishIntr>
+		<finishUri>http://localhost:7001/itmsService/services/GtmsAxis</finishUri>
+		<servMethod>call</servMethod>
+	</finishIntr>
+	<thread>
+		<!-- thread pool size: bl. -->
+		<blPoolSize>150</blPoolSize>
+		<callBackSize>150</callBackSize>
+	</thread>
+
+	<!-- RSA算法公钥/私钥配置 -->
+	<RSA>
+		<!-- RSA算法公钥，提供给第三方进行密码加密 -->
+		<publicKey>MIGfMA0GCSqGSIb3DQEBAQUAA4GNADCBiQKBgQCRaiW7YgQjrpJI4XOILDeyi25S3Hi4Wu90Zze6JIoFod0T5SqHSmnWqR/2kHBbA6pGzenQYxAobcLgoqUPLCVQkVU7O4YKhWerjsssnRout3JdcwRyArg7GdYvV+paizhoLxDENOFsGtOpQ7vCT7w9WVg6t4S6+LhQ1q7VmwXXKQIDAQAB
+		</publicKey>
+		<!-- RSA算法私钥，不允许对外提供，用于对公钥加密的密码进行解密 -->
+		<privateKey>MIICdwIBADANBgkqhkiG9w0BAQEFAASCAmEwggJdAgEAAoGBAJFqJbtiBCOukkjhc4gsN7KLblLceLha73RnN7okigWh3RPlKodKadapH/aQcFsDqkbN6dBjEChtwuCipQ8sJVCRVTs7hgqFZ6uOyyydGi63cl1zBHICuDsZ1i9X6lqLOGgvEMQ04Wwa06lDu8JPvD1ZWDq3hLr4uFDWrtWbBdcpAgMBAAECgYBOztZQLZjMtcm2EemJPV2aOBK8eZw7XZ002tPK4A6lasnkBGj+FYgyvEoEWNdrnBrmcKZtN6MEJihdkggepvA5XkvP5Vi8fouFerw0aPrMODu8aXIStrC/lRWlNo9YXxs0HdqHcqQAwVsj+N5fD2IWxuXkByTdLLk/J6DIl6gkAQJBAM6PNvlpSGYC2VHrcs/n6CQyqqj/t3PE+//uitRMIK9cn1sDtSuJIVbalSL6gzwIMOGlzl+SVdomFzc5TpM+3MECQQC0OFP3UlOQIpynkDQBWzwwVPTJtlZsu3jV2yvbci5Ht2CR3bWyaR51LhpIfsON/mprPMYdNnnO6NyJl3WVtExpAkA14hYtKdHBCq02OX1RzuU3zB/IxixM/u3d7ZQ5nUJJfJf1Xho8qSERTyPoZAEn/9sAggg71iifJ6CWv1RIBPYBAkEAoHWSlR9Q1YFrt2mWVCrWYTYTKVHWi0Mz6D0XRHDaMfJc4iLj9vDPNIgS0L9FADUorUhUIIhzVb1RNpSLFfqNGQJBALM/2/9o04qtRL5zXP4hxyJDjHaWussFWPNjjq1rKAF++LEg6r/lwYI0F2bd1Ubsh+8Plc8eX1fHZPynhEmCLGc=
+		</privateKey>
+	</RSA>
+	
+	<sleepTime>3000</sleepTime>
+	<jxFtthSleepTime></jxFtthSleepTime>
+	<jxTestFtthUrl></jxTestFtthUrl>
+	<jxTestFtthMethod></jxTestFtthMethod>
+	<!-- 与itmsService接口对接 -->
+	<idsService>
+		<url>http://localhost:7001/IDSService/services/CallService</url>
+	</idsService>
+	<ftp>
+		<ip>192.168.2.4</ip>
+		<port>8080</port>
+		<username>linkage</username>
+		<password>JSNet2012LK</password>
+		<localDir>/export/home/itms/dataIns/</localDir>
+	</ftp>
+
+	<PingParam>
+		<PackSize>1336</PackSize>
+		<PackNum>5</PackNum>
+		<Timeout>2000</Timeout>
+		<Dscp>48</Dscp>
+	</PingParam>
+	<!-- traceroute param -->
+	<TraceRouteParam>
+		<MaxHopCount>15</MaxHopCount>
+		<PackSize>128</PackSize>
+		<Timeout>2000</Timeout>
+		<Dscp>0</Dscp>
+	</TraceRouteParam>
+
+	<!-- 调用外部接口[解绑机顶盒MAC地址接口] -->
+	<BusinessService>
+		<url>http://134.224.92.73:18082/unifInterfaceBoss/services/BusinessService</url>
+		<!-- 原rms平台地址 -->
+		<oldurl></oldurl>
+		<!-- 是否需要转发到原rms系统（割接时工单提前上线用） -->
+		<is_SendToOldRMS>0</is_SendToOldRMS>
+	</BusinessService>
+	<strategy_tabname>
+	    <serv>
+	    	<tabname>gw_serv_strategy_serv</tabname>
+	    	<serviceId>1001,1002,1101,1110,1401,17</serviceId>
+	    </serv> 
+	    <soft>
+	    	<tabname>gw_serv_strategy_soft</tabname>
+	    	<serviceId>5</serviceId>
+	    </soft> 
+	    <batch>
+	    	<tabname>gw_serv_strategy_batch</tabname>
+	    	<serviceId>2001,2003,116,117,118,8001,8005,1411,1111,101,911,913,7,101,2004</serviceId>
+	    </batch> 
+	    <strategy>
+	    	<tabname>gw_serv_strategy</tabname>
+	    	<serviceId></serviceId>
+	    </strategy> 
+	</strategy_tabname>
+	
+	<!-- 安徽下载业务质量检测调用外部接口url -->
+	<HttpSpead>
+		<url>http://134.64.199.169:8091/speeduploadah/services/InterfaceService?wsdl</url>
+		<method>InterfaceService</method>
+		<serviceNameSoap>InterfaceServiceSOAP</serviceNameSoap>
+		<nameSpace>http://www.chinatelecom.com/services/speed/</nameSpace>
+		<PoolSize>150</PoolSize>
+	</HttpSpead>
+	<!-- 是否发送corba心跳  0：不开启(默认);1:开启 -->
+    <isSendCorbaHeartBeat>0</isSendCorbaHeartBeat>
+    <!-- 发送周期 unit:min -->
+    <sendCorbaHeartBeatPeriod>20</sendCorbaHeartBeatPeriod>
+	<!--  江苏raidus接口 -->
+	<Radius_Socket>
+		<ip>192.168.1.1</ip>
+		<port>21</port>
+	</Radius_Socket>
+	
+	<ITMS>
+    	<URL>http://134.224.123.206:7070/ItmsService/services/ItmsService </URL>
+    </ITMS>
+	
+	<!-- 调用配置模块类型1：corba，2：发送消息 -->
+	<preProcessType>1</preProcessType>
+	<!-- 调用绑定模块类型1：corba，2：发送消息 -->
+	<resourceBindType>1</resourceBindType>
+	<!-- 是否初始化城市对应测速url  1：初始化   2：不初始化 -->
+	<isInitCitySpeed>1</isInitCitySpeed>
+	<testSpeedReportUrl>http://121.28.169.98:8084/services/contractrate/results/insert/</testSpeedReportUrl>
+	<testSpeedDownUrl>http://121.28.169.98:8084/services/contractrate/contract/rate/</testSpeedDownUrl>
+	
+	
+    <Ipsec>
+            <!-- isfused: 企业网关和家庭网关用户表，业务表是否融合，1是，0否-->
+            <isfused>1</isfused>
+            <callBackUrl>http://132.33.16.163:58080/EServer4WS/services/ws?wsdl</callBackUrl>
+            <callBackTargetName>http://impl.webservice.apps.itms.ai.com</callBackTargetName>
+            <callBackMethodName>ServiceDoneReturn</callBackMethodName>
+
+            <!-- vxlan回调适配层访问地址 -->
+            <vxlanUrl>http://172.30.16.19:9270/EServer4WSVxLAN/services/ws.wsHttpSoap11Endpoint/</vxlanUrl>
+            <vxlanTargetName>http://webservice.apps.itms.ai.com</vxlanTargetName>
+            <vxlanMethodName>VXLANServiceDoneReturn</vxlanMethodName>
+    
+            <!-- ip变动上报(ipsec) -->
+            <ipChangeIpsecUrl>http://192.168.18.69:9090/EServer4WSVxLAN/services/ws.wsHttpSoap11Endpoint/</ipChangeIpsecUrl>
+            <ipChangeIpsecTargetName>http://webservice.apps.itms.ai.com</ipChangeIpsecTargetName>
+            <ipChangeIpsecMethodName>VXLANServiceDoneReturn</ipChangeIpsecMethodName>
+    
+            <!-- ip变动上报(vxlan) -->
+            <ipChangeVxlanUrl>http://172.30.16.19:9270/EServer4WSVxLAN/services/ws.wsHttpSoap11Endpoint/</ipChangeVxlanUrl>
+            <ipChangeVxlanTargetName>http://webservice.apps.itms.ai.com</ipChangeVxlanTargetName>
+            <ipChangeVxlanMethodName>VXLANGatewayIPChange</ipChangeVxlanMethodName>
+    
+            <!-- vxlan新装上报 -->
+            <installVxlanUrl>http://172.30.16.19:9270/EServer4WSVxLAN/services/ws.wsHttpSoap11Endpoint/</installVxlanUrl>
+            <installVxlanTargetName>http://webservice.apps.itms.ai.com</installVxlanTargetName>
+            <installVxlanMethodName>VXLANGatewayInstall</installVxlanMethodName>
+
+            <!-- 智网回调是否开启 0：不开启  1：开启     智网为北研测试环境网络限制,默认为0不开启-->
+            <istest>0</istest>
+    </Ipsec>
+	
+	<factoryReturn>
+		<wsdl>http://136.3.243.201:7337/services/FactoryResetService</wsdl>
+		<namespace>http://api.server.factoryreset.endpoint.uip.cqpf.cqcis.com/</namespace>
+		<method>getFactoryResetReturnDiag</method>
+		<request>arg0</request>
+		<response>return</response>
+	</factoryReturn>
+	
+	<JxdxDownLoadUrl>
+    	http://182.106.134.238/netspeet/data/speet.dat,http://117.21.237.198/test1000.dat
+    </JxdxDownLoadUrl>
+    
+    <SpecialJxdxDownLoadUrl>
+    	http://182.106.141.138/netspeet/data/speet6.dat
+    </SpecialJxdxDownLoadUrl>
+    
+	<JxModifyPwd>
+    <url>http://134.224.103.125:8081/IPTVWebService.asmx</url>
+    <username>jxzdgl</username> 
+    <password>jxzdgl</password>
+    </JxModifyPwd>
+	<StbService>http://192.168.4.81:9090/StbService/services/StbService</StbService>
+	<jxdxTywg2UpList>4;5;9;10</jxdxTywg2UpList>
+	<!-- 缓存类型 -->
+	<memType>M</memType>
+</config>
