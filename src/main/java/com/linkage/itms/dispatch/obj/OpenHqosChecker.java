@@ -1,6 +1,7 @@
 package com.linkage.itms.dispatch.obj;
 
 import java.io.StringReader;
+
 import org.dom4j.Document;
 import org.dom4j.DocumentHelper;
 import org.dom4j.Element;
@@ -135,6 +136,7 @@ public class OpenHqosChecker extends BaseChecker
 	{
 		return dealDate;
 	}
+	
 
 	
 	public void setDealDate(String dealDate)
