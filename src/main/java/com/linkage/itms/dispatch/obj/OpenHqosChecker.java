@@ -139,6 +139,7 @@ public class OpenHqosChecker extends BaseChecker
 	
 
 	
+	
 	public void setDealDate(String dealDate)
 	{
 		this.dealDate = dealDate;
