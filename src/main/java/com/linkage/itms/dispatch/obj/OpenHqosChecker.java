@@ -136,7 +136,7 @@ public class OpenHqosChecker extends BaseChecker
 	{
 		return dealDate;
 	}
-	
+
 	
 	public void setDealDate(String dealDate)
 	{
@@ -247,10 +247,6 @@ public class OpenHqosChecker extends BaseChecker
 	public void setOperateId(String operateId)
 	{
 		this.operateId = operateId;
-	}
-	
-	public void aaa(){
-		
 	}
 
 }

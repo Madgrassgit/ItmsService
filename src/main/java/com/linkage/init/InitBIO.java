@@ -1,6 +1,20 @@
 
 package com.linkage.init;
 
+import java.io.File;
+import java.io.IOException;
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+import java.util.Timer;
+
+import org.apache.commons.io.FileUtils;
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
+import sendCorbaHeartBeat.RunSendCorbaHeartBeatTask;
+
 import com.linkage.commons.jms.MQConfigParser;
 import com.linkage.commons.jms.MQPublisher;
 import com.linkage.commons.jms.obj.MQConfig;
@@ -22,14 +36,6 @@ import com.linkage.itms.socket.core.SocketWorker;
 import com.linkage.itms.socket.pwdsyn.util.PwdSynListener;
 import com.linkage.itms.socket.userBandSyn.UserBandSynListener;
 import com.linkage.system.utils.database.Cursor;
-import org.apache.commons.io.FileUtils;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-import sendCorbaHeartBeat.RunSendCorbaHeartBeatTask;
-
-import java.io.File;
-import java.io.IOException;
-import java.util.*;
 
 /**
  * @author Jason(3412)
@@ -395,6 +401,11 @@ public class InitBIO {
 		Global.vxlanUrl = xml.getStringValue("Ipsec.vxlanUrl");
 		Global.vxlanTargetName = xml.getStringValue("Ipsec.vxlanTargetName");
 		Global.vxlanMethodName = xml.getStringValue("Ipsec.vxlanMethodName");
+		
+		// 直通车 开通、修改、删除业务回调参数
+		Global.hqosUrl = xml.getStringValue("Ipsec.hqosUrl");
+		Global.hqosTargetName = xml.getStringValue("Ipsec.hqosTargetName");
+		Global.hqosMethodName = xml.getStringValue("Ipsec.hqosMethodName");
 		
 		// ip变动上报(ipsec) 回调参数
 		Global.ipChangeIpsecUrl = xml.getStringValue("Ipsec.ipChangeIpsecUrl");

@@ -223,6 +223,11 @@
             <vxlanUrl>http://172.30.16.19:9270/EServer4WSVxLAN/services/ws.wsHttpSoap11Endpoint/</vxlanUrl>
             <vxlanTargetName>http://webservice.apps.itms.ai.com</vxlanTargetName>
             <vxlanMethodName>VXLANServiceDoneReturn</vxlanMethodName>
+            
+            <!-- 直通车回调适配层访问地址 -->
+            <hqosUrl>http://172.30.16.19:9270/EServer4WSVxLAN/services/ws.wsHttpSoap11Endpoint/</vxlanUrl>
+            <hqosTargetName>http://webservice.apps.itms.ai.com</vxlanTargetName>
+            <hqosMethodName>VXLANServiceDoneReturn</vxlanMethodName>
     
             <!-- ip变动上报(ipsec) -->
             <ipChangeIpsecUrl>http://192.168.18.69:9090/EServer4WSVxLAN/services/ws.wsHttpSoap11Endpoint/</ipChangeIpsecUrl>

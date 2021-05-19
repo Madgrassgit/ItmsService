@@ -1,21 +1,22 @@
 package com.linkage.itms;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.Map;
+import java.util.concurrent.ConcurrentHashMap;
+
+import net.rubyeye.xmemcached.MemcachedClient;
 import PreProcess.PPManager;
 import ResourceBind.BlManager;
 import SoftUp.SoftUpManager;
 import StbCm.CMManager;
 import SuperGather.SuperGatherManager;
+
 import com.linkage.commons.jms.MQPublisher;
 import com.linkage.commons.jms.obj.MQConfig;
 import com.linkage.commons.thread.ThreadPoolCommon;
 import com.linkage.init.obj.CpeFaultcodeOBJ;
 import com.linkage.itms.dispatch.util.memcached.MemcachedPool;
-import net.rubyeye.xmemcached.MemcachedClient;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.Map;
-import java.util.concurrent.ConcurrentHashMap;
 
 
 /**
@@ -466,6 +467,14 @@ public class Global {
 	public static String vxlanUrl;
 	public static String vxlanTargetName;
 	public static String vxlanMethodName;
+	
+	/***
+	 *  直通车 开通、修改、删除业务回调参数
+	 */
+	public static String hqosUrl;
+	public static String hqosTargetName;
+	public static String hqosMethodName;
+	
 	/***
 	 * ip变动上报(ipsec) 回调参数
 	 */

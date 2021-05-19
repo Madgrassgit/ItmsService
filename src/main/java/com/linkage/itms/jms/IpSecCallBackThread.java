@@ -68,6 +68,9 @@ public class IpSecCallBackThread implements Runnable {
 			case 5: // vxlan新装上报
 				vxlanGatewayInstall();
 				break;
+			case 6: // 互联网直通车
+				servHqosCallBack();
+				break;
 			default:
 				logger.warn("servType为[{}], 不处理 该条message:[{}]", servType, message);
 				return;
@@ -389,6 +392,29 @@ public class IpSecCallBackThread implements Runnable {
 		sb.append("</root>");
 		return sb.toString();
 	}
+	
+	
+	
+	/**
+	 * 直通车业务回调
+	 * @return
+	 */
+	private String getHqosRetXml(boolean isVxlan) {
+		StringBuffer sb = new StringBuffer("<?xml version=\"1.0\" encoding=\"UTF-8\"?>");
+		sb.append("<root>");
+		sb.append("<CmdID>").append(obj.getRequestId()).append("</CmdID>");
+		sb.append("<CmdType>CX_01</CmdType>");
+		sb.append("<ClientType>6</ClientType>");
+		sb.append("<DealDate>").append(new DateTimeUtil().getYYYYMMDDHHMMSS()).append("</DealDate>");
+		sb.append("<Param>");
+		sb.append("<UserInfoType>").append(obj.getServStatus()).append("</UserInfoType>");
+		sb.append("<UserInfo>").append(obj.getServName()).append("</UserInfo>");
+		sb.append("<RequestID>").append(obj.getRequestId()).append("</RequestID>");
+		sb.append("<Result>").append(obj.getOpenStatus()).append("</Result>");
+		sb.append("</Param>");
+		sb.append("</root>");
+		return sb.toString();
+	}
 
 	/**
 	 * 获取ipsec和vxlan ip变动回调xml
@@ -425,6 +451,14 @@ public class IpSecCallBackThread implements Runnable {
 		return sb.toString();
 	}
 
+	public void servHqosCallBack() throws Exception {
+		String retXml = getHqosRetXml(true);
+		logger.warn("servHqosCallBack begin message: [{}], rul: [{}], targetname: [{}], methodname: [{}]",
+				new Object[] { message, Global.hqosUrl, Global.hqosTargetName, Global.hqosMethodName});
+		String res = WebServiceUtil.call(Global.hqosUrl, Global.hqosTargetName, Global.hqosMethodName, retXml);
+		logger.warn("servHqosCallBack done [{}]", res);
+	}
+	
 //	/**
 //	 * 获取vxlan 新增上报回调xml
 //	 * @return
