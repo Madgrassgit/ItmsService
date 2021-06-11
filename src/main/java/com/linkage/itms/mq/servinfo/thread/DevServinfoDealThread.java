@@ -17,6 +17,7 @@ import com.linkage.commons.db.DBOperation;
 import com.linkage.commons.db.PrepareSQL;
 import com.linkage.commons.util.StringUtil;
 import com.linkage.itms.Global;
+import com.linkage.itms.commom.util.WSClientUtil;
 import com.linkage.itms.dao.DeviceInfoDAO;
 
 /**
@@ -35,8 +36,9 @@ public class DevServinfoDealThread implements Runnable {
 	private String topic = null;
 	private String deviceId = "";
 	private String loid = "";
-	private static String resultDesc = "";
-	private static String resultCode = "";
+	private String resultDesc = "";
+	private String err_type = "";
+	private String resultCode = "";
 	private DeviceInfoDAO dao = new DeviceInfoDAO();
 	public void setMessage(String message) {
 		log.debug("setMessage({})", message);
@@ -57,19 +59,41 @@ public class DevServinfoDealThread implements Runnable {
 			return;
 		}
 		//根据device_id查询loid,返回结果
-		Map<String, String> queryLoidInfoByDeviceId = dao.queryLoidInfoByDeviceId(deviceId);
+		Map<String, String> queryLoidInfoByDeviceId = dao.queryQosInfoByDeviceId(deviceId);
 		if(null != queryLoidInfoByDeviceId && !queryLoidInfoByDeviceId.isEmpty()){
 			//调用服开接口返回结果
 			if (Global.AHLT.equals(Global.G_instArea))
 			{
 				String callRemoteService = callRemoteService(queryLoidInfoByDeviceId.get("username"),Global.BACK_FUKAI_URL);
 				log.warn("callRemoteService：{}",callRemoteService);
-			}else{
-				
+			}
+			if (Global.ZJLT.equals(Global.G_instArea))
+			{
 				JSONObject paramMap = new JSONObject();
+				paramMap.put("task_id",queryLoidInfoByDeviceId.get("order_id"));
 				paramMap.put("loid",queryLoidInfoByDeviceId.get("username"));
 				paramMap.put("result_code",resultCode);
-				paramMap.put("err_type",30);
+				paramMap.put("err_msg",resultDesc);
+				paramMap.put("err_type",err_type);
+				log.warn("paramMap.toString()="+paramMap.toString());
+				//String xml = "{\"task_id\":\"301236117\",\"result_code\":\"2\",\"err_type\":\"30\",\"err_msg\":\"哈哈哈哈咯\"}";
+				String result = WSClientUtil.callRemoteService(Global.BACK_FUKAI_URL, paramMap.toString(), "doZTCComplete");
+				
+				JSONObject jsonObject = JSONObject.parseObject(result);
+				String rstCode = jsonObject.getString("result_code");
+				log.warn("保障配置结果回调返回：{}",result);
+				recordLog("cfgresult", queryLoidInfoByDeviceId.get("username"), queryLoidInfoByDeviceId.get("device_serialnumber"), "", 
+						StringUtil.getIntegerValue(rstCode), paramMap.toString(), result);
+			}
+			else{
+				JSONObject paramMap = new JSONObject();
+				paramMap.put("task_id",queryLoidInfoByDeviceId.get("order_id"));
+				paramMap.put("loid",queryLoidInfoByDeviceId.get("username"));
+				paramMap.put("result_code",resultCode);
+				paramMap.put("err_msg",resultDesc);
+				paramMap.put("err_type",err_type);
+				log.warn("paramMap.toString()="+paramMap.toString());
+				
 				String result="";
 				try {
 					result = HttpUtil.doPost(Global.BACK_FUKAI_URL, paramMap,null);
@@ -84,6 +108,26 @@ public class DevServinfoDealThread implements Runnable {
 				
 			}
 		}
+	}
+	public static void main(String[] args)
+	{
+		JSONObject paramMap = new JSONObject();
+		paramMap.put("task_id",1111);
+		paramMap.put("loid",2222);
+		paramMap.put("result_code","1");
+		paramMap.put("err_msg","");
+		paramMap.put("err_type","");
+		log.warn("paramMap.toString()="+paramMap.toString());
+		String url = "http://127.0.0.1:12000/axis/services/cu/IOMServiceForCRM";
+		//String xml = "{\"task_id\":\"301236117\",\"result_code\":\"2\",\"err_type\":\"30\",\"err_msg\":\"哈哈哈哈咯\"}";
+		System.out.println(paramMap.toString());
+		String res = WSClientUtil.callRemoteService(url, paramMap.toString(), "doZTCComplete");
+		System.out.println("res=" + res);
+		
+		JSONObject jsonObject = JSONObject.parseObject(res);
+		String rstCode = jsonObject.getString("result_code");
+		System.out.println(rstCode);
+		
 	}
 	
 	public void recordLog(String modthName,
@@ -118,7 +162,7 @@ public class DevServinfoDealThread implements Runnable {
 	/**
 	 * 发送webService
 	 */
-	public static String callRemoteService(String loid, String url)
+	public String callRemoteService(String loid, String url)
 	{
 		StringBuffer inParam = new StringBuffer();
 		inParam.append("<soapenv:Envelope xmlns:soapenv=\"http://schemas.xmlsoap.org/soap/envelope/\" xmlns:ser=\"http://service.interfaces.iom.dbdp.usi/\">\n");
@@ -165,11 +209,13 @@ public class DevServinfoDealThread implements Runnable {
 				Element root = document.getRootElement();
 				deviceId = root.elementTextTrim("devId");
 				//loid = root.elementTextTrim("Loid");
-				resultCode = root.elementTextTrim("OpenStatus");
+				resultCode = root.elementTextTrim("openStatus");
 				if(Global.DO == StringUtil.getIntegerValue(resultCode)){
 					resultDesc = "成功";
+					err_type = "";
 				}else{
 					resultDesc = "失败";
+					err_type = "30";
 				}
 			}catch(Exception e){
 				log.error("解析出错:{}",ExceptionUtils.getStackTrace(e));

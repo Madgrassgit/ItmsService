@@ -1,5 +1,13 @@
 package com.linkage.itms.dao;
 
+import java.util.ArrayList;
+import java.util.HashMap;
+import java.util.List;
+import java.util.Map;
+
+import org.slf4j.Logger;
+import org.slf4j.LoggerFactory;
+
 import com.linkage.commons.db.DBOperation;
 import com.linkage.commons.db.DBUtil;
 import com.linkage.commons.db.PrepareSQL;
@@ -7,13 +15,6 @@ import com.linkage.commons.util.StringUtil;
 import com.linkage.itms.Global;
 import com.linkage.system.utils.database.Cursor;
 import com.linkage.system.utils.database.DataSetBean;
-import org.slf4j.Logger;
-import org.slf4j.LoggerFactory;
-
-import java.util.ArrayList;
-import java.util.HashMap;
-import java.util.List;
-import java.util.Map;
 
 public class DeviceInfoDAO
 {
@@ -748,6 +749,17 @@ public class DeviceInfoDAO
 		psql.append(", tab_gw_device b where a.device_id = b.device_id");
 		psql.append(" and b.device_id = '" + device_id + "'");
 		psql.append(" and a.user_state in ('1','2')");
+		
+		return DBOperation.getRecord(psql.getSQL());
+	}
+	
+	public Map<String, String> queryQosInfoByDeviceId(String device_id) {
+		logger.debug("queryDeviceInfoByLoid,loid({})", device_id);
+		PrepareSQL psql = new PrepareSQL();
+		psql.append("select s.order_id,a.username,a.user_id,b.device_id,b.device_serialnumber from tab_hgwcustomer a ");
+		psql.append(", tab_gw_device b,tab_bss_sheet s where a.device_id = b.device_id and s.username=a.username ");
+		psql.append(" and b.device_id = '" + device_id + "'");
+		psql.append(" and a.user_state in ('1','2') and s.product_spec_id='46' order by receive_date desc");
 		
 		return DBOperation.getRecord(psql.getSQL());
 	}

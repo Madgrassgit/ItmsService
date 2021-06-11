@@ -273,4 +273,6 @@
 	<jxdxTywg2UpList>4;5;9;10</jxdxTywg2UpList>
 	<!-- 缓存类型 -->
 	<memType>M</memType>
+	<!-- 服开的地址 -->
+	<backFukaiUrl>http://130.36.19.25:7004/axis/services/cu/IOMServiceForCRM</backFukaiUrl>
 </config>

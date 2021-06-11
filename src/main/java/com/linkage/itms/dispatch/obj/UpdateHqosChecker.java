@@ -1,6 +1,7 @@
 package com.linkage.itms.dispatch.obj;
 
 import java.io.StringReader;
+
 import org.dom4j.Document;
 import org.dom4j.DocumentHelper;
 import org.dom4j.Element;
@@ -100,8 +101,9 @@ public class UpdateHqosChecker extends BaseChecker
 			return false;
 		}
 		
+		//|| StringUtil.IsEmpty(hqsPassword)密码可以为空，不做更改
 		if (StringUtil.IsEmpty(loid) || StringUtil.IsEmpty(hqsName)
-				|| StringUtil.IsEmpty(hqsPassword) || StringUtil.IsEmpty(vlanId)
+				 || StringUtil.IsEmpty(vlanId)
 				|| StringUtil.IsEmpty(wanType) || StringUtil.IsEmpty(ipForwardList)
 				|| StringUtil.IsEmpty(qosValue)){
 			result = 1;

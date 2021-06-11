@@ -526,6 +526,7 @@ public class Global {
 	public static final String SDLT = "sd_lt";
 	public static final String NMGLT = "nmg_lt";
 	public static final String AHLT = "ah_lt";
+	public static final String ZJLT = "zj_lt";
 
 	public static final String OK = "OK";
 	public static final String ERROR = "ERROR";

@@ -1,6 +1,5 @@
 package com.linkage.itms.jms;
 
-import java.io.StringReader;
 import java.net.URL;
 import java.util.HashMap;
 import java.util.List;
@@ -10,9 +9,6 @@ import javax.xml.namespace.QName;
 import org.apache.axis.client.Call;
 import org.apache.axis.client.Service;
 import org.apache.commons.lang3.exception.ExceptionUtils;
-import org.dom4j.Document;
-import org.dom4j.Element;
-import org.dom4j.io.SAXReader;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
@@ -72,7 +68,7 @@ public class ProcessRusultThread implements Runnable
 			}
 			return;
 		}
-		if(Global.AHLT.equals(Global.G_instArea)){
+		if(Global.AHLT.equals(Global.G_instArea)||Global.ZJLT.equals(Global.G_instArea)){
 			log.warn("接收到dev.servinfo消息为空:{}",this.message);
 			return;
 		}else{
